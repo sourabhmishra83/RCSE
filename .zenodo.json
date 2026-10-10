@@ -1,0 +1,21 @@
+{
+  "title": "RCSE v1.0.1 — cleaned reproduction package",
+  "upload_type": "software",
+  "version": "v1.0.1",
+  "creators": [
+    {
+      "name": "Mishra, Sourabh",
+      "affiliation": "Deloitte (United States)",
+      "orcid": "0009-0006-6338-5587"
+    }
+  ],
+  "license": "mit-license",
+  "description": "Research code, derived datasets, saved models, numerical outputs, figures, and detailed reproduction instructions for Risk-Calibrated Selective Execution. Version v1.0.1 excludes manuscript files, reviewer correspondence, manuscript-editing helpers, editorial change logs, and the reference-check report. Analysis code and numerical results are unchanged. Original code is MIT licensed; BPI Challenge 2019 source-data attribution remains governed by separate CC BY 4.0 terms.",
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.23273149",
+      "relation": "isNewVersionOf",
+      "scheme": "doi"
+    }
+  ]
+}
