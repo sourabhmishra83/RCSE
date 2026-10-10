@@ -51,4 +51,6 @@ Source: [BPI Challenge 2019, 4TU.ResearchData](https://doi.org/10.4121/uuid:d06a
 Original code and accompanying code documentation are MIT licensed; see `LICENSE` and `LICENSE_SCOPE.md` for the separate source-data attribution terms. The pre-resubmission label-loss sensitivity is documented in `docs/RESULTS.md` and reproduced by `revision_complete/run_loss_label_sensitivity.py`.
 
 
-The immutable research snapshot is [RCSE v1.0.0 on Zenodo](https://doi.org/10.5281/zenodo.23273149), DOI 10.5281/zenodo.23273149. It archives the versioned [GitHub release](https://github.com/sourabhmishra83/RCSE/releases/tag/v1.0.0).
+The current archived reproduction package is [RCSE v1.0.1 on Zenodo](https://doi.org/10.5281/zenodo.23283511), DOI **10.5281/zenodo.23283511**. This cleaned package contains research code, data, outputs, and reproduction documentation; manuscript and reviewer-response materials are excluded. The corresponding [GitHub release is v1.0.1](https://github.com/sourabhmishra83/RCSE/releases/tag/v1.0.1).
+
+The previous [v1.0.0 snapshot](https://doi.org/10.5281/zenodo.23273149) remains available. Both versions belong to the same [Zenodo DOI series](https://doi.org/10.5281/zenodo.23273148).
