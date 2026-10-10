@@ -1,0 +1,1974 @@
+{
+  "step": "09b.2n",
+  "status": "FROZEN_RCSE_V2_SIMULATION_EXECUTED",
+  "analysis_status": "Secondary revised analysis motivated by diagnostics after the original RCSE v1 simulation. Must be reported as such; it does not replace the original frozen v1 results.",
+  "dataset_directory": "C:\\Users\\jkashyap\\Downloads\\rcse_output\\experimental_benchmark\\splits\\frozen_baseline_results\\rcse_policy_dataset\\rcse_v2_policy_dataset",
+  "frozen_spec": "C:\\Users\\jkashyap\\Downloads\\09b2l_rcse_v2_policy_spec.json",
+  "policy_set": [
+    "ARGMAX_V1",
+    "CONFIDENCE_THRESHOLD_V1",
+    "VOI_BLIND_V1",
+    "RCSE_V1_FULL",
+    "V2_SAFETY_NO_GATE",
+    "V2_GATE_MULTICLASS_EXECUTE",
+    "RCSE_V2_NO_GATHER",
+    "RCSE_V2_FULL"
+  ],
+  "reference_parameters": {
+    "c_G": 0.02,
+    "c_H": 0.1,
+    "c_A": 0.5,
+    "rho_H": 0.0,
+    "tau_safe_t0": 0.95,
+    "beta0": 0.05,
+    "tau_safe_t1": 0.95,
+    "beta1": 0.05
+  },
+  "consequence_modes": [
+    "LOG_TRAIN_P90",
+    "UNIFORM",
+    "LOG_TRAIN_P50",
+    "LOG_TRAIN_P99"
+  ],
+  "frontier_grid_size": 320,
+  "frontier_grid": [
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.9,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.95,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.97,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.01,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.05,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.97,
+      "beta1": 0.1
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.01
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.02
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.05
+    },
+    {
+      "tau_safe_t0": 0.99,
+      "beta0": 0.2,
+      "tau_safe_t1": 0.99,
+      "beta1": 0.1
+    }
+  ],
+  "training_performed": false,
+  "recalibration_performed": false,
+  "gate_modified": false,
+  "policy_retuned": false,
+  "important_reporting_guardrails": [
+    "Do not modify the evidence-gate delta after RCSE v2 results are observed.",
+    "Do not choose tau_safe_t0, beta0, tau_safe_t1, or beta1 from test-set winners.",
+    "Report the frozen reference point together with the full predeclared grids/frontiers.",
+    "Do not introduce an R4-specific policy override in the primary analysis.",
+    "Do not train on synthetic intervention labels.",
+    "Do not use intervention_type or synthetic_intervention as policy inputs.",
+    "Do not use future outcomes as t0 policy features.",
+    "Do not use transaction exposure/risk as learned safety-model features; exposure enters only through C(v).",
+    "Preserve original RCSE v1 results and identify v2 as a diagnostically motivated secondary/revised analysis.",
+    "Do not claim universal probability calibration if R4 calibration remains poor.",
+    "Do not claim RCSE v2 dominance unless the predeclared frontier/ablation results support it."
+  ],
+  "interpretation_note": "Reference-point metrics are illustrative frozen operating points. Final claims must be supported by the full predeclared frontier and ablation analysis, not by selecting the best held-out result."
+}

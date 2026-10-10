@@ -1,0 +1,33 @@
+{
+  "step": "09b.2k",
+  "gate_states": [
+    "VALID",
+    "INCOMPLETE",
+    "CONTRADICTORY"
+  ],
+  "precedence": "CONTRADICTORY overrides INCOMPLETE; otherwise VALID",
+  "fixed_incomplete_rules": [
+    "po_value_initial_eur is missing",
+    "invoice_value_t0_eur is missing",
+    "goods_receipt_required=True AND gr_available_at_t0=False",
+    "vendor_invoice_seen_at_t0=False",
+    "po_created_at_t0=False"
+  ],
+  "fixed_process_consistency_rules": [
+    "gr_available_at_t0=False AND n_goods_receipts_before_t0>0",
+    "gr_available_at_t0=True AND n_goods_receipts_before_t0==0",
+    "had_gr_cancellation_before_t0=True AND n_cancel_gr_before_t0==0",
+    "had_invoice_cancellation_before_t0=True AND n_cancel_invoice_before_t0==0",
+    "had_price_change_before_t0=True AND n_price_change_before_t0==0",
+    "had_quantity_change_before_t0=True AND n_quantity_change_before_t0==0",
+    "had_payment_block_before_t0=True AND (n_set_payment_block_before_t0+n_remove_payment_block_before_t0)==0"
+  ],
+  "value_consistency_rule": "inv_po_abs_rel_diff >= delta OR (gr_available_at_t0=True AND inv_gr_abs_rel_diff >= delta)",
+  "predeclared_deltas": [
+    0.05,
+    0.1,
+    0.25,
+    0.5
+  ],
+  "important_semantics": "Mismatch fields are audited here only as deterministic consistency relationships; they remain rejected as universal historical REVIEW ground truth."
+}

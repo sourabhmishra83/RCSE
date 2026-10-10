@@ -1,0 +1,16 @@
+regime,risk_cap,best_consequence_mode,max_coverage_across_modes,unsafe_execution_rate,mean_realized_normalized_loss
+grouped_iid,0.01,,0.0,,
+grouped_iid,0.02,,0.0,,
+grouped_iid,0.05,,0.0,,
+grouped_iid,0.1,,0.0,,
+grouped_iid,0.2,LOG_TRAIN_P99,0.2027682223245483,0.173256745925728,0.0967583232712775
+ood_exposure,0.01,,0.0,,
+ood_exposure,0.02,,0.0,,
+ood_exposure,0.05,,0.0,,
+ood_exposure,0.1,,0.0,,
+ood_exposure,0.2,LOG_TRAIN_P99,0.0130126182965299,0.1818181818181818,0.0989567196402144
+temporal,0.01,,0.0,,
+temporal,0.02,,0.0,,
+temporal,0.05,,0.0,,
+temporal,0.1,,0.0,,
+temporal,0.2,LOG_TRAIN_P99,0.2260244811069718,0.1720037673651989,0.0995635376770718

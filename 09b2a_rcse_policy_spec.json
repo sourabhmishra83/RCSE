@@ -1,0 +1,197 @@
+{
+  "step": "09b.2a",
+  "status": "FROZEN_BEFORE_POLICY_SIMULATION",
+  "purpose": "Predeclare comparator definitions, consequence scaling, action costs, execution-risk budgets, and post-GATHER continuation rules before running the RCSE policy simulation.",
+  "policies": {
+    "ARGMAX": {
+      "description": "Choose the highest calibrated t0 action probability among EXECUTE/GATHER/ESCALATE/ABSTAIN. This is a predictive-action baseline and does not use transaction consequence.",
+      "uses_exposure": false,
+      "uses_gather_continuation": false,
+      "uses_risk_budget": false
+    },
+    "CONFIDENCE_THRESHOLD": {
+      "description": "EXECUTE if p_cal_execute >= tau0; otherwise ESCALATE. GATHER and ABSTAIN are not used. This isolates fixed-confidence selective execution.",
+      "uses_exposure": false,
+      "uses_gather_continuation": false,
+      "uses_risk_budget": false,
+      "tau0_grid": [
+        0.5,
+        0.6,
+        0.7,
+        0.75,
+        0.8,
+        0.85,
+        0.9,
+        0.92,
+        0.94,
+        0.95,
+        0.96,
+        0.97,
+        0.98,
+        0.99,
+        0.995
+      ]
+    },
+    "COST_AWARE_BLIND": {
+      "description": "Consequence-blind expected-loss policy. Uses C(v)=1, does not use GATHER, and chooses minimum loss among EXECUTE/ESCALATE/ABSTAIN.",
+      "uses_exposure": false,
+      "uses_gather_continuation": false,
+      "uses_risk_budget": false
+    },
+    "VOI_BLIND": {
+      "description": "Consequence-blind one-step GATHER policy. Uses C(v)=1. GATHER is available only for Step-09b.1 eligible natural delayed-evidence episodes.",
+      "uses_exposure": false,
+      "uses_gather_continuation": true,
+      "uses_risk_budget": true
+    },
+    "RCSE_NO_GATHER": {
+      "description": "Consequence-aware RCSE ablation without GATHER. Uses exposure-scaled execution loss and explicit consequence-weighted execution-risk budget.",
+      "uses_exposure": true,
+      "uses_gather_continuation": false,
+      "uses_risk_budget": true
+    },
+    "RCSE_FULL": {
+      "description": "Full consequence-aware RCSE with EXECUTE/GATHER/ESCALATE/ABSTAIN, exposure-scaled loss, execution-risk budget, and one-step post-GATHER continuation.",
+      "uses_exposure": true,
+      "uses_gather_continuation": true,
+      "uses_risk_budget": true
+    }
+  },
+  "consequence_functions": {
+    "primary": {
+      "name": "LOG_TRAIN_P90",
+      "formula": "log1p(abs(exposure_eur)) / log1p(v_ref)",
+      "v_ref_definition": "90th percentile of absolute transaction exposure computed from the TRAIN partition of the corresponding frozen regime. Never compute v_ref from the test partition.",
+      "floor": 0.0,
+      "cap": null
+    },
+    "sensitivity": [
+      {
+        "name": "UNIFORM",
+        "formula": "1.0",
+        "purpose": "Consequence-blind ablation."
+      },
+      {
+        "name": "LOG_TRAIN_P50",
+        "formula": "log1p(abs(exposure_eur)) / log1p(v_ref)",
+        "v_ref_definition": "50th percentile of absolute exposure from the TRAIN partition of the corresponding frozen regime."
+      },
+      {
+        "name": "LOG_TRAIN_P99",
+        "formula": "log1p(abs(exposure_eur)) / log1p(v_ref)",
+        "v_ref_definition": "99th percentile of absolute exposure from the TRAIN partition of the corresponding frozen regime."
+      }
+    ]
+  },
+  "losses": {
+    "execute": {
+      "formula": "(1 - p_execute) * C(v)",
+      "interpretation": "Expected autonomous-execution loss from residual probability that EXECUTE is not the benchmark-appropriate t0 response."
+    },
+    "escalate": {
+      "formula": "c_H + rho_H * C(v)",
+      "reference_rho_H": 0.0,
+      "rho_H_sensitivity": [
+        0.0,
+        0.02,
+        0.05
+      ]
+    },
+    "abstain": {
+      "formula": "c_A"
+    },
+    "gather": {
+      "formula": "c_G + min(post_execute_loss, c_H, c_A)",
+      "availability": "Only when gather_policy_eligible=True in the Step-09b.1 policy-ready dataset.",
+      "post_execute_loss": "(1 - p_safe_t1_for_primary_rcse) * C(v)",
+      "post_execute_feasibility": "Post-GATHER autonomous EXECUTE is allowed only if BOTH p_safe_t1_for_primary_rcse >= tau1 AND (1 - p_safe_t1_for_primary_rcse) * C(v) <= beta1. Otherwise post-GATHER continuation falls back to min(ESCALATE, ABSTAIN).",
+      "important_limitation": "q_t1 is treated as an auxiliary selective score, not as a universally calibrated safety probability. No special R4 override is introduced in the primary policy."
+    }
+  },
+  "reference_cost_schedule": {
+    "units": "normalized experimental loss units",
+    "c_G": 0.02,
+    "c_H": 0.1,
+    "c_A": 0.5,
+    "ordering": "c_G < c_H < c_A",
+    "note": "These are reference experimental costs for figures/tables, not claimed enterprise monetary costs."
+  },
+  "cost_sensitivity_grid": {
+    "c_G": [
+      0.01,
+      0.02,
+      0.05,
+      0.1
+    ],
+    "c_H": [
+      0.05,
+      0.1,
+      0.2
+    ],
+    "c_A": [
+      0.2,
+      0.5,
+      1.0
+    ],
+    "constraint": "Only evaluate combinations satisfying c_G < c_H < c_A."
+  },
+  "risk_budget": {
+    "definition": "Consequence-weighted execution-risk budget: (1 - p_execute) * C(v) <= beta0.",
+    "beta0_grid": [
+      0.01,
+      0.02,
+      0.05,
+      0.1,
+      0.2
+    ],
+    "reference_beta0": 0.05,
+    "note": "This continuous consequence-weighted budget replaces arbitrary hand-set R1/R2/R3/R4 confidence multipliers in the primary policy."
+  },
+  "post_gather_gate": {
+    "tau1_grid": [
+      0.9,
+      0.95,
+      0.97,
+      0.99
+    ],
+    "reference_tau1": 0.95,
+    "beta1_grid": [
+      0.01,
+      0.02,
+      0.05,
+      0.1
+    ],
+    "reference_beta1": 0.05,
+    "rule": "Post-GATHER execute only when q_t1 >= tau1 and (1-q_t1)*C(v) <= beta1; otherwise ESCALATE/ABSTAIN fallback.",
+    "test_result_safeguard": "No regime-specific threshold or R4-only rule may be introduced in the primary analysis after seeing Step-09a.5 test results."
+  },
+  "primary_reference_configuration": {
+    "consequence_function": "LOG_TRAIN_P90",
+    "c_G": 0.02,
+    "c_H": 0.1,
+    "c_A": 0.5,
+    "rho_H": 0.0,
+    "beta0": 0.05,
+    "tau1": 0.95,
+    "beta1": 0.05,
+    "usage": "Illustrative/reference operating configuration only. Main claims must be based on policy frontiers and sensitivity ranges, not one chosen parameter point."
+  },
+  "evaluation_metrics": [
+    "autonomous_execution_coverage",
+    "unsafe_execution_rate",
+    "exposure_weighted_unsafe_execution_rate",
+    "expected_normalized_business_loss",
+    "human_escalation_rate",
+    "gather_rate",
+    "abstention_rate",
+    "action_distribution",
+    "risk_coverage_frontier"
+  ],
+  "test_set_governance": [
+    "Do not choose a single tau0, beta0, tau1, beta1, or cost schedule because it looks best on the test set.",
+    "Report predeclared grids/frontiers and the frozen reference configuration.",
+    "Training-only statistics may be used for consequence normalization; test outcomes may not be used to redefine policy parameters.",
+    "Step-09a.5 risk-cap operating points are descriptive diagnostics and are not reused as prospectively tuned thresholds.",
+    "No special R4 policy override is permitted in the primary analysis."
+  ]
+}

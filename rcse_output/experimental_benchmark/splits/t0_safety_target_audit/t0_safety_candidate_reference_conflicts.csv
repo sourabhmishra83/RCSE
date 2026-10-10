@@ -1,0 +1,5 @@
+candidate,resolved_n,resolved_pct,safe_n,unsafe_n,ambiguous_n,safe_and_reference_execute,safe_but_reference_not_execute,unsafe_but_reference_execute,unsafe_and_reference_not_execute
+target_d1_core_natural,219806,0.891050015809828,165632,54174,26876,41380,124252,1904,52270
+target_d2_expanded_natural,220205,0.8926674828321483,161477,58728,26477,40353,121124,3037,55691
+target_d3_hybrid_experimental,239966,0.9727746653586399,41380,198586,6716,41380,0,1904,196682
+target_d4_reference_binary,246682,1.0,50000,196682,0,50000,0,0,196682

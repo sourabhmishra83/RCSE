@@ -1,0 +1,21 @@
+{
+  "step": "09b.2m",
+  "policy_directory": "C:\\Users\\jkashyap\\Downloads\\rcse_output\\experimental_benchmark\\splits\\frozen_baseline_results\\rcse_policy_dataset",
+  "safety_robustness_directory": "C:\\Users\\jkashyap\\Downloads\\rcse_output\\experimental_benchmark\\splits\\t0_safety_full_benchmark_robustness",
+  "gate_directory": "C:\\Users\\jkashyap\\Downloads\\rcse_output\\experimental_benchmark\\splits\\evidence_gate_v2_audit",
+  "frozen_spec": "C:\\Users\\jkashyap\\Downloads\\09b2l_rcse_v2_policy_spec.json",
+  "output_directory": "C:\\Users\\jkashyap\\Downloads\\rcse_output\\experimental_benchmark\\splits\\frozen_baseline_results\\rcse_policy_dataset\\rcse_v2_policy_dataset",
+  "output_files": {
+    "grouped_iid": "C:\\Users\\jkashyap\\Downloads\\rcse_output\\experimental_benchmark\\splits\\frozen_baseline_results\\rcse_policy_dataset\\rcse_v2_policy_dataset\\rcse_v2_policy_dataset_grouped_iid.parquet",
+    "temporal": "C:\\Users\\jkashyap\\Downloads\\rcse_output\\experimental_benchmark\\splits\\frozen_baseline_results\\rcse_policy_dataset\\rcse_v2_policy_dataset\\rcse_v2_policy_dataset_temporal.parquet",
+    "ood_exposure": "C:\\Users\\jkashyap\\Downloads\\rcse_output\\experimental_benchmark\\splits\\frozen_baseline_results\\rcse_policy_dataset\\rcse_v2_policy_dataset\\rcse_v2_policy_dataset_ood_exposure.parquet"
+  },
+  "training_performed": false,
+  "recalibration_performed": false,
+  "policy_retuning_performed": false,
+  "gate_recomputed": false,
+  "gate_delta": 0.05,
+  "primary_t0_safety_belief": "p_safe_t0_cal",
+  "important_guardrail": "This step only assembles frozen artifacts. It does not alter the RCSE v2 specification or choose operating thresholds.",
+  "next_step": "Step 09b.2n: run the frozen RCSE v2 policy simulation and required ablations using these validated policy-ready datasets."
+}

@@ -1,0 +1,51 @@
+{
+  "step": "09b.2g",
+  "purpose": "Evaluate the dedicated natural-only t0 execution-safety estimator as a selective autonomous-execution score.",
+  "scores": {
+    "RAW": "p_safe_t0_raw",
+    "CALIBRATED": "p_safe_t0_cal"
+  },
+  "selection_rule": "EXECUTE iff chosen p_safe_t0 score >= threshold",
+  "thresholds": [
+    0.5,
+    0.6,
+    0.7,
+    0.75,
+    0.8,
+    0.85,
+    0.9,
+    0.92,
+    0.94,
+    0.95,
+    0.96,
+    0.97,
+    0.98,
+    0.99,
+    0.995,
+    0.999
+  ],
+  "coverage_targets": [
+    0.1,
+    0.25,
+    0.5,
+    0.75,
+    0.9
+  ],
+  "risk_caps": [
+    0.01,
+    0.02,
+    0.05,
+    0.1
+  ],
+  "primary_metrics": [
+    "coverage",
+    "unsafe_execution_rate",
+    "exposure_weighted_unsafe_rate",
+    "AURC"
+  ],
+  "retraining_performed": false,
+  "recalibration_performed": false,
+  "policy_retuning_performed": false,
+  "important_guardrail": "Risk-cap and coverage-target operating points use held-out test outcomes and are descriptive diagnostics only. They must not be reused as prospectively tuned policy thresholds.",
+  "next_decision": "If the dedicated safety score provides strong selective risk-coverage behavior, freeze it as the execution-safety belief input and define a revised RCSE policy specification before any rerun. If R4 ranking remains poor, use a conservative OOD fallback rather than claiming universal calibration."
+}

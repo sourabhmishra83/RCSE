@@ -1,0 +1,45 @@
+{
+  "step": "09a.3",
+  "input_file": "C:\\Users\\jkashyap\\Downloads\\rcse_output\\gather_transition_diagnostic\\t1_exact_reconstruction\\t1_transition_exact.parquet",
+  "rows": 16360,
+  "candidate_target_definitions": {
+    "D1_CORE": [
+      "after_t1_invoice_cancelled",
+      "after_t1_payment_block_set",
+      "after_t1_gr_cancel",
+      "after_t1_price_change",
+      "after_t1_quantity_change",
+      "after_t1_subsequent_invoice"
+    ],
+    "D2_EXPANDED": [
+      "after_t1_invoice_cancelled",
+      "after_t1_payment_block_set",
+      "after_t1_gr_cancel",
+      "after_t1_price_change",
+      "after_t1_quantity_change",
+      "after_t1_subsequent_invoice",
+      "after_t1_additional_invoice"
+    ],
+    "D3_CONSERVATIVE": [
+      "after_t1_invoice_cancelled",
+      "after_t1_payment_block_set",
+      "after_t1_gr_cancel",
+      "after_t1_price_change",
+      "after_t1_quantity_change",
+      "after_t1_subsequent_invoice",
+      "after_t1_additional_invoice",
+      "after_t1_future_gr",
+      "after_t1_service_entry"
+    ]
+  },
+  "primary_candidate_for_diagnostics": "D1_CORE",
+  "D1_CORE_semantics": {
+    "NOT_SAFE_TO_EXECUTE": "At least one core adverse/control signal occurs after t1.",
+    "SAFE_TO_EXECUTE": "Case later clears and no core adverse/control signal occurs after t1.",
+    "AMBIGUOUS": "Neither a core adverse/control signal nor later clearing provides sufficient evidence for the candidate target."
+  },
+  "future_data_rule": "Post-t1 outcomes are candidate target/evaluation information only and must never be supplied as t1 model features.",
+  "four_class_target_status": "NOT JUSTIFIED by this script. GATHER and ABSTAIN are not inferred from post-t1 event traces merely to force a four-action label.",
+  "binary_target_status": "DIAGNOSTIC_ONLY_NOT_FROZEN",
+  "diagnostic_recommendation": "D1_CORE binary-on-resolved subset is empirically viable for post-GATHER SAFE_TO_EXECUTE vs NOT_SAFE_TO_EXECUTE modeling, subject to substantive review of the adverse-signal semantics."
+}

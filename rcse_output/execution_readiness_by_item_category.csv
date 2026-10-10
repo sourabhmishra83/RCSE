@@ -1,0 +1,6 @@
+item_category,execution_readiness_label,count,pct_within_item_category
+"3-way match, invoice after GR",READY,9545,85.7746
+"3-way match, invoice after GR",REVIEW,1583,14.2254
+"3-way match, invoice before GR",READY,182743,91.5711
+"3-way match, invoice before GR",REVIEW,140,0.0702
+"3-way match, invoice before GR",WAIT_FOR_EVIDENCE,16681,8.3587

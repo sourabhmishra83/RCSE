@@ -1,0 +1,14 @@
+reason_flag,reason_code,count,pct,forces_review_in_this_run
+reason_missing_gr,MISSING_GR,16682,7.9177,False
+reason_prior_quantity_change,PRIOR_QUANTITY_CHANGE,14192,6.7359,False
+reason_prior_price_change,PRIOR_PRICE_CHANGE,7727,3.6674,False
+reason_inv_gr_mismatch,INV_GR_MISMATCH,1631,0.7741,True
+reason_po_inv_mismatch,PO_INV_MISMATCH,1500,0.7119,True
+reason_prior_gr_cancellation,PRIOR_GR_CANCELLATION,717,0.3403,False
+reason_po_inv_match_unknown,PO_INV_MATCH_UNKNOWN,56,0.0266,True
+reason_gr_match_unknown,GR_MATCH_UNKNOWN,53,0.0252,True
+reason_prior_invoice_cancellation,PRIOR_INVOICE_CANCELLATION,26,0.0123,False
+reason_prior_payment_block,PRIOR_PAYMENT_BLOCK,9,0.0043,False
+reason_missing_po_value,MISSING_PO_VALUE,0,0.0,True
+reason_missing_invoice_value,MISSING_INVOICE_VALUE,0,0.0,True
+reason_missing_gr_value,MISSING_GR_VALUE,0,0.0,True

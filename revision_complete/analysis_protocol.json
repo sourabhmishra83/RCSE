@@ -1,0 +1,21 @@
+{
+  "status": "post-review protocol saved before execution",
+  "seed": 20261004,
+  "bootstrap_replicates": 2000,
+  "cost_grid_c_H": [0.05, 0.10, 0.20, 0.30, 0.50],
+  "cost_grid_rho_H": [0.0, 0.01, 0.05, 0.10, 0.20],
+  "stress_tests": [
+    "NEGATIVE_PO_AGE: set PO-to-invoice interval to minus 7 days, holding all gate inputs fixed",
+    "COHERENT_VALUE_SUBSTITUTION: multiply observed PO, invoice and GR values by 10 and recompute ratios, holding exposure fixed as an external evaluation variable"
+  ],
+  "stress_scope": "natural held-out states; paired originals; fixed gate and already-trained mismatch models; not production harm labels",
+  "follow_up_days": [30, 60, 90],
+  "censoring_scope": "maturity restrictions under original D1, not fixed-horizon outcome relabeling",
+  "new_selection": "split original natural calibration source cases deterministically into isotonic fitting and threshold selection halves; train models on original train cases",
+  "threshold_grid": [0.0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95, 0.96, 0.97, 0.98, 0.99, 1.0],
+  "risk_caps": [0.01, 0.05, 0.10, 0.12, 0.14, 0.16, 0.18, 0.20],
+  "risk_control": "Learn then Test style one-sided exact binomial tests with Bonferroni correction over 25 fixed thresholds, delta=0.05; natural source-case UER; exchangeability guarantee limited to IID assumptions",
+  "crc": "monotone unsafe-execution indicator per natural case, not conditional UER; finite sample correction (n*empirical_loss+1)/(n+1)",
+  "gather": "original GATHER results retrospective only; prospective analyses disable GATHER; no use of t1 score at t0",
+  "public_release": "prepare local reproducibility materials; no external publishing"
+}

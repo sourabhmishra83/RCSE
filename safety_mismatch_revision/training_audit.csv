@@ -1,0 +1,4 @@
+regime,train_cases,calibration_cases,test_cases,iterations_required,convergence_warning,converged
+grouped_iid,95983,20566,20604,162,False,True
+temporal,108611,19453,9089,183,False,True
+ood_exposure,94992,20410,1376,148,False,True

@@ -1,0 +1,12 @@
+{
+  "step": "09b.2i",
+  "experimental_benchmark": "C:\\Users\\jkashyap\\Downloads\\rcse_output\\experimental_benchmark\\splits\\rcse_experimental_with_splits.parquet",
+  "model_training_performed": false,
+  "gate_uses_intervention_metadata": false,
+  "gate_uses_future_outcomes": false,
+  "gate_uses_exposure_or_risk": false,
+  "gate_uses_expected_action_reference": false,
+  "evaluation_uses_intervention_family": true,
+  "important_interpretation": "A useful gate should block a high fraction of synthetic uncertainty episodes while keeping the block rate on natural/reference-EXECUTE episodes acceptably low.",
+  "next_decision": "If contradiction/missingness detection is inadequate or natural false-blocking is excessive, refine ONLY semantically justified observable consistency rules. Do not optimize on test labels."
+}

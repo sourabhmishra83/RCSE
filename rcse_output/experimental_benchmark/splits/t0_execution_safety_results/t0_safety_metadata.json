@@ -1,0 +1,40 @@
+{
+  "step": "09b.2f",
+  "base_v2": "C:\\Users\\jkashyap\\Downloads\\rcse_output\\rcse_base_v2.parquet",
+  "split_source": "C:\\Users\\jkashyap\\Downloads\\rcse_output\\experimental_benchmark\\splits\\rcse_experimental_with_splits.parquet",
+  "all_v2_natural_source_cases": 210692,
+  "frozen_experimental_source_cases_present_in_v2": 155821,
+  "v2_cases_outside_frozen_experimental_universe_excluded": 54871,
+  "resolved_d1_cases": 137153,
+  "ambiguous_excluded": 18668,
+  "target_definition": {
+    "SAFE_TO_EXECUTE": "required GR evidence complete at t0 AND eventually clears AND no D1 core adverse/control signal",
+    "NOT_SAFE_TO_EXECUTE": "required GR evidence missing at t0 OR at least one D1 core adverse/control signal",
+    "AMBIGUOUS": "excluded from fitting/evaluation",
+    "D1_core_signals": [
+      "outcome_invoice_cancelled_after_t0",
+      "outcome_payment_block_set_after_t0",
+      "outcome_future_gr_cancel",
+      "outcome_future_price_change",
+      "outcome_future_quantity_change",
+      "outcome_subsequent_invoice"
+    ]
+  },
+  "model": {
+    "type": "binary logistic regression",
+    "solver": "lbfgs",
+    "penalty": "l2",
+    "C": 1.0,
+    "max_iter": 5000,
+    "tol": 0.0001,
+    "calibration": "isotonic on dedicated calibration partition"
+  },
+  "split_policy": "Restrict rcse_base_v2 to the already-frozen experimental source-case universe, then reuse the frozen source-case split assignments from rcse_experimental_with_splits.parquet.",
+  "synthetic_episodes_used": false,
+  "future_outcomes_used_as_features": false,
+  "transaction_exposure_used_as_feature": false,
+  "transaction_risk_stratum_used_as_feature": false,
+  "rejected_mismatch_fields_used_as_features": false,
+  "frozen_multiclass_model_modified": false,
+  "next_step": "Evaluate discrimination, calibration, and selective risk-coverage of p_safe_t0 before integrating the dedicated safety estimator into a revised RCSE policy."
+}

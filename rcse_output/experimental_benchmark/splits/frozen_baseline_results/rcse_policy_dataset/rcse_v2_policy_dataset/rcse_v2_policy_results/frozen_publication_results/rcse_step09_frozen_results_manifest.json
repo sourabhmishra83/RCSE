@@ -1,0 +1,987 @@
+{
+  "step": "09b.2s",
+  "status": "STEP_09_FROZEN_PUBLICATION_RESULTS",
+  "analysis_status": "Secondary revised analysis motivated by diagnostics after the original RCSE v1 simulation. Must be reported as such; it does not replace the original frozen v1 results.",
+  "primary_policy": "RCSE_V2_FULL",
+  "primary_consequence": "LOG_TRAIN_P90",
+  "frozen_spec_status": "FROZEN_BEFORE_RCSE_V2_SIMULATION",
+  "publication_rules": [
+    "RCSE v2 is a revised/secondary analysis motivated by documented diagnostics.",
+    "Original RCSE v1 results remain preserved.",
+    "No OOD loss-superiority claim when paired bootstrap CI includes zero.",
+    "Unsafe-rate ablations are N/A when one comparator has zero autonomous executions.",
+    "Frontier points are descriptive points from the frozen predeclared grid, not retuned thresholds.",
+    "Natural-only risk must be distinguished from full synthetic robustness risk."
+  ],
+  "primary_results": {
+    "grouped_iid": {
+      "autonomous_execution_coverage": {
+        "estimate": 0.172702402556949,
+        "ci_lower": 0.168993310426097,
+        "ci_upper": 0.1762725748323706
+      },
+      "unsafe_execution_rate": {
+        "estimate": 0.1689146800501882,
+        "ci_lower": 0.160349808928277,
+        "ci_upper": 0.1779768811322765
+      },
+      "raw_exposure_weighted_unsafe_rate": {
+        "estimate": 0.2006310101196569,
+        "ci_lower": 0.170068228938408,
+        "ci_upper": 0.237665401102424
+      },
+      "mean_realized_normalized_loss_09b2n": {
+        "estimate": 0.1001842352829762,
+        "ci_lower": 0.099028561746521,
+        "ci_upper": 0.1013538863028885
+      },
+      "mean_end_to_end_realized_loss_diagnostic": {
+        "estimate": 0.1009472671401948,
+        "ci_lower": 0.0997572635808396,
+        "ci_upper": 0.1021632959410413
+      }
+    },
+    "temporal": {
+      "autonomous_execution_coverage": {
+        "estimate": 0.2190526875997871,
+        "ci_lower": 0.2152378704654468,
+        "ci_upper": 0.2227920998970769
+      },
+      "unsafe_execution_rate": {
+        "estimate": 0.1721331389698736,
+        "ci_lower": 0.1639457732515724,
+        "ci_upper": 0.1800295726735429
+      },
+      "raw_exposure_weighted_unsafe_rate": {
+        "estimate": 0.1743672255614193,
+        "ci_lower": 0.1516446401508255,
+        "ci_upper": 0.1991149311696159
+      },
+      "mean_realized_normalized_loss_09b2n": {
+        "estimate": 0.1043359054562943,
+        "ci_lower": 0.1030121438848186,
+        "ci_upper": 0.1056928500984909
+      },
+      "mean_end_to_end_realized_loss_diagnostic": {
+        "estimate": 0.1047394854747897,
+        "ci_lower": 0.1033522621435418,
+        "ci_upper": 0.1061280953661749
+      }
+    },
+    "ood_exposure": {
+      "autonomous_execution_coverage": {
+        "estimate": 0.0090694006309148,
+        "ci_lower": 0.0054665079588283,
+        "ci_upper": 0.0130797967187206
+      },
+      "unsafe_execution_rate": {
+        "estimate": 0.217391304347826,
+        "ci_lower": 0.0434782608695652,
+        "ci_upper": 0.4166666666666667
+      },
+      "raw_exposure_weighted_unsafe_rate": {
+        "estimate": 0.2962075994110268,
+        "ci_lower": 0.0633768003878417,
+        "ci_upper": 0.5174692670343062
+      },
+      "mean_realized_normalized_loss_09b2n": {
+        "estimate": 0.0997679413011087,
+        "ci_lower": 0.0975213637339886,
+        "ci_upper": 0.1024929233145456
+      },
+      "mean_end_to_end_realized_loss_diagnostic": {
+        "estimate": 0.1059189861147173,
+        "ci_lower": 0.1020779211199972,
+        "ci_upper": 0.1103932168343274
+      }
+    }
+  },
+  "robustness_results": {
+    "grouped_iid": {
+      "natural_reference_execute_retention_rate": {
+        "estimate": 0.9816283372984403,
+        "ci_lower": 0.9784424127508468,
+        "ci_upper": 0.9845612761595864
+      },
+      "natural_execution_coverage": {
+        "estimate": 0.534434989115377,
+        "ci_lower": 0.5249946729110827,
+        "ci_upper": 0.5441218487122413
+      },
+      "natural_unsafe_execution_rate": {
+        "estimate": 0.0188853915941492,
+        "ci_lower": 0.0153051354414527,
+        "ci_upper": 0.0225842456302604
+      },
+      "contradiction_gate_block_rate": {
+        "estimate": 0.9255046280807404,
+        "ci_lower": 0.9217587367312108,
+        "ci_upper": 0.9291742212472196
+      },
+      "residual_valid_contradiction_execution_rate": {
+        "estimate": 0.7297904191616766,
+        "ci_lower": 0.7044252826050891,
+        "ci_upper": 0.7536117413263157
+      },
+      "missingness_gate_block_rate": {
+        "estimate": 1.0,
+        "ci_lower": 1.0,
+        "ci_upper": 1.0
+      },
+      "severe_evidence_loss_gate_block_rate": {
+        "estimate": 1.0,
+        "ci_lower": 1.0,
+        "ci_upper": 1.0
+      }
+    },
+    "temporal": {
+      "natural_reference_execute_retention_rate": {
+        "estimate": 0.9674121405750798,
+        "ci_lower": 0.9634397746289572,
+        "ci_upper": 0.9714249695223318
+      },
+      "natural_execution_coverage": {
+        "estimate": 0.7288710019063758,
+        "ci_lower": 0.7198193953026779,
+        "ci_upper": 0.7378592429780467
+      },
+      "natural_unsafe_execution_rate": {
+        "estimate": 0.0097355419936065,
+        "ci_lower": 0.0075525410564219,
+        "ci_upper": 0.012071268554054
+      },
+      "contradiction_gate_block_rate": {
+        "estimate": 0.92129752725339,
+        "ci_lower": 0.9174611966900276,
+        "ci_upper": 0.9252861131759336
+      },
+      "residual_valid_contradiction_execution_rate": {
+        "estimate": 0.9121621621621622,
+        "ci_lower": 0.8967991761066463,
+        "ci_upper": 0.9267320514081748
+      },
+      "missingness_gate_block_rate": {
+        "estimate": 1.0,
+        "ci_lower": 1.0,
+        "ci_upper": 1.0
+      },
+      "severe_evidence_loss_gate_block_rate": {
+        "estimate": 1.0,
+        "ci_lower": 1.0,
+        "ci_upper": 1.0
+      }
+    },
+    "ood_exposure": {
+      "natural_reference_execute_retention_rate": {
+        "estimate": 0.9865384615384616,
+        "ci_lower": 0.9760956175298804,
+        "ci_upper": 0.9960709195269464
+      },
+      "natural_execution_coverage": {
+        "estimate": 0.0310192023633678,
+        "ci_lower": 0.0186278245627405,
+        "ci_upper": 0.0449808930121405
+      },
+      "natural_unsafe_execution_rate": {
+        "estimate": 0.1428571428571428,
+        "ci_lower": 0.0,
+        "ci_upper": 0.3125
+      },
+      "contradiction_gate_block_rate": {
+        "estimate": 0.9271966527196652,
+        "ci_lower": 0.912846721619758,
+        "ci_upper": 0.9411308100478308
+      },
+      "residual_valid_contradiction_execution_rate": {
+        "estimate": 0.0229885057471264,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0595357142857142
+      },
+      "missingness_gate_block_rate": {
+        "estimate": 1.0,
+        "ci_lower": 1.0,
+        "ci_upper": 1.0
+      },
+      "severe_evidence_loss_gate_block_rate": {
+        "estimate": 1.0,
+        "ci_lower": 1.0,
+        "ci_upper": 1.0
+      }
+    }
+  },
+  "ablation_results": [
+    {
+      "regime": "grouped_iid",
+      "comparison": "GATHER_CONTRIBUTION",
+      "metric": "autonomous_execution_coverage",
+      "bootstrap_mean": 0.0,
+      "ci_lower": 0.0,
+      "ci_upper": 0.0,
+      "reporting_status": "CI includes zero"
+    },
+    {
+      "regime": "grouped_iid",
+      "comparison": "GATHER_CONTRIBUTION",
+      "metric": "unsafe_execution_rate",
+      "bootstrap_mean": 0.0,
+      "ci_lower": 0.0,
+      "ci_upper": 0.0,
+      "reporting_status": "CI includes zero"
+    },
+    {
+      "regime": "grouped_iid",
+      "comparison": "GATHER_CONTRIBUTION",
+      "metric": "mean_realized_normalized_loss_09b2n",
+      "bootstrap_mean": -0.003281501078662,
+      "ci_lower": -0.0034509906722797,
+      "ci_upper": -0.0031216859366005,
+      "reporting_status": "CI excludes zero"
+    },
+    {
+      "regime": "grouped_iid",
+      "comparison": "GATHER_CONTRIBUTION",
+      "metric": "mean_end_to_end_realized_loss_diagnostic",
+      "bootstrap_mean": -0.0025151084344468,
+      "ci_lower": -0.0028000040767226,
+      "ci_upper": -0.0022129512369289,
+      "reporting_status": "CI excludes zero"
+    },
+    {
+      "regime": "grouped_iid",
+      "comparison": "EVIDENCE_GATE_CONTRIBUTION",
+      "metric": "autonomous_execution_coverage",
+      "bootstrap_mean": -0.4149753706920413,
+      "ci_lower": -0.4205439953097933,
+      "ci_upper": -0.409447635783323,
+      "reporting_status": "CI excludes zero"
+    },
+    {
+      "regime": "grouped_iid",
+      "comparison": "EVIDENCE_GATE_CONTRIBUTION",
+      "metric": "unsafe_execution_rate",
+      "bootstrap_mean": -0.5849371952705514,
+      "ci_lower": -0.592719558511039,
+      "ci_upper": -0.5773364957112255,
+      "reporting_status": "CI excludes zero"
+    },
+    {
+      "regime": "grouped_iid",
+      "comparison": "EVIDENCE_GATE_CONTRIBUTION",
+      "metric": "mean_realized_normalized_loss_09b2n",
+      "bootstrap_mean": -0.2476473796261005,
+      "ci_lower": -0.2512966462320743,
+      "ci_upper": -0.2440099288807084,
+      "reporting_status": "CI excludes zero"
+    },
+    {
+      "regime": "grouped_iid",
+      "comparison": "EVIDENCE_GATE_CONTRIBUTION",
+      "metric": "mean_end_to_end_realized_loss_diagnostic",
+      "bootstrap_mean": -0.2476473796261005,
+      "ci_lower": -0.2512966462320743,
+      "ci_upper": -0.2440099288807083,
+      "reporting_status": "CI excludes zero"
+    },
+    {
+      "regime": "grouped_iid",
+      "comparison": "DEDICATED_SAFETY_BELIEF_CONTRIBUTION",
+      "metric": "autonomous_execution_coverage",
+      "bootstrap_mean": 0.1726962765359184,
+      "ci_lower": 0.168993310426097,
+      "ci_upper": 0.1762725748323706,
+      "reporting_status": "CI excludes zero"
+    },
+    {
+      "regime": "grouped_iid",
+      "comparison": "DEDICATED_SAFETY_BELIEF_CONTRIBUTION",
+      "metric": "unsafe_execution_rate",
+      "bootstrap_mean": null,
+      "ci_lower": null,
+      "ci_upper": null,
+      "reporting_status": "N/A (undefined metric for at least one comparator)"
+    },
+    {
+      "regime": "grouped_iid",
+      "comparison": "DEDICATED_SAFETY_BELIEF_CONTRIBUTION",
+      "metric": "mean_realized_normalized_loss_09b2n",
+      "bootstrap_mean": 0.0034657654057956,
+      "ci_lower": 0.0023435941083429,
+      "ci_upper": 0.0046261661827939,
+      "reporting_status": "CI excludes zero"
+    },
+    {
+      "regime": "grouped_iid",
+      "comparison": "DEDICATED_SAFETY_BELIEF_CONTRIBUTION",
+      "metric": "mean_end_to_end_realized_loss_diagnostic",
+      "bootstrap_mean": 0.0034657654057956,
+      "ci_lower": 0.0023435941083429,
+      "ci_upper": 0.0046261661827938,
+      "reporting_status": "CI excludes zero"
+    },
+    {
+      "regime": "grouped_iid",
+      "comparison": "CONSEQUENCE_AWARE_VS_VOI_BLIND",
+      "metric": "autonomous_execution_coverage",
+      "bootstrap_mean": 0.1726962765359184,
+      "ci_lower": 0.168993310426097,
+      "ci_upper": 0.1762725748323706,
+      "reporting_status": "CI excludes zero"
+    },
+    {
+      "regime": "grouped_iid",
+      "comparison": "CONSEQUENCE_AWARE_VS_VOI_BLIND",
+      "metric": "unsafe_execution_rate",
+      "bootstrap_mean": null,
+      "ci_lower": null,
+      "ci_upper": null,
+      "reporting_status": "N/A (undefined metric for at least one comparator)"
+    },
+    {
+      "regime": "grouped_iid",
+      "comparison": "CONSEQUENCE_AWARE_VS_VOI_BLIND",
+      "metric": "mean_realized_normalized_loss_09b2n",
+      "bootstrap_mean": 0.0037076703463619,
+      "ci_lower": 0.0025863409123041,
+      "ci_upper": 0.0048646222766796,
+      "reporting_status": "CI excludes zero"
+    },
+    {
+      "regime": "grouped_iid",
+      "comparison": "CONSEQUENCE_AWARE_VS_VOI_BLIND",
+      "metric": "mean_end_to_end_realized_loss_diagnostic",
+      "bootstrap_mean": 0.003405289170654,
+      "ci_lower": 0.0022815932097706,
+      "ci_upper": 0.0045666947739705,
+      "reporting_status": "CI excludes zero"
+    },
+    {
+      "regime": "grouped_iid",
+      "comparison": "V2_VS_V1",
+      "metric": "autonomous_execution_coverage",
+      "bootstrap_mean": 0.1726962765359184,
+      "ci_lower": 0.168993310426097,
+      "ci_upper": 0.1762725748323706,
+      "reporting_status": "CI excludes zero"
+    },
+    {
+      "regime": "grouped_iid",
+      "comparison": "V2_VS_V1",
+      "metric": "unsafe_execution_rate",
+      "bootstrap_mean": null,
+      "ci_lower": null,
+      "ci_upper": null,
+      "reporting_status": "N/A (undefined metric for at least one comparator)"
+    },
+    {
+      "regime": "grouped_iid",
+      "comparison": "V2_VS_V1",
+      "metric": "mean_realized_normalized_loss_09b2n",
+      "bootstrap_mean": 0.0034657654057956,
+      "ci_lower": 0.0023435941083429,
+      "ci_upper": 0.0046261661827939,
+      "reporting_status": "CI excludes zero"
+    },
+    {
+      "regime": "grouped_iid",
+      "comparison": "V2_VS_V1",
+      "metric": "mean_end_to_end_realized_loss_diagnostic",
+      "bootstrap_mean": 0.0034657654057956,
+      "ci_lower": 0.0023435941083429,
+      "ci_upper": 0.0046261661827938,
+      "reporting_status": "CI excludes zero"
+    },
+    {
+      "regime": "temporal",
+      "comparison": "GATHER_CONTRIBUTION",
+      "metric": "autonomous_execution_coverage",
+      "bootstrap_mean": 0.0,
+      "ci_lower": 0.0,
+      "ci_upper": 0.0,
+      "reporting_status": "CI includes zero"
+    },
+    {
+      "regime": "temporal",
+      "comparison": "GATHER_CONTRIBUTION",
+      "metric": "unsafe_execution_rate",
+      "bootstrap_mean": 0.0,
+      "ci_lower": 0.0,
+      "ci_upper": 0.0,
+      "reporting_status": "CI includes zero"
+    },
+    {
+      "regime": "temporal",
+      "comparison": "GATHER_CONTRIBUTION",
+      "metric": "mean_realized_normalized_loss_09b2n",
+      "bootstrap_mean": -0.0014421321224452,
+      "ci_lower": -0.0015555688210411,
+      "ci_upper": -0.0013364622110769,
+      "reporting_status": "CI excludes zero"
+    },
+    {
+      "regime": "temporal",
+      "comparison": "GATHER_CONTRIBUTION",
+      "metric": "mean_end_to_end_realized_loss_diagnostic",
+      "bootstrap_mean": -0.0010407512742634,
+      "ci_lower": -0.0012330625390643,
+      "ci_upper": -0.0008353838892305,
+      "reporting_status": "CI excludes zero"
+    },
+    {
+      "regime": "temporal",
+      "comparison": "EVIDENCE_GATE_CONTRIBUTION",
+      "metric": "autonomous_execution_coverage",
+      "bootstrap_mean": -0.5385603684800683,
+      "ci_lower": -0.5437755124482984,
+      "ci_upper": -0.5331474695464652,
+      "reporting_status": "CI excludes zero"
+    },
+    {
+      "regime": "temporal",
+      "comparison": "EVIDENCE_GATE_CONTRIBUTION",
+      "metric": "unsafe_execution_rate",
+      "bootstrap_mean": -0.5819339122927092,
+      "ci_lower": -0.5893379530325465,
+      "ci_upper": -0.5747025267527229,
+      "reporting_status": "CI excludes zero"
+    },
+    {
+      "regime": "temporal",
+      "comparison": "EVIDENCE_GATE_CONTRIBUTION",
+      "metric": "mean_realized_normalized_loss_09b2n",
+      "bootstrap_mean": -0.3341331609858216,
+      "ci_lower": -0.337853753578634,
+      "ci_upper": -0.3304234067422124,
+      "reporting_status": "CI excludes zero"
+    },
+    {
+      "regime": "temporal",
+      "comparison": "EVIDENCE_GATE_CONTRIBUTION",
+      "metric": "mean_end_to_end_realized_loss_diagnostic",
+      "bootstrap_mean": -0.3341331609858216,
+      "ci_lower": -0.337853753578634,
+      "ci_upper": -0.3304234067422123,
+      "reporting_status": "CI excludes zero"
+    },
+    {
+      "regime": "temporal",
+      "comparison": "DEDICATED_SAFETY_BELIEF_CONTRIBUTION",
+      "metric": "autonomous_execution_coverage",
+      "bootstrap_mean": 0.2190266237091514,
+      "ci_lower": 0.2152378704654468,
+      "ci_upper": 0.2227920998970769,
+      "reporting_status": "CI excludes zero"
+    },
+    {
+      "regime": "temporal",
+      "comparison": "DEDICATED_SAFETY_BELIEF_CONTRIBUTION",
+      "metric": "unsafe_execution_rate",
+      "bootstrap_mean": null,
+      "ci_lower": null,
+      "ci_upper": null,
+      "reporting_status": "N/A (undefined metric for at least one comparator)"
+    },
+    {
+      "regime": "temporal",
+      "comparison": "DEDICATED_SAFETY_BELIEF_CONTRIBUTION",
+      "metric": "mean_realized_normalized_loss_09b2n",
+      "bootstrap_mean": 0.005761529034341,
+      "ci_lower": 0.004444584009033,
+      "ci_upper": 0.0071470135872317,
+      "reporting_status": "CI excludes zero"
+    },
+    {
+      "regime": "temporal",
+      "comparison": "DEDICATED_SAFETY_BELIEF_CONTRIBUTION",
+      "metric": "mean_end_to_end_realized_loss_diagnostic",
+      "bootstrap_mean": 0.005761529034341,
+      "ci_lower": 0.0044445840090329,
+      "ci_upper": 0.0071470135872317,
+      "reporting_status": "CI excludes zero"
+    },
+    {
+      "regime": "temporal",
+      "comparison": "CONSEQUENCE_AWARE_VS_VOI_BLIND",
+      "metric": "autonomous_execution_coverage",
+      "bootstrap_mean": 0.2190266237091514,
+      "ci_lower": 0.2152378704654468,
+      "ci_upper": 0.2227920998970769,
+      "reporting_status": "CI excludes zero"
+    },
+    {
+      "regime": "temporal",
+      "comparison": "CONSEQUENCE_AWARE_VS_VOI_BLIND",
+      "metric": "unsafe_execution_rate",
+      "bootstrap_mean": null,
+      "ci_lower": null,
+      "ci_upper": null,
+      "reporting_status": "N/A (undefined metric for at least one comparator)"
+    },
+    {
+      "regime": "temporal",
+      "comparison": "CONSEQUENCE_AWARE_VS_VOI_BLIND",
+      "metric": "mean_realized_normalized_loss_09b2n",
+      "bootstrap_mean": 0.0057680045137819,
+      "ci_lower": 0.004447173572892,
+      "ci_upper": 0.0071538809195001,
+      "reporting_status": "CI excludes zero"
+    },
+    {
+      "regime": "temporal",
+      "comparison": "CONSEQUENCE_AWARE_VS_VOI_BLIND",
+      "metric": "mean_end_to_end_realized_loss_diagnostic",
+      "bootstrap_mean": 0.0057599101644808,
+      "ci_lower": 0.0044440395967493,
+      "ci_upper": 0.0071449024618453,
+      "reporting_status": "CI excludes zero"
+    },
+    {
+      "regime": "temporal",
+      "comparison": "V2_VS_V1",
+      "metric": "autonomous_execution_coverage",
+      "bootstrap_mean": 0.2190266237091514,
+      "ci_lower": 0.2152378704654468,
+      "ci_upper": 0.2227920998970769,
+      "reporting_status": "CI excludes zero"
+    },
+    {
+      "regime": "temporal",
+      "comparison": "V2_VS_V1",
+      "metric": "unsafe_execution_rate",
+      "bootstrap_mean": null,
+      "ci_lower": null,
+      "ci_upper": null,
+      "reporting_status": "N/A (undefined metric for at least one comparator)"
+    },
+    {
+      "regime": "temporal",
+      "comparison": "V2_VS_V1",
+      "metric": "mean_realized_normalized_loss_09b2n",
+      "bootstrap_mean": 0.005761529034341,
+      "ci_lower": 0.004444584009033,
+      "ci_upper": 0.0071470135872317,
+      "reporting_status": "CI excludes zero"
+    },
+    {
+      "regime": "temporal",
+      "comparison": "V2_VS_V1",
+      "metric": "mean_end_to_end_realized_loss_diagnostic",
+      "bootstrap_mean": 0.005761529034341,
+      "ci_lower": 0.0044445840090329,
+      "ci_upper": 0.0071470135872317,
+      "reporting_status": "CI excludes zero"
+    },
+    {
+      "regime": "ood_exposure",
+      "comparison": "GATHER_CONTRIBUTION",
+      "metric": "autonomous_execution_coverage",
+      "bootstrap_mean": 0.0,
+      "ci_lower": 0.0,
+      "ci_upper": 0.0,
+      "reporting_status": "CI includes zero"
+    },
+    {
+      "regime": "ood_exposure",
+      "comparison": "GATHER_CONTRIBUTION",
+      "metric": "unsafe_execution_rate",
+      "bootstrap_mean": 0.0,
+      "ci_lower": 0.0,
+      "ci_upper": 0.0,
+      "reporting_status": "CI includes zero"
+    },
+    {
+      "regime": "ood_exposure",
+      "comparison": "GATHER_CONTRIBUTION",
+      "metric": "mean_realized_normalized_loss_09b2n",
+      "bootstrap_mean": -0.0019367868320632,
+      "ci_lower": -0.002451938745384,
+      "ci_upper": -0.001453942977252,
+      "reporting_status": "CI excludes zero"
+    },
+    {
+      "regime": "ood_exposure",
+      "comparison": "GATHER_CONTRIBUTION",
+      "metric": "mean_end_to_end_realized_loss_diagnostic",
+      "bootstrap_mean": 0.0042486897524074,
+      "ci_lower": 0.0011201753449486,
+      "ci_upper": 0.0078322953509244,
+      "reporting_status": "CI excludes zero"
+    },
+    {
+      "regime": "ood_exposure",
+      "comparison": "EVIDENCE_GATE_CONTRIBUTION",
+      "metric": "autonomous_execution_coverage",
+      "bootstrap_mean": -0.0477797858470685,
+      "ci_lower": -0.0574582338335394,
+      "ci_upper": -0.03866285560464,
+      "reporting_status": "CI excludes zero"
+    },
+    {
+      "regime": "ood_exposure",
+      "comparison": "EVIDENCE_GATE_CONTRIBUTION",
+      "metric": "unsafe_execution_rate",
+      "bootstrap_mean": -0.6528936704310662,
+      "ci_lower": -0.8194064327485379,
+      "ci_upper": -0.4841425725515533,
+      "reporting_status": "CI excludes zero"
+    },
+    {
+      "regime": "ood_exposure",
+      "comparison": "EVIDENCE_GATE_CONTRIBUTION",
+      "metric": "mean_realized_normalized_loss_09b2n",
+      "bootstrap_mean": -0.0567069664285152,
+      "ci_lower": -0.0682163675533388,
+      "ci_upper": -0.0457785366610878,
+      "reporting_status": "CI excludes zero"
+    },
+    {
+      "regime": "ood_exposure",
+      "comparison": "EVIDENCE_GATE_CONTRIBUTION",
+      "metric": "mean_end_to_end_realized_loss_diagnostic",
+      "bootstrap_mean": -0.0567069664285152,
+      "ci_lower": -0.0682163675533388,
+      "ci_upper": -0.0457785366610878,
+      "reporting_status": "CI excludes zero"
+    },
+    {
+      "regime": "ood_exposure",
+      "comparison": "DEDICATED_SAFETY_BELIEF_CONTRIBUTION",
+      "metric": "autonomous_execution_coverage",
+      "bootstrap_mean": 0.0090295081265424,
+      "ci_lower": 0.0054665079588283,
+      "ci_upper": 0.0130797967187206,
+      "reporting_status": "CI excludes zero"
+    },
+    {
+      "regime": "ood_exposure",
+      "comparison": "DEDICATED_SAFETY_BELIEF_CONTRIBUTION",
+      "metric": "unsafe_execution_rate",
+      "bootstrap_mean": null,
+      "ci_lower": null,
+      "ci_upper": null,
+      "reporting_status": "N/A (undefined metric for at least one comparator)"
+    },
+    {
+      "regime": "ood_exposure",
+      "comparison": "DEDICATED_SAFETY_BELIEF_CONTRIBUTION",
+      "metric": "mean_realized_normalized_loss_09b2n",
+      "bootstrap_mean": 0.0017123962968867,
+      "ci_lower": -0.0003882341749253,
+      "ci_upper": 0.0043970924738372,
+      "reporting_status": "CI includes zero"
+    },
+    {
+      "regime": "ood_exposure",
+      "comparison": "DEDICATED_SAFETY_BELIEF_CONTRIBUTION",
+      "metric": "mean_end_to_end_realized_loss_diagnostic",
+      "bootstrap_mean": 0.0017123962968867,
+      "ci_lower": -0.0003882341749253,
+      "ci_upper": 0.0043970924738372,
+      "reporting_status": "CI includes zero"
+    },
+    {
+      "regime": "ood_exposure",
+      "comparison": "CONSEQUENCE_AWARE_VS_VOI_BLIND",
+      "metric": "autonomous_execution_coverage",
+      "bootstrap_mean": 0.006278597324008,
+      "ci_lower": 0.0019677292404565,
+      "ci_upper": 0.010963732610605,
+      "reporting_status": "CI excludes zero"
+    },
+    {
+      "regime": "ood_exposure",
+      "comparison": "CONSEQUENCE_AWARE_VS_VOI_BLIND",
+      "metric": "unsafe_execution_rate",
+      "bootstrap_mean": -0.7837928297362121,
+      "ci_lower": -0.9565217391304348,
+      "ci_upper": -0.5855603448275865,
+      "reporting_status": "CI excludes zero"
+    },
+    {
+      "regime": "ood_exposure",
+      "comparison": "CONSEQUENCE_AWARE_VS_VOI_BLIND",
+      "metric": "mean_realized_normalized_loss_09b2n",
+      "bootstrap_mean": -0.0020683598510159,
+      "ci_lower": -0.006547326021649,
+      "ci_upper": 0.0019129884949825,
+      "reporting_status": "CI includes zero"
+    },
+    {
+      "regime": "ood_exposure",
+      "comparison": "CONSEQUENCE_AWARE_VS_VOI_BLIND",
+      "metric": "mean_end_to_end_realized_loss_diagnostic",
+      "bootstrap_mean": -0.0025839500327046,
+      "ci_lower": -0.0069943596195883,
+      "ci_upper": 0.0013696029762459,
+      "reporting_status": "CI includes zero"
+    },
+    {
+      "regime": "ood_exposure",
+      "comparison": "V2_VS_V1",
+      "metric": "autonomous_execution_coverage",
+      "bootstrap_mean": 0.0070562712622327,
+      "ci_lower": 0.0027755749405233,
+      "ci_upper": 0.01157965873855,
+      "reporting_status": "CI excludes zero"
+    },
+    {
+      "regime": "ood_exposure",
+      "comparison": "V2_VS_V1",
+      "metric": "unsafe_execution_rate",
+      "bootstrap_mean": -0.7841099908943336,
+      "ci_lower": -0.9564229249011856,
+      "ci_upper": -0.5863083164300202,
+      "reporting_status": "CI excludes zero"
+    },
+    {
+      "regime": "ood_exposure",
+      "comparison": "V2_VS_V1",
+      "metric": "mean_realized_normalized_loss_09b2n",
+      "bootstrap_mean": -0.0014087413720485,
+      "ci_lower": -0.0055511878603156,
+      "ci_upper": 0.0023344258589433,
+      "reporting_status": "CI includes zero"
+    },
+    {
+      "regime": "ood_exposure",
+      "comparison": "V2_VS_V1",
+      "metric": "mean_end_to_end_realized_loss_diagnostic",
+      "bootstrap_mean": -0.0014087413720485,
+      "ci_lower": -0.0055511878603156,
+      "ci_upper": 0.0023344258589433,
+      "reporting_status": "CI includes zero"
+    }
+  ],
+  "ood_results": [
+    {
+      "category": "Primary",
+      "metric": "Autonomous execution coverage",
+      "estimate": 0.0090694006309148,
+      "ci_lower": 0.0054665079588283,
+      "ci_upper": 0.0130797967187206,
+      "interpretation": "Very low autonomous coverage under OOD exposure shift."
+    },
+    {
+      "category": "Primary",
+      "metric": "Unsafe execution rate",
+      "estimate": 0.217391304347826,
+      "ci_lower": 0.0434782608695652,
+      "ci_upper": 0.4166666666666667,
+      "interpretation": "Wide CI because very few OOD cases are autonomously executed."
+    },
+    {
+      "category": "Primary",
+      "metric": "Human escalation rate",
+      "estimate": 0.9668769716088328,
+      "ci_lower": 0.9595437497146688,
+      "ci_upper": 0.9737604974441848,
+      "interpretation": "RCSE behaves conservatively under OOD shift."
+    },
+    {
+      "category": "Natural-only",
+      "metric": "Natural unsafe execution rate",
+      "estimate": 0.1428571428571428,
+      "ci_lower": 0.0,
+      "ci_upper": 0.3125,
+      "interpretation": "Natural OOD execution remains uncertain and materially weaker than IID/temporal."
+    },
+    {
+      "category": "Gate",
+      "metric": "Contradiction block rate",
+      "estimate": 0.9271966527196652,
+      "ci_lower": 0.912846721619758,
+      "ci_upper": 0.9411308100478308,
+      "interpretation": "Evidence gate remains effective under OOD."
+    },
+    {
+      "category": "Paired ablation",
+      "metric": "CONSEQUENCE_AWARE_VS_VOI_BLIND",
+      "estimate": -0.0025839500327046,
+      "ci_lower": -0.0069943596195883,
+      "ci_upper": 0.0013696029762459,
+      "interpretation": "CI includes zero; do not claim OOD loss superiority."
+    },
+    {
+      "category": "Paired ablation",
+      "metric": "V2_VS_V1",
+      "estimate": -0.0014087413720485,
+      "ci_lower": -0.0055511878603156,
+      "ci_upper": 0.0023344258589433,
+      "interpretation": "CI includes zero; do not claim OOD loss superiority."
+    },
+    {
+      "category": "Paired ablation",
+      "metric": "GATHER_CONTRIBUTION",
+      "estimate": 0.0042486897524074,
+      "ci_lower": 0.0011201753449486,
+      "ci_upper": 0.0078322953509244,
+      "interpretation": "Statistically stable difference."
+    }
+  ],
+  "frontier_results": [
+    {
+      "regime": "grouped_iid",
+      "risk_cap": 0.01,
+      "feasible": false,
+      "selected_coverage": 0.0,
+      "selected_unsafe_execution_rate": null,
+      "tau_safe_t0": null,
+      "beta0": null,
+      "tau_safe_t1": null,
+      "beta1": null
+    },
+    {
+      "regime": "grouped_iid",
+      "risk_cap": 0.02,
+      "feasible": false,
+      "selected_coverage": 0.0,
+      "selected_unsafe_execution_rate": null,
+      "tau_safe_t0": null,
+      "beta0": null,
+      "tau_safe_t1": null,
+      "beta1": null
+    },
+    {
+      "regime": "grouped_iid",
+      "risk_cap": 0.05,
+      "feasible": false,
+      "selected_coverage": 0.0,
+      "selected_unsafe_execution_rate": null,
+      "tau_safe_t0": null,
+      "beta0": null,
+      "tau_safe_t1": null,
+      "beta1": null
+    },
+    {
+      "regime": "grouped_iid",
+      "risk_cap": 0.1,
+      "feasible": false,
+      "selected_coverage": 0.0,
+      "selected_unsafe_execution_rate": null,
+      "tau_safe_t0": null,
+      "beta0": null,
+      "tau_safe_t1": null,
+      "beta1": null
+    },
+    {
+      "regime": "grouped_iid",
+      "risk_cap": 0.2,
+      "feasible": true,
+      "selected_coverage": 0.2025515317316287,
+      "selected_unsafe_execution_rate": 0.1733083712222519,
+      "tau_safe_t0": 0.9,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.1
+    },
+    {
+      "regime": "ood_exposure",
+      "risk_cap": 0.01,
+      "feasible": false,
+      "selected_coverage": 0.0,
+      "selected_unsafe_execution_rate": null,
+      "tau_safe_t0": null,
+      "beta0": null,
+      "tau_safe_t1": null,
+      "beta1": null
+    },
+    {
+      "regime": "ood_exposure",
+      "risk_cap": 0.02,
+      "feasible": false,
+      "selected_coverage": 0.0,
+      "selected_unsafe_execution_rate": null,
+      "tau_safe_t0": null,
+      "beta0": null,
+      "tau_safe_t1": null,
+      "beta1": null
+    },
+    {
+      "regime": "ood_exposure",
+      "risk_cap": 0.05,
+      "feasible": false,
+      "selected_coverage": 0.0,
+      "selected_unsafe_execution_rate": null,
+      "tau_safe_t0": null,
+      "beta0": null,
+      "tau_safe_t1": null,
+      "beta1": null
+    },
+    {
+      "regime": "ood_exposure",
+      "risk_cap": 0.1,
+      "feasible": false,
+      "selected_coverage": 0.0,
+      "selected_unsafe_execution_rate": null,
+      "tau_safe_t0": null,
+      "beta0": null,
+      "tau_safe_t1": null,
+      "beta1": null
+    },
+    {
+      "regime": "ood_exposure",
+      "risk_cap": 0.2,
+      "feasible": true,
+      "selected_coverage": 0.0035488958990536,
+      "selected_unsafe_execution_rate": 0.1111111111111111,
+      "tau_safe_t0": 0.99,
+      "beta0": 0.02,
+      "tau_safe_t1": 0.95,
+      "beta1": 0.1
+    },
+    {
+      "regime": "temporal",
+      "risk_cap": 0.01,
+      "feasible": false,
+      "selected_coverage": 0.0,
+      "selected_unsafe_execution_rate": null,
+      "tau_safe_t0": null,
+      "beta0": null,
+      "tau_safe_t1": null,
+      "beta1": null
+    },
+    {
+      "regime": "temporal",
+      "risk_cap": 0.02,
+      "feasible": false,
+      "selected_coverage": 0.0,
+      "selected_unsafe_execution_rate": null,
+      "tau_safe_t0": null,
+      "beta0": null,
+      "tau_safe_t1": null,
+      "beta1": null
+    },
+    {
+      "regime": "temporal",
+      "risk_cap": 0.05,
+      "feasible": false,
+      "selected_coverage": 0.0,
+      "selected_unsafe_execution_rate": null,
+      "tau_safe_t0": null,
+      "beta0": null,
+      "tau_safe_t1": null,
+      "beta1": null
+    },
+    {
+      "regime": "temporal",
+      "risk_cap": 0.1,
+      "feasible": false,
+      "selected_coverage": 0.0,
+      "selected_unsafe_execution_rate": null,
+      "tau_safe_t0": null,
+      "beta0": null,
+      "tau_safe_t1": null,
+      "beta1": null
+    },
+    {
+      "regime": "temporal",
+      "risk_cap": 0.2,
+      "feasible": true,
+      "selected_coverage": 0.225971261309207,
+      "selected_unsafe_execution_rate": 0.1720442769665567,
+      "tau_safe_t0": 0.9,
+      "beta0": 0.1,
+      "tau_safe_t1": 0.9,
+      "beta1": 0.1
+    }
+  ]
+}

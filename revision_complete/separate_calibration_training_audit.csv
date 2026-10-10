@@ -1,0 +1,4 @@
+regime,training,isotonic,selection,test,iterations_required,convergence_warning,converged
+grouped_iid,95983,10276,10290,20604,147,False,True
+temporal,108611,9616,9837,9089,171,False,True
+ood_exposure,94992,10216,10194,1376,172,False,True

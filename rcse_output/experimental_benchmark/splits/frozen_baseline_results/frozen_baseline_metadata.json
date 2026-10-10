@@ -1,0 +1,30 @@
+{
+  "step": "08c",
+  "input_file": "C:\\Users\\jkashyap\\Downloads\\rcse_output\\experimental_benchmark\\splits\\rcse_experimental_with_splits.parquet",
+  "predictive_baseline_status": "FROZEN",
+  "feature_config": "NO_MISMATCH",
+  "solver": "lbfgs",
+  "penalty": "l2",
+  "C": 1.0,
+  "max_iter": 5000,
+  "tol": 0.0001,
+  "calibration": "one-vs-rest isotonic regression on dedicated calibration partition",
+  "classes": [
+    "EXECUTE",
+    "GATHER",
+    "ESCALATE",
+    "ABSTAIN"
+  ],
+  "regimes": [
+    "grouped_iid",
+    "temporal",
+    "ood_exposure"
+  ],
+  "convergence_required": true,
+  "architectural_boundary": "transaction exposure and risk stratum are excluded from predictive fitting and are attached only to final prediction artifacts for the downstream RCSE consequence layer.",
+  "step09_inputs": [
+    "frozen_predictions_grouped_iid.parquet",
+    "frozen_predictions_temporal.parquet",
+    "frozen_predictions_ood_exposure.parquet"
+  ]
+}

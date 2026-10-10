@@ -1,0 +1,4 @@
+regime,expected_rows,actual_rows,unique_benchmark_episode_ids,missing_safety_join,missing_gate_join,missing_transaction_exposure,gather_eligible_count,missing_t1_score_when_gather_eligible,gate_valid_count,gate_incomplete_count,gate_contradictory_count,action_prob_sum_mean,action_prob_sum_min,action_prob_sum_max,action_prob_sum_max_abs_error_from_1
+grouped_iid,36919,36919,36919,0,0,0,2279,0,8763,7030,21126,1.0,0.9999999999999998,1.0000000000000002,2.220446049250313e-16
+temporal,37580,37580,37580,0,0,0,712,0,9050,6518,22012,1.0,0.9999999999999998,1.0000000000000002,2.220446049250313e-16
+ood_exposure,2536,2536,2536,0,0,0,148,0,600,474,1462,1.0,0.9999999999999998,1.0000000000000002,2.220446049250313e-16

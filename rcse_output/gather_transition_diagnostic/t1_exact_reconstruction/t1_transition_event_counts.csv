@@ -1,0 +1,15 @@
+variable,cases_with_event,pct_cases_with_event,total_events,mean_events,max_events
+between_n_goods_receipts,16360,100.0,16360,1.0,1
+between_n_cancel_gr,0,0.0,0,0.0,0
+between_n_invoice_receipts,136,0.8313,142,0.008679706601466993,2
+between_n_cancel_invoice,81,0.4951,82,0.005012224938875306,2
+between_n_price_change,76,0.4645,78,0.004767726161369193,3
+between_n_quantity_change,277,1.6932,288,0.017603911980440097,3
+between_n_set_payment_block,0,0.0,0,0.0,0
+between_n_remove_payment_block,349,2.1333,352,0.021515892420537898,2
+between_n_service_entry,0,0.0,0,0.0,0
+between_n_delete_po,0,0.0,0,0.0,0
+between_n_block_po,38,0.2323,40,0.0024449877750611247,3
+between_n_reactivate_po,38,0.2323,40,0.0024449877750611247,3
+between_n_change_approval,2,0.0122,2,0.00012224938875305622,1
+between_n_release_po,2,0.0122,2,0.00012224938875305622,1

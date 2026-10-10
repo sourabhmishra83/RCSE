@@ -1,0 +1,12 @@
+signal,count,pct
+after_t1_payment_block_removed,15543,95.0061
+after_t1_eventually_cleared,15048,91.9804
+after_t1_additional_invoice,997,6.0941
+after_t1_invoice_cancelled,809,4.945
+after_t1_future_gr,427,2.61
+after_t1_quantity_change,168,1.0269
+after_t1_price_change,163,0.9963
+after_t1_gr_cancel,77,0.4707
+after_t1_subsequent_invoice,15,0.0917
+after_t1_payment_block_set,3,0.0183
+after_t1_service_entry,0,0.0

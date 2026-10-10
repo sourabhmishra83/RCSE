@@ -1,0 +1,8 @@
+signal,outcome_invoice_cancelled_after_t0,outcome_payment_block_set_after_t0,outcome_future_gr_cancel,outcome_future_price_change,outcome_future_quantity_change,outcome_subsequent_invoice,outcome_additional_invoice_receipt
+outcome_invoice_cancelled_after_t0,6462,9,119,317,221,36,5130
+outcome_payment_block_set_after_t0,9,143,2,4,1,0,10
+outcome_future_gr_cancel,119,2,281,44,44,0,107
+outcome_future_price_change,317,4,44,2753,69,11,547
+outcome_future_quantity_change,221,1,44,69,1216,2,438
+outcome_subsequent_invoice,36,0,0,11,2,166,38
+outcome_additional_invoice_receipt,5130,10,107,547,438,38,11229

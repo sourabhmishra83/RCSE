@@ -1,0 +1,25 @@
+{
+  "input_file": "C:\\Users\\jkashyap\\Downloads\\rcse_output\\experimental_benchmark\\splits\\rcse_experimental_with_splits.parquet",
+  "experiment": "feature_ablation_robustness",
+  "model": "multinomial logistic regression",
+  "max_iter": 5000,
+  "convergence_rule": "converged iff max(model.n_iter_) < max_iter",
+  "convergence_fields": [
+    "max_iter",
+    "iterations_required",
+    "converged"
+  ],
+  "calibration": "one-vs-rest isotonic",
+  "feature_configs": {
+    "FULL": "Step-07 feature set.",
+    "NO_MISMATCH": "FULL minus inv_po_abs_rel_diff and inv_gr_abs_rel_diff.",
+    "PROCESS_ONLY": "NO_MISMATCH minus po_value_initial_eur, invoice_value_t0_eur, and latest_gr_value_before_t0_eur."
+  },
+  "regimes": [
+    "grouped_iid",
+    "temporal",
+    "ood_exposure"
+  ],
+  "primary_robustness_question": "Does R4 high-exposure degradation, especially ESCALATE->EXECUTE error, persist when ambiguous monetary-comparison features and event-level monetary values are removed?",
+  "decision_rule_for_interpretation": "If the qualitative R4 failure persists across NO_MISMATCH and PROCESS_ONLY, treat the result as robust to BPI monetary-field semantics. If it disappears, do not attribute the failure to distribution shift without further investigation."
+}

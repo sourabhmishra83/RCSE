@@ -1,0 +1,9 @@
+event,timestamp_column,observed_anywhere_after_t0,before_t1,same_timestamp_as_t1,after_t1,pct_candidates_before_t1,pct_candidates_same_timestamp_t1
+clear,first_clear_time,15066,89,0,14977,0.544,0.0
+payment_block_removal,first_payment_block_removal_time,15871,349,0,15522,2.1333,0.0
+payment_block_set,first_payment_block_set_time,3,0,0,3,0.0,0.0
+invoice_cancel,first_invoice_cancel_time,885,81,0,804,0.4951,0.0
+additional_invoice,first_additional_invoice_time,1120,136,0,984,0.8313,0.0
+subsequent_invoice,first_subsequent_invoice_time,15,0,0,15,0.0,0.0
+future_price_change,first_future_price_change_time,236,75,1,160,0.4584,0.0061
+future_quantity_change,first_future_quantity_change_time,434,262,15,157,1.6015,0.0917

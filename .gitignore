@@ -1,0 +1,47 @@
+# Source data is obtained from 4TU; duplicate raw logs are not repository outputs.
+/*.xes
+/*.xml
+# Large CSV exports have corresponding compact Parquet datasets.
+/rcse_output/rcse_base.csv
+/rcse_output/rcse_base_v2.csv
+/rcse_output/rcse_labeled.csv
+/rcse_output/experimental_benchmark/rcse_experimental_benchmark.csv
+/rcse_output/experimental_benchmark/splits/rcse_experimental_with_splits.csv
+# Original manuscripts and private review correspondence remain local.
+/*.pdf
+/*.docx
+/revision_complete/review_letter.txt
+/revision_complete/manuscript_extracted.txt
+# Render caches and generated release archives are reproducible.
+**/__pycache__/
+*.pyc
+/revision_complete/rendered/
+/revision_complete/original_render/
+*.zip
+.env
+.env.*
+# Writing artifacts and reviewer material stay on this computer.
+/RCSE_Research_Knowledge_Document*.md
+/Revision_Review_Status.md
+/revision_complete/*.docx
+/revision_complete/*.pdf
+/revision_complete/Response_to_Reviewers.md
+/revision_complete/Revised_Manuscript.md
+/revision_complete/Review_Evidence_Report.md
+/revision_complete/reviewer_comment_matrix.json
+/revision_complete/manuscript_changes.json
+/revision_complete/document_preservation_audit.json
+/revision_complete/artifact.md
+/revision_complete/final_validation.json
+/revision_complete/release_inventory.json
+/revision_complete/build_review_response.py
+/revision_complete/build_revision_documents.py
+/revision_complete/build_release_candidate.py
+/revision_complete/export_word_pdfs.ps1
+/revision_complete/render_exported_documents.py
+/revision_complete/validate_final_package.py
+.venv/
+
+/Revised/
+/revision_complete/reviewer_response_final_items.json
+/revision_complete/primary_source_verification.md

@@ -1,0 +1,84 @@
+{
+  "step": "09b.2b",
+  "policy_directory": "C:\\Users\\jkashyap\\Downloads\\rcse_output\\experimental_benchmark\\splits\\frozen_baseline_results\\rcse_policy_dataset",
+  "split_benchmark": "C:\\Users\\jkashyap\\Downloads\\rcse_output\\experimental_benchmark\\splits\\rcse_experimental_with_splits.parquet",
+  "frozen_spec": "C:\\Users\\jkashyap\\Downloads\\09b2a_rcse_policy_spec.json",
+  "spec_status": "FROZEN_BEFORE_POLICY_SIMULATION",
+  "regimes": [
+    "grouped_iid",
+    "temporal",
+    "ood_exposure"
+  ],
+  "train_exposure_reference_rule": "source-case-level TRAIN-only exposure percentiles",
+  "reference_configuration": {
+    "consequence_function": "LOG_TRAIN_P90",
+    "c_G": 0.02,
+    "c_H": 0.1,
+    "c_A": 0.5,
+    "rho_H": 0.0,
+    "beta0": 0.05,
+    "tau1": 0.95,
+    "beta1": 0.05,
+    "usage": "Illustrative/reference operating configuration only. Main claims must be based on policy frontiers and sensitivity ranges, not one chosen parameter point."
+  },
+  "confidence_threshold_grid": [
+    0.5,
+    0.6,
+    0.7,
+    0.75,
+    0.8,
+    0.85,
+    0.9,
+    0.92,
+    0.94,
+    0.95,
+    0.96,
+    0.97,
+    0.98,
+    0.99,
+    0.995
+  ],
+  "beta0_grid": [
+    0.01,
+    0.02,
+    0.05,
+    0.1,
+    0.2
+  ],
+  "tau1_grid": [
+    0.9,
+    0.95,
+    0.97,
+    0.99
+  ],
+  "beta1_grid": [
+    0.01,
+    0.02,
+    0.05,
+    0.1
+  ],
+  "valid_cost_combinations": 23,
+  "consequence_functions": [
+    "LOG_TRAIN_P90",
+    "UNIFORM",
+    "LOG_TRAIN_P50",
+    "LOG_TRAIN_P99"
+  ],
+  "realized_loss_rule": {
+    "direct_execute": "C(v) if expected_action_reference != EXECUTE, else 0",
+    "post_gather_execute": "c_G + C(v) if y_t1_d1 != SAFE_TO_EXECUTE, else c_G",
+    "escalate": "c_H + rho_H*C(v)",
+    "abstain": "c_A",
+    "gather_then_escalate": "c_G + c_H + rho_H*C(v)",
+    "gather_then_abstain": "c_G + c_A"
+  },
+  "argmax_gather_convention": "ARGMAX does not use t1 continuation; if it predicts GATHER, the simulation applies GATHER cost then the cheaper non-autonomous fallback (ESCALATE or ABSTAIN) for end-to-end loss accounting.",
+  "governance": [
+    "Do not choose a single tau0, beta0, tau1, beta1, or cost schedule because it looks best on the test set.",
+    "Report predeclared grids/frontiers and the frozen reference configuration.",
+    "Training-only statistics may be used for consequence normalization; test outcomes may not be used to redefine policy parameters.",
+    "Step-09a.5 risk-cap operating points are descriptive diagnostics and are not reused as prospectively tuned thresholds.",
+    "No special R4 policy override is permitted in the primary analysis."
+  ],
+  "interpretation": "Do not select a preferred parameter point from test performance. Use predeclared frontiers/sensitivity ranges plus the frozen reference configuration."
+}

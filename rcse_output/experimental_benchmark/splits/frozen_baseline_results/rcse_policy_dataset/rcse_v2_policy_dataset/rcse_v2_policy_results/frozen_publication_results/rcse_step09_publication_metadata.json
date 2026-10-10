@@ -1,0 +1,35 @@
+{
+  "step": "09b.2s",
+  "status": "STEP_09_PUBLICATION_RESULTS_FROZEN",
+  "analysis_type": "reporting_consolidation_only",
+  "primary_policy": "RCSE_V2_FULL",
+  "primary_consequence": "LOG_TRAIN_P90",
+  "source_artifacts": {
+    "results_dir": "C:\\Users\\jkashyap\\Downloads\\rcse_output\\experimental_benchmark\\splits\\frozen_baseline_results\\rcse_policy_dataset\\rcse_v2_policy_dataset\\rcse_v2_policy_results",
+    "bootstrap_dir": "C:\\Users\\jkashyap\\Downloads\\rcse_output\\experimental_benchmark\\splits\\frozen_baseline_results\\rcse_policy_dataset\\rcse_v2_policy_dataset\\rcse_v2_policy_results\\bootstrap_uncertainty",
+    "frontier_dir": "C:\\Users\\jkashyap\\Downloads\\rcse_output\\experimental_benchmark\\splits\\frozen_baseline_results\\rcse_policy_dataset\\rcse_v2_policy_dataset\\rcse_v2_policy_results\\frontier_analysis",
+    "error_dir": "C:\\Users\\jkashyap\\Downloads\\rcse_output\\experimental_benchmark\\splits\\frozen_baseline_results\\rcse_policy_dataset\\rcse_v2_policy_dataset\\rcse_v2_policy_results\\unsafe_error_decomposition",
+    "contradiction_dir": "C:\\Users\\jkashyap\\Downloads\\rcse_output\\experimental_benchmark\\splits\\frozen_baseline_results\\rcse_policy_dataset\\rcse_v2_policy_dataset\\rcse_v2_policy_results\\residual_contradiction_audit",
+    "frozen_spec": "C:\\Users\\jkashyap\\Downloads\\09b2l_rcse_v2_policy_spec.json"
+  },
+  "new_training_performed": false,
+  "new_recalibration_performed": false,
+  "gate_modified": false,
+  "policy_retuned": false,
+  "new_threshold_selection": false,
+  "new_statistical_tests": false,
+  "publication_outputs": [
+    "TABLE_01_primary_rcse_v2_performance.csv",
+    "TABLE_02_natural_and_intervention_robustness.csv",
+    "TABLE_03_component_ablation_bootstrap.csv",
+    "TABLE_04_ood_generalization.csv",
+    "TABLE_05_frontier_risk_caps.csv",
+    "FIGURE_01_frontier_coverage_vs_risk.png",
+    "FIGURE_02_gate_robustness.png",
+    "FIGURE_03_natural_vs_full_benchmark_risk.png",
+    "FIGURE_04_ablation_effects.png",
+    "rcse_step09_frozen_results_manifest.json",
+    "rcse_step09_publication_summary.md"
+  ],
+  "next_step": "Use the frozen manifest/tables/figures as the only authoritative Step 09 source for manuscript Results writing. Do not re-open model or policy tuning unless a genuine implementation defect is discovered."
+}

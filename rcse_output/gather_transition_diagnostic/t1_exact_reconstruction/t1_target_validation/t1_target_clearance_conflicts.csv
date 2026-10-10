@@ -1,0 +1,10 @@
+unsafe_signal,signal_count,cleared_and_signal_count,pct_signal_that_also_clears,pct_all_cases
+after_t1_invoice_cancelled,809,804,99.382,4.9144
+after_t1_payment_block_set,3,3,100.0,0.0183
+after_t1_gr_cancel,77,72,93.5065,0.4401
+after_t1_price_change,163,159,97.546,0.9719
+after_t1_quantity_change,168,163,97.0238,0.9963
+after_t1_subsequent_invoice,15,15,100.0,0.0917
+after_t1_additional_invoice,997,986,98.8967,6.0269
+after_t1_future_gr,427,412,96.4871,2.5183
+after_t1_service_entry,0,0,0.0,0.0

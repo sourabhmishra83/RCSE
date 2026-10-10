@@ -1,0 +1,33 @@
+{
+  "step": "09a.4",
+  "input_transition_file": "C:\\Users\\jkashyap\\Downloads\\rcse_output\\gather_transition_diagnostic\\t1_exact_reconstruction\\t1_transition_exact.parquet",
+  "split_source_file": "C:\\Users\\jkashyap\\Downloads\\rcse_output\\experimental_benchmark\\splits\\rcse_experimental_with_splits.parquet",
+  "all_t1_cases": 16360,
+  "resolved_d1_cases": 15066,
+  "ambiguous_excluded": 1294,
+  "target_definition": {
+    "SAFE_TO_EXECUTE": "eventually clears after t1 and no D1 core adverse/control signal occurs after t1",
+    "NOT_SAFE_TO_EXECUTE": "at least one D1 core adverse/control signal occurs after t1",
+    "AMBIGUOUS": "excluded from model fitting/evaluation",
+    "D1_core_signals": [
+      "after_t1_invoice_cancelled",
+      "after_t1_payment_block_set",
+      "after_t1_gr_cancel",
+      "after_t1_price_change",
+      "after_t1_quantity_change",
+      "after_t1_subsequent_invoice"
+    ]
+  },
+  "model": {
+    "type": "binary logistic regression",
+    "solver": "lbfgs",
+    "penalty": "l2",
+    "C": 1.0,
+    "max_iter": 5000,
+    "tol": 0.0001,
+    "calibration": "isotonic on dedicated calibration partition"
+  },
+  "split_policy": "Reuse the already-frozen source-case split assignments from rcse_experimental_with_splits.parquet.",
+  "architectural_boundary": "The post-GATHER estimator predicts P(SAFE_TO_EXECUTE | O_t1) without transaction exposure/risk stratum or post-t1 outcome features. Consequence is added only later in the RCSE decision layer.",
+  "next_step": "If discrimination and calibration are adequate, freeze q_t1 prediction artifacts and implement the RCSE/VoI decision policy."
+}

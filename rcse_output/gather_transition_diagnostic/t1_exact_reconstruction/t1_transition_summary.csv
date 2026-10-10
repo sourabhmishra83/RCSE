@@ -1,0 +1,8 @@
+metric,value
+candidate_cases,16360.0
+exact_transition_rows,16360.0
+t1_time_exact_match,16360.0
+same_timestamp_t0_t1,4.0
+cases_with_non_gr_event_between_t0_t1,2277.0
+median_wait_days,1.2166666666666666
+p90_wait_days,6.066180555555556

@@ -1,0 +1,4 @@
+stage,cases,events,case_retention_vs_all_pct
+All BPIC 2019 cases,251734,1595923,100.0
+3-way matching cases,236192,1553941,93.826
+3-way cases with Record Invoice Receipt,210692,1348108,83.6963

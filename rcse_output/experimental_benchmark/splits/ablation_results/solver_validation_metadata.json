@@ -1,0 +1,26 @@
+{
+  "input_file": "C:\\Users\\jkashyap\\Downloads\\rcse_output\\experimental_benchmark\\splits\\rcse_experimental_with_splits.parquet",
+  "experiment": "solver_convergence_validation",
+  "model": "multinomial logistic regression",
+  "max_iter": 5000,
+  "convergence_rule": "converged iff max(model.n_iter_) < max_iter",
+  "convergence_fields": [
+    "max_iter",
+    "iterations_required",
+    "converged"
+  ],
+  "calibration": "one-vs-rest isotonic",
+  "feature_config": "NO_MISMATCH",
+  "solvers": [
+    "saga",
+    "lbfgs"
+  ],
+  "tol": 0.0001,
+  "regimes": [
+    "grouped_iid",
+    "temporal",
+    "ood_exposure"
+  ],
+  "primary_question": "Which logistic-regression solver converges across all three evaluation regimes for the selected NO_MISMATCH feature set?",
+  "selection_rule": "A solver is eligible to freeze only if converged=True in every requested regime. If both converge, compare discrimination and calibration rather than selecting solely on accuracy."
+}

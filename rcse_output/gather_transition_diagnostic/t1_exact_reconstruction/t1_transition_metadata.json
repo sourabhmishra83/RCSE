@@ -1,0 +1,14 @@
+{
+  "step": "09a.2",
+  "xes_file": "C:\\Users\\jkashyap\\Downloads\\BPI_Challenge_2019.xes",
+  "candidate_file": "C:\\Users\\jkashyap\\Downloads\\rcse_output\\gather_transition_diagnostic\\gather_transition_candidates.parquet",
+  "candidate_cases": 16360,
+  "reconstructed_cases": 16360,
+  "t0_definition": "first Record Invoice Receipt in timestamp + original XES order",
+  "t1_definition": "first Record Goods Receipt strictly after t0 in timestamp + original XES event order",
+  "same_timestamp_order_preserved": true,
+  "post_t1_outcomes_are_features": false,
+  "post_t1_outcomes_purpose": "target-design diagnostics only; never expose them to a t1 model",
+  "post_gather_target_created": false,
+  "next_methodological_step": "Validate candidate Y_t1 definitions using exact t1 state and post-t1 outcomes before training any post-GATHER estimator."
+}

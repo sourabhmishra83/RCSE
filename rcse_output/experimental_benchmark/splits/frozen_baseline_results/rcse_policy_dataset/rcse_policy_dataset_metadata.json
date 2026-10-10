@@ -1,0 +1,26 @@
+{
+  "step": "09b.1",
+  "t0_input_directory": "C:\\Users\\jkashyap\\Downloads\\rcse_output\\experimental_benchmark\\splits\\frozen_baseline_results",
+  "t1_input_directory": "C:\\Users\\jkashyap\\Downloads\\rcse_output\\gather_transition_diagnostic\\t1_exact_reconstruction\\post_gather_safety_results",
+  "regimes": [
+    "grouped_iid",
+    "temporal",
+    "ood_exposure"
+  ],
+  "join_key": "t0.source_case_id == t1.case_id",
+  "primary_gather_eligibility_rule": [
+    "real post-GATHER t1 transition exists for source case",
+    "expected_action_reference == GATHER",
+    "episode is not a synthetic intervention"
+  ],
+  "primary_policy_t1_fields": [
+    "p_safe_t1_for_primary_rcse",
+    "p_not_safe_t1_for_primary_rcse"
+  ],
+  "diagnostic_t1_fields": [
+    "p_safe_t1_cal_observed",
+    "p_not_safe_t1_cal_observed"
+  ],
+  "important_boundary": "The primary RCSE GATHER branch is restricted to naturally observed delayed-evidence episodes. Synthetic uncertainty episodes are not assigned a real t1 continuation score in the primary policy evaluation.",
+  "next_step": "Step 09b.2: implement parameterized comparator and RCSE policy simulation over this policy-ready dataset."
+}

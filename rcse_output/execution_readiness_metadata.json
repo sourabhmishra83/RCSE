@@ -1,0 +1,34 @@
+{
+  "input_file": "C:\\Users\\jkashyap\\Downloads\\rcse_output\\rcse_base_v2.parquet",
+  "rows": 210692,
+  "label_version": "execution_readiness_v1",
+  "labels": [
+    "READY",
+    "WAIT_FOR_EVIDENCE",
+    "REVIEW"
+  ],
+  "label_precedence": [
+    "REVIEW",
+    "WAIT_FOR_EVIDENCE",
+    "READY"
+  ],
+  "decision_point": "first Record Invoice Receipt",
+  "po_invoice_relative_tolerance": 0.01,
+  "invoice_gr_relative_tolerance": 0.01,
+  "mandatory_review_reasons": [
+    "reason_missing_po_value",
+    "reason_missing_invoice_value",
+    "reason_missing_gr_value",
+    "reason_po_inv_mismatch",
+    "reason_inv_gr_mismatch",
+    "reason_gr_match_unknown",
+    "reason_po_inv_match_unknown"
+  ],
+  "optional_review_reasons_enabled": [],
+  "methodological_rule": "Execution-readiness labels are derived only from t0-visible evidence and documented process semantics. Future outcome columns are not used to assign READY, WAIT_FOR_EVIDENCE, or REVIEW.",
+  "important_interpretation": {
+    "READY": "Required t0 evidence is present and no configured contradiction or review condition is triggered.",
+    "WAIT_FOR_EVIDENCE": "Required GR evidence is absent at t0 but no other configured contradiction is currently present.",
+    "REVIEW": "Available evidence is missing/contradictory in a way that should prevent autonomous execution under the configured reference policy."
+  }
+}

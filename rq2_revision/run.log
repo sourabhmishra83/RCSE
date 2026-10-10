@@ -1,0 +1,12 @@
+21:38:34 Loading frozen benchmark and natural decision-time states
+21:38:38 grouped_iid: fitting action model on 172,820 episodes
+21:40:00 grouped_iid/natural_d1_resolved: paired bootstrap (2000 source-case resamples)
+21:41:02 grouped_iid/evidence_complete: paired bootstrap (2000 source-case resamples)
+21:41:48 temporal: fitting action model on 171,985 episodes
+21:43:11 temporal/natural_d1_resolved: paired bootstrap (2000 source-case resamples)
+21:43:37 temporal/evidence_complete: paired bootstrap (2000 source-case resamples)
+21:44:01 ood_exposure: fitting action model on 170,871 episodes
+21:44:48 ood_exposure/natural_d1_resolved: paired bootstrap (2000 source-case resamples)
+21:45:02 ood_exposure/evidence_complete: paired bootstrap (2000 source-case resamples)
+21:45:16 Hashing input artifacts for provenance
+21:45:16 Experiment complete

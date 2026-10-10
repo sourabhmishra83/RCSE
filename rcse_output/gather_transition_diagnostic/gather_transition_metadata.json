@@ -1,0 +1,15 @@
+{
+  "step": "09a.1",
+  "input_file": "C:\\Users\\jkashyap\\Downloads\\rcse_output\\rcse_base_v2.parquet",
+  "total_v2_cases": 210692,
+  "eligible_natural_gather_cases": 16360,
+  "t1_definition": "first_future_gr_time",
+  "eligibility_rule": "gr_available_at_t0=False AND gather_gr_possible=True AND gather_gr_has_value=True AND first_future_gr_time is present",
+  "invalid_t1_before_t0_cases": 0,
+  "same_timestamp_t0_t1_cases": 4,
+  "selected_intervening_event_before_t1_cases": 812,
+  "minimal_t1_state_reconstructible": true,
+  "full_original_feature_vector_reconstructible_from_v2": false,
+  "post_gather_action_target_present_in_v2": false,
+  "methodological_conclusion": "The v2 table supports an exact minimal first-GR transition state, but not a complete reconstruction of every original predictive feature or a validated post-GATHER action target. A dedicated t1 estimator should not be trained until the target and state extraction semantics are explicitly defined. If complete event-state reconstruction is required, return to the raw XES log."
+}

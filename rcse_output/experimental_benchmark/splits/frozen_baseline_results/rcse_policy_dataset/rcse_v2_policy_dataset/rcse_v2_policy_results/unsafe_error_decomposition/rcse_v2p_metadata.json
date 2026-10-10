@@ -1,0 +1,25 @@
+{
+  "step": "09b.2p",
+  "policy": "RCSE_V2_FULL",
+  "consequence_mode": "LOG_TRAIN_P90",
+  "frozen_reference_parameters": {
+    "c_G": 0.02,
+    "c_H": 0.1,
+    "c_A": 0.5,
+    "rho_H": 0.0,
+    "tau_safe_t0": 0.95,
+    "beta0": 0.05,
+    "tau_safe_t1": 0.95,
+    "beta1": 0.05
+  },
+  "diagnostic_only": true,
+  "training_performed": false,
+  "recalibration_performed": false,
+  "gate_modified": false,
+  "policy_retuned": false,
+  "frontier_selected_point_used": false,
+  "direct_execution_safety_semantics": "t0_safety_robustness_target when available; unresolved cases fall back to expected_action_reference semantics.",
+  "post_gather_safety_semantics": "y_t1_d1 when available; ambiguous t1 outcomes remain unresolved.",
+  "loss_accounting_note": "Step 09b.2n top-level realized loss assigns GATHER=c_G only. This diagnostic additionally reports c_G plus realized continuation loss. It does not overwrite or silently modify Step 09b.2n outputs.",
+  "next_decision": "Use the error decomposition to determine whether the residual unsafe-execution floor is driven by natural false-safe cases, residual synthetic contradictions, OOD safety-score failure, post-GATHER continuation, or a mixture. Only then decide whether method changes or statistical uncertainty analysis are warranted."
+}

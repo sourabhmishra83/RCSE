@@ -1,0 +1,7 @@
+metric,value
+all_cases,16360.0
+resolved_d1_cases,15066.0
+resolved_d1_pct_all,92.09046454767727
+safe_cases,13924.0
+not_safe_cases,1142.0
+not_safe_pct_resolved,7.579981415106864

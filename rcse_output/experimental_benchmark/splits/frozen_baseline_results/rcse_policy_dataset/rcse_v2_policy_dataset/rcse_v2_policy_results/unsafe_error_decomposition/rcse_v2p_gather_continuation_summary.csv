@@ -1,0 +1,4 @@
+regime,gather_count,post_gather_execute_count,post_gather_escalate_count,post_gather_abstain_count,post_gather_execute_rate,post_gather_execute_known_safety_count,post_gather_unsafe_execute_count,post_gather_unsafe_execution_rate_known
+grouped_iid,1514,1514,0,0,1.0,1514,35,0.023117569352708058
+ood_exposure,61,61,0,0,1.0,61,12,0.19672131147540983
+temporal,677,677,0,0,1.0,677,19,0.028064992614475627

@@ -1,0 +1,29 @@
+{
+  "step": "09b.2d",
+  "purpose": "Compare frozen raw and isotonic-calibrated EXECUTE discrimination.",
+  "retraining_performed": false,
+  "recalibration_performed": false,
+  "policy_retuning_performed": false,
+  "prediction_files": {
+    "grouped_iid": "C:\\Users\\jkashyap\\Downloads\\rcse_output\\experimental_benchmark\\splits\\frozen_baseline_results\\frozen_predictions_grouped_iid.parquet",
+    "temporal": "C:\\Users\\jkashyap\\Downloads\\rcse_output\\experimental_benchmark\\splits\\frozen_baseline_results\\frozen_predictions_temporal.parquet",
+    "ood_exposure": "C:\\Users\\jkashyap\\Downloads\\rcse_output\\experimental_benchmark\\splits\\frozen_baseline_results\\frozen_predictions_ood_exposure.parquet"
+  },
+  "raw_candidates": [
+    "p_raw_execute",
+    "p_execute_raw",
+    "raw_probability_execute",
+    "prob_execute_raw"
+  ],
+  "calibrated_candidates": [
+    "p_cal_execute",
+    "p_execute_calibrated",
+    "calibrated_probability_execute",
+    "prob_execute_calibrated"
+  ],
+  "interpretation": {
+    "calibration_damage_signal": "Raw AUROC/AUPRC materially exceed calibrated AUROC/AUPRC, with substantial unique-value compression or rank disruption.",
+    "weak_base_signal": "Raw AUROC/AUPRC are also weak and close to calibrated performance.",
+    "important_note": "Isotonic calibration can create probability plateaus while preserving much of the ranking; unique-value compression alone is not evidence that calibration caused the weak EXECUTE discrimination."
+  }
+}

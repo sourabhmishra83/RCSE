@@ -1,0 +1,14 @@
+{
+  "status": "complete",
+  "horizons_days": [
+    30,
+    60,
+    90
+  ],
+  "event_window": "strictly after t0, through t0+h inclusive",
+  "target": "missing required GR OR adverse within horizon => unsafe; cleared within horizon with complete evidence and no adverse => safe; otherwise ambiguous",
+  "model": "fixed original D1 training; no horizon-specific retraining",
+  "observed_event_max": "2020-04-09 21:59:00+00:00",
+  "censoring_limit": "maximum timestamp is only an observation-boundary proxy. No external capture-completeness indicator is available; unresolved cases remain ambiguous. These analyses do not establish censoring-free outcomes.",
+  "source_sha256": "af63bc687fc4152f2123b05c3af7772b37ef3fce2d3f67f812666c9e356baae7"
+}

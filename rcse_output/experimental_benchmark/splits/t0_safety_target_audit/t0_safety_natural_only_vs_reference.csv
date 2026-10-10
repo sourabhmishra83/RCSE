@@ -1,0 +1,11 @@
+candidate,target_d1_core_natural,_reference_action,count,target_d2_expanded_natural,target_d4_reference_binary
+target_d1_core_natural,AMBIGUOUS,EXECUTE,6716,,
+target_d1_core_natural,SAFE,EXECUTE,41380,,
+target_d1_core_natural,UNSAFE,EXECUTE,1904,,
+target_d1_core_natural,UNSAFE,GATHER,16682,,
+target_d2_expanded_natural,,EXECUTE,6610,AMBIGUOUS,
+target_d2_expanded_natural,,EXECUTE,40353,SAFE,
+target_d2_expanded_natural,,EXECUTE,3037,UNSAFE,
+target_d2_expanded_natural,,GATHER,16682,UNSAFE,
+target_d4_reference_binary,,EXECUTE,50000,,SAFE
+target_d4_reference_binary,,GATHER,16682,,UNSAFE

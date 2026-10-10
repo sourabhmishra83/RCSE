@@ -1,0 +1,17 @@
+{
+  "step": "09b.2k",
+  "experimental_benchmark": "C:\\Users\\jkashyap\\Downloads\\rcse_output\\experimental_benchmark\\splits\\rcse_experimental_with_splits.parquet",
+  "safety_robustness_directory": "C:\\Users\\jkashyap\\Downloads\\rcse_output\\experimental_benchmark\\splits\\t0_safety_full_benchmark_robustness",
+  "model_training_performed": false,
+  "policy_modified": false,
+  "value_thresholds_selected_from_test": false,
+  "threshold_origin": "Sensitivity points aligned to the already-frozen controlled contradiction strengths; no post-hoc winner selection.",
+  "evaluation_only_fields": [
+    "intervention_type",
+    "intervention_strength",
+    "expected_action_reference",
+    "p_safe_t0_raw",
+    "p_safe_t0_cal"
+  ],
+  "next_decision": "Review contradiction detection, missingness detection, natural reference-EXECUTE false blocking, and overlap with high-confidence safety false positives. If a threshold is scientifically frozen, freeze the gate before RCSE v2 simulation."
+}

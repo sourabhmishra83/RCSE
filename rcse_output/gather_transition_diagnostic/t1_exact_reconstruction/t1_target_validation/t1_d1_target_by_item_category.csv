@@ -1,0 +1,4 @@
+item_category,target_d1_core,count,pct_within_item_category
+"3-way match, invoice before GR",AMBIGUOUS,1294,7.9095
+"3-way match, invoice before GR",NOT_SAFE_TO_EXECUTE,1142,6.9804
+"3-way match, invoice before GR",SAFE_TO_EXECUTE,13924,85.11

@@ -1,0 +1,12 @@
+signal,count_true,pct_ambiguous
+outcome_eventually_cleared,0,0.0
+outcome_invoice_cancelled_after_t0,0,0.0
+outcome_payment_block_set_after_t0,0,0.0
+outcome_future_gr_cancel,0,0.0
+outcome_future_price_change,0,0.0
+outcome_future_quantity_change,0,0.0
+outcome_subsequent_invoice,0,0.0
+outcome_additional_invoice_receipt,399,0.014845959220122043
+outcome_future_gr,104,0.0038696234558714096
+outcome_payment_block_removed_after_t0,4416,0.16431016520315522
+gather_gr_possible,104,0.0038696234558714096

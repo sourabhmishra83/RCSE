@@ -1,0 +1,4 @@
+regime,partition,episodes,source_cases,episode_pct,source_case_pct
+temporal,calibration,37117,23373,15.0465,14.9999
+temporal,test,37580,23374,15.2342,15.0005
+temporal,train,171985,109074,69.7193,69.9996

@@ -1,0 +1,13 @@
+candidate,label,count,pct_all
+target_d1_core_natural,SAFE,165632,0.6714393429597619
+target_d1_core_natural,UNSAFE,54174,0.21961067285006608
+target_d1_core_natural,AMBIGUOUS,26876,0.10894998419017196
+target_d2_expanded_natural,SAFE,161477,0.6545957953965024
+target_d2_expanded_natural,UNSAFE,58728,0.23807168743564588
+target_d2_expanded_natural,AMBIGUOUS,26477,0.10733251716785173
+target_d3_hybrid_experimental,SAFE,41380,0.16774632928223382
+target_d3_hybrid_experimental,UNSAFE,198586,0.8050283360764061
+target_d3_hybrid_experimental,AMBIGUOUS,6716,0.027225334641360132
+target_d4_reference_binary,SAFE,50000,0.2026901030476484
+target_d4_reference_binary,UNSAFE,196682,0.7973098969523517
+target_d4_reference_binary,AMBIGUOUS,0,0.0

@@ -1,0 +1,21 @@
+{
+  "folders": [{ "path": "." }],
+  "settings": {
+    "python.defaultInterpreterPath": "C:\\Users\\jkashyap\\miniconda3\\python.exe"
+  },
+  "tasks": {
+    "version": "2.0.0",
+    "tasks": [{
+      "label": "Run RQ2 revision experiment",
+      "type": "process",
+      "command": "C:\\Users\\jkashyap\\miniconda3\\python.exe",
+      "args": ["-u", "${workspaceFolder}\\run_rq2_revision.py"],
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "env": { "OMP_NUM_THREADS": "4", "OPENBLAS_NUM_THREADS": "4", "MKL_NUM_THREADS": "4" }
+      },
+      "group": { "kind": "build", "isDefault": true },
+      "problemMatcher": []
+    }]
+  }
+}

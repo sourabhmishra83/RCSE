@@ -1,0 +1,4 @@
+regime,largest_calibrated_plateau_rows,largest_calibrated_plateau_fraction,median_rows_per_calibrated_value,max_raw_unique_mapped_to_one_cal_value
+grouped_iid,9735,0.2636853652590807,2.0,9688
+temporal,11338,0.3017030335284726,1.0,11058
+ood_exposure,758,0.29889589905362773,1.0,758

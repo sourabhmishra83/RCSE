@@ -1,0 +1,15 @@
+{
+  "input_file": "C:\\Users\\jkashyap\\Downloads\\rcse_output\\rcse_labeled.parquet",
+  "total_rows": 210692,
+  "review_rows": 1723,
+  "review_pct_of_all": 0.8178,
+  "diagnostic_only": true,
+  "label_modification": false,
+  "review_gr_structure": {
+    "zero_gr_before_t0": 1,
+    "exactly_one_gr_before_t0": 313,
+    "more_than_one_gr_before_t0": 1409
+  },
+  "interpretation_goal": "Determine whether REVIEW cases, especially INV_GR_MISMATCH cases, reflect genuine evidence contradiction or artifacts from repeated/partial goods receipts and cumulative-value semantics.",
+  "future_outcome_usage": "Post-t0 outcomes are summarized for diagnostic validation only and are not used to construct execution-readiness labels."
+}

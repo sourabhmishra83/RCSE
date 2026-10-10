@@ -1,0 +1,41 @@
+{
+  "step": "09b.2e",
+  "purpose": "Audit operationally defensible t0 execution-safety targets before training any dedicated safety estimator.",
+  "training_performed": false,
+  "recalibration_performed": false,
+  "policy_retuning_performed": false,
+  "base_v2": "C:\\Users\\jkashyap\\Downloads\\rcse_output\\rcse_base_v2.parquet",
+  "experimental_benchmark": "C:\\Users\\jkashyap\\Downloads\\rcse_output\\experimental_benchmark\\splits\\rcse_experimental_with_splits.parquet",
+  "rows": 246682,
+  "natural_rows": 66682,
+  "synthetic_rows": 180000,
+  "core_signals": [
+    "outcome_invoice_cancelled_after_t0",
+    "outcome_payment_block_set_after_t0",
+    "outcome_future_gr_cancel",
+    "outcome_future_price_change",
+    "outcome_future_quantity_change",
+    "outcome_subsequent_invoice"
+  ],
+  "expanded_signals": [
+    "outcome_invoice_cancelled_after_t0",
+    "outcome_payment_block_set_after_t0",
+    "outcome_future_gr_cancel",
+    "outcome_future_price_change",
+    "outcome_future_quantity_change",
+    "outcome_subsequent_invoice",
+    "outcome_additional_invoice_receipt"
+  ],
+  "candidate_definitions": {
+    "D1_CORE_NATURAL": {
+      "SAFE": "required GR evidence complete at t0 AND eventually clears AND no core adverse/control signal",
+      "UNSAFE": "required GR evidence missing at t0 OR any core adverse/control signal",
+      "AMBIGUOUS": "neither SAFE nor UNSAFE rule resolves the case"
+    },
+    "D2_EXPANDED_NATURAL": "D1 plus additional invoice receipt as an adverse/control signal",
+    "D3_HYBRID_EXPERIMENTAL": "synthetic intervention episodes are UNSAFE; natural episodes use D1",
+    "D4_REFERENCE_BINARY": "SAFE iff expected_action_reference == EXECUTE; comparison only"
+  },
+  "important_guardrail": "Future outcomes are used only for target-definition audit / possible target construction and must never be t0 predictive features.",
+  "decision_rule_for_next_step": "Do not automatically choose the candidate with highest agreement with expected_action_reference. Freeze a target only if its process semantics, ambiguity, and conflicts are defensible."
+}

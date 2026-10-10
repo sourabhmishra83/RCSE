@@ -1,0 +1,4 @@
+regime,train_cases,train_safe,train_unsafe,calibration_cases,calibration_safe,calibration_unsafe,test_cases,test_safe,test_unsafe
+grouped_iid,10498,9696,802,2289,2108,181,2279,2120,159
+temporal,12845,11820,1025,1509,1422,87,712,682,30
+ood_exposure,10459,9676,783,2218,2054,164,148,117,31

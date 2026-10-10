@@ -1,0 +1,11 @@
+rule,overall_trigger_count,overall_trigger_rate,natural_trigger_count,natural_trigger_rate,missingness_trigger_count,missingness_trigger_rate,contradiction_trigger_count,contradiction_trigger_rate,severe_evidence_loss_trigger_count,severe_evidence_loss_trigger_rate
+missing_required_gr,46682,0.18923958780940645,16682,0.25017246033412316,15000,0.3333333333333333,0,0.0,15000,1.0
+missing_vendor_invoice_evidence,3919,0.01588685027687468,1986,0.029783149875528627,438,0.009733333333333333,1321,0.011008333333333334,174,0.0116
+missing_po_creation_evidence,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0
+gr_flag_false_but_gr_count_positive,30000,0.12161406182858904,0,0.0,15000,0.3333333333333333,0,0.0,15000,1.0
+gr_flag_true_but_gr_count_zero,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0
+gr_cancel_flag_without_cancel_count,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0
+invoice_cancel_flag_without_cancel_count,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0
+price_change_flag_without_count,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0
+quantity_change_flag_without_count,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0
+payment_block_flag_without_history,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0

@@ -1,0 +1,13 @@
+feature,status,reason
+item_category / company / source_system / document metadata,EXACT,Static case context does not change between t0 and t1.
+po_value_initial_eur,EXACT,Initial PO observation is carried forward unchanged.
+invoice_value_t0_eur,EXACT,Original invoice observation is carried forward unchanged.
+gr_available_at_t1,EXACT,By definition t1 is the first future GR; therefore GR is available.
+latest_gr_value_at_t1_eur,EXACT,Equals first_future_gr_value_eur at the first future GR transition.
+n_goods_receipts_by_t1,EXACT,Equals n_goods_receipts_before_t0 + 1 for first future GR.
+elapsed_t0_to_t1_days,EXACT,Derived from decision_time and first_future_gr_time.
+selected history flags before t1,PARTIAL,"Some first post-t0 timestamps are available, allowing boolean presence-before-t1 flags, but exact counts/order are not fully stored."
+price/quantity/payment-block event counts by t1,NOT_EXACT_FROM_V2,"v2 stores selected first future timestamps, not all event counts between t0 and t1."
+events_available_at_t1,NOT_EXACT_FROM_V2,"v2 stores total future-event count, not the complete count of events strictly up to first future GR."
+same-timestamp event ordering at t1,NOT_EXACT_FROM_V2,Original XES event order is not preserved in the v2 case-level table for multiple events sharing the t1 timestamp.
+post-GATHER action target Y_t1,NOT_PRESENT,The v2 benchmark contains future process observations but no validated ground-truth action label at t1. A target must be defined separately.

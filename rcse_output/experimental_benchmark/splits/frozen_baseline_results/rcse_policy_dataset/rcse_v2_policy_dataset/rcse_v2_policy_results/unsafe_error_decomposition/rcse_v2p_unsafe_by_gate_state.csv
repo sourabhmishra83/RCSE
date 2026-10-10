@@ -1,0 +1,10 @@
+evaluation_regime,gate_state_v2,episodes,execute_count,execution_coverage,unsafe_execute_count,unsafe_execution_rate,raw_exposure_weighted_unsafe_rate,consequence_weighted_unsafe_rate
+grouped_iid,CONTRADICTORY,21126,0,0.0,0,,,
+grouped_iid,INCOMPLETE,7030,0,0.0,0,,,
+grouped_iid,VALID,8763,6376,0.7276047015862148,1077,0.1689146800501882,0.20063101011965698,0.17079059237208455
+ood_exposure,CONTRADICTORY,1462,0,0.0,0,,,
+ood_exposure,INCOMPLETE,474,0,0.0,0,,,
+ood_exposure,VALID,600,23,0.03833333333333333,5,0.21739130434782608,0.2962075994110268,0.22382155497408596
+temporal,CONTRADICTORY,22012,0,0.0,0,,,
+temporal,INCOMPLETE,6518,0,0.0,0,,,
+temporal,VALID,9050,8232,0.9096132596685083,1417,0.17213313896987367,0.17436722556141934,0.17313936019164866

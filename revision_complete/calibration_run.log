@@ -1,0 +1,7 @@
+22:20:50 grouped_iid: fit natural safety model; isotonic=10276, independent selection=10290
+22:21:03 grouped_iid: selected on calibration and evaluated on untouched test
+22:21:04 temporal: fit natural safety model; isotonic=9616, independent selection=9837
+22:21:17 temporal: selected on calibration and evaluated on untouched test
+22:21:17 ood_exposure: fit natural safety model; isotonic=10216, independent selection=10194
+22:21:26 ood_exposure: selected on calibration and evaluated on untouched test
+22:21:26 Calibration analyses complete

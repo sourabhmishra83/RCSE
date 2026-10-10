@@ -1,0 +1,4 @@
+regime,episodes,unique_source_cases,real_t1_transition_available,reference_gather_episodes,primary_gather_eligible,primary_gather_eligible_pct,eligible_unique_source_cases,synthetic_episodes
+grouped_iid,36919,23374,2279,4779,2279,0.061729732657980985,2279,26813
+temporal,37580,23374,712,3923,712,0.018946248004257583,712,28138
+ood_exposure,2536,1578,148,338,148,0.0583596214511041,148,1859

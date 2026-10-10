@@ -1,0 +1,8 @@
+metric,count,pct_of_review
+review_cases,1723,100.0
+more_than_one_gr_before_t0,1409,81.776
+more_than_one_invoice_receipt_by_t0,0,0.0
+prior_gr_cancellation,120,6.9646
+prior_invoice_cancellation,0,0.0
+prior_price_change,24,1.3929
+prior_quantity_change,43,2.4956

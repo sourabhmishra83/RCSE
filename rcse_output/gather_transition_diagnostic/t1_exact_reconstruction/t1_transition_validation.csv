@@ -1,0 +1,8 @@
+check,value
+candidate_cases,16360
+cases_found_in_xes,16360
+exact_transition_rows,16360
+candidate_t1_time_match,16360
+candidate_t1_time_mismatch,0
+same_timestamp_t0_t1,4
+gr_available_at_t1_false,0

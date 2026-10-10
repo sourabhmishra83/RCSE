@@ -1,0 +1,4 @@
+regime,natural_episodes,execute_prevalence,raw_execute_min,raw_execute_max,raw_execute_auroc,argmax_accuracy,label,feature_count,removed_feature
+grouped_iid,10106,0.7486641599050069,2.1136701093010142e-13,0.41526312312598374,1.0,0.25074213338610724,expected_action_reference EXECUTE versus rest,40,events_total_case
+temporal,9442,0.8287439101885193,1.1357568880557646e-61,0.6010628829587427,0.9998610608925532,0.1711501800466003,expected_action_reference EXECUTE versus rest,40,events_total_case
+ood_exposure,677,0.7680945347119645,0.0,0.8057352625343128,0.9734443900048996,0.4342688330871492,expected_action_reference EXECUTE versus rest,40,events_total_case

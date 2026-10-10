@@ -1,0 +1,27 @@
+{
+  "step": "09b.2q",
+  "policy": "RCSE_V2_FULL",
+  "consequence_mode": "LOG_TRAIN_P90",
+  "gate_delta": 0.05,
+  "analysis_type": "diagnostic_only",
+  "training_performed": false,
+  "recalibration_performed": false,
+  "gate_modified": false,
+  "policy_retuned": false,
+  "frontier_selected_point_used": false,
+  "comparison_groups": [
+    "CONTRADICTION_BLOCKED",
+    "CONTRADICTION_VALID_NOT_EXECUTED",
+    "CONTRADICTION_VALID_EXECUTED",
+    "NATURAL_REFERENCE_EXECUTE"
+  ],
+  "separability_metrics": [
+    "standardized_mean_difference",
+    "absolute_standardized_mean_difference",
+    "empirical_ks_distance",
+    "residual fraction inside natural 5th-95th percentile interval",
+    "residual fraction inside natural 1st-99th percentile interval"
+  ],
+  "important_guardrail": "Large distributional separation does not automatically justify a new gate rule. Any later rule must have independent ERP/process semantics and must not be chosen solely to remove test errors.",
+  "next_decision": "Determine whether residual executed contradictions are observably distinct from legitimate natural reference-EXECUTE cases. If yes, consider a semantically justified gate revision in a separately declared secondary analysis. If no, report an observability limit and proceed to statistical uncertainty analysis."
+}

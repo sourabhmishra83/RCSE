@@ -1,0 +1,3 @@
+item_category,review_cases,median_gr_count,mean_gr_count,pct_multi_gr,median_inv_po_diff,median_inv_gr_diff,pct_of_review
+"3-way match, invoice after GR",1583,5.0,20.241945672773216,88.6924,7.001746231321779,1.0,91.8746
+"3-way match, invoice before GR",140,1.0,1.1,3.5714,0.0,0.5000046173594245,8.1254

@@ -1,0 +1,4 @@
+regime,partition,episodes,source_cases,episode_pct,source_case_pct
+grouped_iid,calibration,36943,23373,14.976,14.9999
+grouped_iid,test,36919,23374,14.9662,15.0005
+grouped_iid,train,172820,109074,70.0578,69.9996

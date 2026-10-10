@@ -1,0 +1,4 @@
+regime,iterations_required,convergence_warning,converged
+grouped_iid,147,False,True
+temporal,171,False,True
+ood_exposure,172,False,True

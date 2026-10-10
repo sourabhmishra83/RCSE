@@ -1,0 +1,93 @@
+column,dtype,non_null,missing,missing_pct,unique_values
+case_id,object,210692,0,0.0,210692
+purchasing_document,object,210692,0,0.0,60728
+item_id,object,210692,0,0.0,320
+vendor_id,object,210692,0,0.0,1594
+vendor_name_anon,object,210692,0,0.0,1525
+company,object,210692,0,0.0,2
+source_system,object,210692,0,0.0,1
+document_type,object,210692,0,0.0,3
+document_category,object,210692,0,0.0,1
+item_type,object,210692,0,0.0,4
+item_category,object,210692,0,0.0,2
+spend_classification,object,210692,0,0.0,4
+spend_area,object,210692,0,0.0,20
+sub_spend_area,object,210692,0,0.0,126
+gr_based_invoice_verification,bool,210692,0,0.0,2
+goods_receipt_required,bool,210692,0,0.0,1
+decision_time,"datetime64[ns, UTC]",210692,0,0.0,65871
+decision_activity,object,210692,0,0.0,1
+case_start_time,"datetime64[ns, UTC]",210692,0,0.0,36310
+case_end_time,"datetime64[ns, UTC]",210692,0,0.0,8834
+events_total_case,int64,210692,0,0.0,268
+events_available_at_t0,int64,210692,0,0.0,222
+events_future_after_t0,int64,210692,0,0.0,151
+po_value_initial_eur,float64,210692,0,0.0,15081
+invoice_value_t0_eur,float64,210692,0,0.0,15308
+latest_gr_value_before_t0_eur,float64,194010,16682,7.9177,15162
+inv_po_abs_rel_diff,float64,210636,56,0.0266,1019
+inv_gr_abs_rel_diff,float64,193957,16735,7.9429,1245
+gr_available_at_t0,bool,210692,0,0.0,2
+vendor_invoice_seen_at_t0,bool,210692,0,0.0,2
+po_created_at_t0,bool,210692,0,0.0,1
+n_goods_receipts_before_t0,int64,210692,0,0.0,143
+n_cancel_gr_before_t0,int64,210692,0,0.0,12
+n_invoice_receipts_at_t0_history,int64,210692,0,0.0,1
+n_cancel_invoice_before_t0,int64,210692,0,0.0,3
+n_price_change_before_t0,int64,210692,0,0.0,10
+n_quantity_change_before_t0,int64,210692,0,0.0,15
+n_set_payment_block_before_t0,int64,210692,0,0.0,1
+n_remove_payment_block_before_t0,int64,210692,0,0.0,3
+n_service_entry_before_t0,int64,210692,0,0.0,147
+n_delete_po_before_t0,int64,210692,0,0.0,3
+n_block_po_before_t0,int64,210692,0,0.0,3
+n_reactivate_po_before_t0,int64,210692,0,0.0,3
+n_change_approval_before_t0,int64,210692,0,0.0,9
+n_release_po_before_t0,int64,210692,0,0.0,6
+had_gr_cancellation_before_t0,bool,210692,0,0.0,2
+had_invoice_cancellation_before_t0,bool,210692,0,0.0,2
+had_price_change_before_t0,bool,210692,0,0.0,2
+had_quantity_change_before_t0,bool,210692,0,0.0,2
+had_payment_block_before_t0,bool,210692,0,0.0,2
+po_to_invoice_days,float64,210692,0,0.0,53570
+vendor_invoice_to_recorded_invoice_days,float64,207163,3529,1.675,27867
+last_gr_to_invoice_days,float64,194010,16682,7.9177,43739
+outcome_eventually_cleared,bool,210692,0,0.0,2
+outcome_invoice_cancelled_after_t0,bool,210692,0,0.0,2
+outcome_payment_block_removed_after_t0,bool,210692,0,0.0,2
+outcome_payment_block_set_after_t0,bool,210692,0,0.0,2
+outcome_future_gr,bool,210692,0,0.0,2
+outcome_future_gr_cancel,bool,210692,0,0.0,2
+outcome_future_price_change,bool,210692,0,0.0,2
+outcome_future_quantity_change,bool,210692,0,0.0,2
+outcome_subsequent_invoice,bool,210692,0,0.0,2
+outcome_additional_invoice_receipt,bool,210692,0,0.0,2
+outcome_future_service_entry,bool,210692,0,0.0,2
+time_to_clear_days,float64,182977,27715,13.1543,47867
+time_to_first_future_gr_days,float64,18258,192434,91.3343,6278
+first_future_gr_time,"datetime64[ns, UTC]",18258,192434,91.3343,8417
+last_future_gr_time,"datetime64[ns, UTC]",18258,192434,91.3343,8478
+first_future_gr_value_eur,float64,18258,192434,91.3343,5179
+latest_future_gr_value_eur,float64,18258,192434,91.3343,5181
+n_future_goods_receipts,int64,210692,0,0.0,69
+first_clear_time,"datetime64[ns, UTC]",182977,27715,13.1543,977
+first_payment_block_removal_time,"datetime64[ns, UTC]",55790,154902,73.5206,2561
+first_payment_block_set_time,"datetime64[ns, UTC]",111,210581,99.9473,15
+first_invoice_cancel_time,"datetime64[ns, UTC]",5619,205073,97.3331,2167
+first_cancel_invoice_value_eur,float64,5619,205073,97.3331,2835
+first_additional_invoice_time,"datetime64[ns, UTC]",9636,201056,95.4265,5842
+first_additional_invoice_value_eur,float64,9636,201056,95.4265,5121
+first_subsequent_invoice_time,"datetime64[ns, UTC]",159,210533,99.9245,135
+first_subsequent_invoice_value_eur,float64,159,210533,99.9245,151
+first_future_price_change_time,"datetime64[ns, UTC]",2373,208319,98.8737,1916
+first_future_quantity_change_time,"datetime64[ns, UTC]",1138,209554,99.4599,993
+future_sequence_preview,object,210692,0,0.0,2806
+gather_gr_possible,bool,210692,0,0.0,2
+gather_gr_has_value,bool,210692,0,0.0,2
+outcome_any_post_t0_exception,bool,210692,0,0.0,2
+post_gather_inv_first_gr_abs_rel_diff,float64,18252,192440,91.3371,41
+post_gather_inv_latest_gr_abs_rel_diff,float64,18252,192440,91.3371,41
+transaction_exposure_eur,float64,210692,0,0.0,15081
+transaction_risk_stratum,object,210692,0,0.0,4
+decision_year,int32,210692,0,0.0,2
+decision_month,object,210692,0,0.0,13

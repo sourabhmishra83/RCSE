@@ -1,0 +1,33 @@
+{
+  "input_file": "C:\\Users\\jkashyap\\Downloads\\rcse_output\\rcse_base_v2.parquet",
+  "benchmark_rows": 246682,
+  "seed": 42,
+  "benchmark_version": "experimental_v1",
+  "natural_sampling_cap_per_class": 50000,
+  "controlled_samples_per_intervention": 15000,
+  "contradiction_strengths": [
+    0.05,
+    0.1,
+    0.25,
+    0.5
+  ],
+  "natural_reference_policy": {
+    "GR available at t0": "EXECUTE",
+    "GR unavailable at t0": "GATHER"
+  },
+  "controlled_reference_policy": {
+    "MISSING_GR": "GATHER",
+    "MISSING_PO_VALUE": "ESCALATE",
+    "MISSING_INVOICE_VALUE": "ESCALATE",
+    "PO_VALUE_CONTRADICTION": "ESCALATE",
+    "INVOICE_VALUE_CONTRADICTION": "ESCALATE",
+    "MULTI_FIELD_MISSING": "ABSTAIN"
+  },
+  "methodological_notes": [
+    "The benchmark does not use BPI monetary mismatch arithmetic as a historical REVIEW ground-truth label.",
+    "Natural delayed-evidence episodes come directly from the BPI process state at t0.",
+    "REVIEW/ABSTAIN-like conditions are introduced through controlled, fully logged interventions.",
+    "Transaction exposure remains an independent variable and does not determine the intervention class.",
+    "The same source case can appear in multiple experimental arms; benchmark_episode_id uniquely identifies each episode."
+  ]
+}

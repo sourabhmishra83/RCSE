@@ -1,0 +1,7 @@
+regime,subset,metric,estimate,lower,upper,replicates
+grouped_iid,natural_resolved,mismatch_minus_original_auroc,-1.6845220745298484e-05,-0.000331178363013751,0.00030085635866556026,2000
+grouped_iid,evidence_complete,mismatch_minus_original_auroc,-0.00017013057262871278,-0.001580990911739466,0.0011811476275889112,2000
+temporal,natural_resolved,mismatch_minus_original_auroc,-0.0005471164294873487,-0.0013496576881185467,0.00017876279569102588,2000
+temporal,evidence_complete,mismatch_minus_original_auroc,-0.002819613687063627,-0.007272853121587775,0.0010447873829183606,2000
+ood_exposure,natural_resolved,mismatch_minus_original_auroc,0.00021429529172889428,-0.0029094300277587443,0.003195179373560943,2000
+ood_exposure,evidence_complete,mismatch_minus_original_auroc,0.00032834397241177093,-0.004643160748324376,0.00476782912089034,2000

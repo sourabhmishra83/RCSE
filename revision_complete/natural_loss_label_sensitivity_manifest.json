@@ -1,0 +1,31 @@
+{
+  "seed": 20261004,
+  "bootstrap_replicates": 2000,
+  "models_fixed": true,
+  "policies_fixed": true,
+  "resolved_denominator": "all D1-resolved natural benchmark episodes",
+  "ambiguous_count": "all unresolved direct executions before subset restriction",
+  "consequence_diagnostics": [
+    {
+      "regime": "grouped_iid",
+      "ambiguous_executed": 485,
+      "mean_consequence_ambiguous_executed": 0.67799039742622,
+      "min_consequence": 0.07810225560690368,
+      "max_consequence": 1.63913861830116
+    },
+    {
+      "regime": "temporal",
+      "ambiguous_executed": 4489,
+      "mean_consequence_ambiguous_executed": 0.7381091665859655,
+      "min_consequence": 0.0,
+      "max_consequence": 1.589405641358867
+    },
+    {
+      "regime": "ood_exposure",
+      "ambiguous_executed": 2,
+      "mean_consequence_ambiguous_executed": 1.2415687195190022,
+      "min_consequence": 1.230293747637325,
+      "max_consequence": 1.8213239576187388
+    }
+  ]
+}

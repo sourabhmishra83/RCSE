@@ -1,0 +1,10 @@
+{
+  "status": "complete",
+  "protocol": "analysis_protocol.json",
+  "gather": false,
+  "selection_uses_test_labels": false,
+  "calibration_halves": "SHA256 of seed concatenated with source-case ID mod 2",
+  "ltt": "exact binomial Bonferroni over fixed threshold grid for each score family and risk cap",
+  "crc": "unsafe indicator per case; not conditional UER",
+  "limitation": "no exchangeability guarantee under temporal or exposure OOD, or synthetic-cluster benchmark"
+}

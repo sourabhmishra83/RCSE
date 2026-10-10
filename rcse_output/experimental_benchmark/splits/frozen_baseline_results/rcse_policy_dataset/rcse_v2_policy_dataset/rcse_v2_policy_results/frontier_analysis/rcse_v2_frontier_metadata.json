@@ -1,0 +1,29 @@
+{
+  "step": "09b.2o",
+  "frontier_file": "C:\\Users\\jkashyap\\Downloads\\rcse_output\\experimental_benchmark\\splits\\frozen_baseline_results\\rcse_policy_dataset\\rcse_v2_policy_dataset\\rcse_v2_policy_results\\rcse_v2_policy_frontier.csv",
+  "reference_point_file": "C:\\Users\\jkashyap\\Downloads\\rcse_output\\experimental_benchmark\\splits\\frozen_baseline_results\\rcse_policy_dataset\\rcse_v2_policy_dataset\\rcse_v2_policy_results\\rcse_v2_policy_reference_point.csv",
+  "risk_caps": [
+    0.01,
+    0.02,
+    0.05,
+    0.1,
+    0.2
+  ],
+  "selection_rule": "Maximum coverage among predeclared frontier points satisfying unsafe_execution_rate <= fixed cap; deterministic tie-breaking by lower realized loss/risk/escalation/gather burden.",
+  "pareto_objectives": {
+    "maximize": [
+      "autonomous_execution_coverage"
+    ],
+    "minimize": [
+      "unsafe_execution_rate",
+      "mean_realized_normalized_loss"
+    ]
+  },
+  "training_performed": false,
+  "recalibration_performed": false,
+  "gate_modified": false,
+  "policy_retuned": false,
+  "new_threshold_grid_introduced": false,
+  "important_interpretation": "Selected cap points are descriptive operating points from the already-frozen parameter grid. They must not be presented as newly tuned production thresholds.",
+  "next_decision": "Determine whether RCSE v2 provides meaningful autonomous coverage at low unsafe-execution caps in grouped IID, temporal, and R4 OOD, then decide whether statistical uncertainty/bootstrap analysis is needed before paper claims."
+}

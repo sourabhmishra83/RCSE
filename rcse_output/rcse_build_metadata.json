@@ -1,0 +1,28 @@
+{
+  "input_file": "C:\\Users\\jkashyap\\Downloads\\BPI_Challenge_2019.xes",
+  "total_events_input": 1595923,
+  "total_cases_input": 251734,
+  "three_way_cases": 236192,
+  "eligible_cases_with_record_invoice_receipt": 210692,
+  "rcse_rows": 210692,
+  "decision_point": "Record Invoice Receipt",
+  "three_way_categories": [
+    "3-way match, invoice after GR",
+    "3-way match, invoice before GR"
+  ],
+  "transaction_exposure_proxy": "abs(po_value_initial_eur)",
+  "risk_percentiles": {
+    "p50": 572.0,
+    "p90": 7101.0,
+    "p99": 49205.53999999998
+  },
+  "temporal_leakage_rule": "Features use events before or including the first Record Invoice Receipt according to timestamp and original XES event order. Outcomes use later events.",
+  "important_note": "'Cumulative net worth (EUR)' is captured at specific events and is not blindly summed across event rows.",
+  "benchmark_version": "v2",
+  "v2_sequential_gather": {
+    "future_gr_cases": 18258,
+    "future_gr_with_value_cases": 18258,
+    "no_gr_at_t0_but_future_gr_cases": 16360,
+    "rule": "Future evidence columns describe the post-t0 state and are reserved for sequential GATHER/evaluation. They must not be used by the t0 predictive model."
+  }
+}

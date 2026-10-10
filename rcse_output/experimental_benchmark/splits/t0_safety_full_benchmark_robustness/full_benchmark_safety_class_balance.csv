@@ -1,0 +1,4 @@
+regime,train_n,train_safe,train_unsafe,calibration_n,calibration_safe,calibration_unsafe,full_test_n,full_test_synthetic,full_test_natural,full_test_robustness_resolved
+grouped_iid,95983,80679,15304,20566,17234,3332,36919,26813,10106,35861
+temporal,108611,91202,17409,19453,16925,2528,37580,28138,9442,32434
+ood_exposure,94992,79965,15027,20410,17203,3207,2536,1859,677,2465

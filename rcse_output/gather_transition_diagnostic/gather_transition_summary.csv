@@ -1,0 +1,11 @@
+stage,count,pct_of_all
+all_v2_cases,210692,100.0
+no_gr_available_at_t0,16682,7.9177
+future_gr_possible,18258,8.6657
+no_gr_at_t0_and_future_gr,16360,7.7649
+eligible_natural_gather_transition,16360,7.7649
+eligible_t1_strictly_after_t0,16356,7.763
+eligible_t1_same_timestamp_as_t0,4,0.0019
+invalid_t1_before_t0,0,0.0
+selected_intervening_event_before_t1,812,0.3854
+selected_same_timestamp_order_ambiguity,16,0.0076

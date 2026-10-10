@@ -1,0 +1,16 @@
+regime,consequence_mode,risk_cap,feasible,feasible_point_count,selected_execute_count,selected_coverage,selected_unsafe_execution_rate,selected_raw_exposure_weighted_unsafe_rate,selected_consequence_weighted_unsafe_rate,selected_mean_realized_normalized_loss,selected_human_escalation_rate,selected_gather_rate,selected_abstention_rate,tau_safe_t0,beta0,tau_safe_t1,beta1,regime_display,risk_cap_display,selected_coverage_display,selected_unsafe_execution_rate_display,reporting_note
+grouped_iid,LOG_TRAIN_P90,0.01,False,0,0,0.0,,,,,,,,,,,,Grouped IID,1.00%,0.00%,N/A,No feasible frozen-grid point at this risk cap
+grouped_iid,LOG_TRAIN_P90,0.02,False,0,0,0.0,,,,,,,,,,,,Grouped IID,2.00%,0.00%,N/A,No feasible frozen-grid point at this risk cap
+grouped_iid,LOG_TRAIN_P90,0.05,False,0,0,0.0,,,,,,,,,,,,Grouped IID,5.00%,0.00%,N/A,No feasible frozen-grid point at this risk cap
+grouped_iid,LOG_TRAIN_P90,0.1,False,0,0,0.0,,,,,,,,,,,,Grouped IID,10.00%,0.00%,N/A,No feasible frozen-grid point at this risk cap
+grouped_iid,LOG_TRAIN_P90,0.2,True,320,7478,0.2025515317316287,0.1733083712222519,0.2143960054347982,0.1757443456264901,0.1013987050543618,0.7509412497629947,0.0465072185053766,0.0,0.9,0.1,0.9,0.1,Grouped IID,20.00%,20.26%,17.33%,Descriptive point from frozen predeclared grid
+ood_exposure,LOG_TRAIN_P90,0.01,False,0,0,0.0,,,,,,,,,,,,OOD exposure,1.00%,0.00%,N/A,No feasible frozen-grid point at this risk cap
+ood_exposure,LOG_TRAIN_P90,0.02,False,0,0,0.0,,,,,,,,,,,,OOD exposure,2.00%,0.00%,N/A,No feasible frozen-grid point at this risk cap
+ood_exposure,LOG_TRAIN_P90,0.05,False,0,0,0.0,,,,,,,,,,,,OOD exposure,5.00%,0.00%,N/A,No feasible frozen-grid point at this risk cap
+ood_exposure,LOG_TRAIN_P90,0.1,False,0,0,0.0,,,,,,,,,,,,OOD exposure,10.00%,0.00%,N/A,No feasible frozen-grid point at this risk cap
+ood_exposure,LOG_TRAIN_P90,0.2,True,128,9,0.0035488958990536,0.1111111111111111,0.1345972779004521,0.1133283653048256,0.0981375158640113,0.9712145110410094,0.0252365930599369,0.0,0.99,0.02,0.95,0.1,OOD exposure,20.00%,0.35%,11.11%,Descriptive point from frozen predeclared grid
+temporal,LOG_TRAIN_P90,0.01,False,0,0,0.0,,,,,,,,,,,,Temporal,1.00%,0.00%,N/A,No feasible frozen-grid point at this risk cap
+temporal,LOG_TRAIN_P90,0.02,False,0,0,0.0,,,,,,,,,,,,Temporal,2.00%,0.00%,N/A,No feasible frozen-grid point at this risk cap
+temporal,LOG_TRAIN_P90,0.05,False,0,0,0.0,,,,,,,,,,,,Temporal,5.00%,0.00%,N/A,No feasible frozen-grid point at this risk cap
+temporal,LOG_TRAIN_P90,0.1,False,0,0,0.0,,,,,,,,,,,,Temporal,10.00%,0.00%,N/A,No feasible frozen-grid point at this risk cap
+temporal,LOG_TRAIN_P90,0.2,True,320,8492,0.225971261309207,0.1720442769665567,0.1685211852540742,0.1728914098066998,0.1047117813923071,0.755614688664183,0.0184140500266099,0.0,0.9,0.1,0.9,0.1,Temporal,20.00%,22.60%,17.20%,Descriptive point from frozen predeclared grid

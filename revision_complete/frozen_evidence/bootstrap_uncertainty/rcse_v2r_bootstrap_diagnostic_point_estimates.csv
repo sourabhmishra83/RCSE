@@ -1,0 +1,4 @@
+regime,natural_reference_execute_retention_rate,natural_execution_coverage,natural_unsafe_execution_rate,contradiction_gate_block_rate,residual_valid_contradiction_execution_rate,missingness_gate_block_rate,severe_evidence_loss_gate_block_rate
+grouped_iid,0.9816283372984403,0.534434989115377,0.01888539159414923,0.9255046280807405,0.7297904191616766,1.0,1.0
+temporal,0.9674121405750798,0.7288710019063758,0.00973554199360651,0.9212975272533901,0.9121621621621622,1.0,1.0
+ood_exposure,0.9865384615384616,0.0310192023633678,0.14285714285714285,0.9271966527196652,0.022988505747126436,1.0,1.0

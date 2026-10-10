@@ -1,0 +1,38 @@
+{
+  "step": "09b.2c",
+  "purpose": "Frozen t0 EXECUTE probability diagnostic",
+  "retraining_performed": false,
+  "recalibration_performed": false,
+  "policy_retuning_performed": false,
+  "regimes": [
+    "grouped_iid",
+    "temporal",
+    "ood_exposure"
+  ],
+  "prediction_files": {
+    "grouped_iid": "C:\\Users\\jkashyap\\Downloads\\rcse_output\\experimental_benchmark\\splits\\frozen_baseline_results\\frozen_predictions_grouped_iid.parquet",
+    "temporal": "C:\\Users\\jkashyap\\Downloads\\rcse_output\\experimental_benchmark\\splits\\frozen_baseline_results\\frozen_predictions_temporal.parquet",
+    "ood_exposure": "C:\\Users\\jkashyap\\Downloads\\rcse_output\\experimental_benchmark\\splits\\frozen_baseline_results\\frozen_predictions_ood_exposure.parquet"
+  },
+  "descriptive_thresholds": [
+    0.01,
+    0.02,
+    0.05,
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    0.95,
+    0.99
+  ],
+  "interpretation_rule": {
+    "possibility_A": "Strong binary ranking but low absolute p(EXECUTE): investigate multiclass/calibration probability scale.",
+    "possibility_B": "Weak binary AUROC/AUPRC and overlapping distributions: frozen predictor lacks a strong execution-safety signal.",
+    "warning": "Do not choose a new policy threshold from these test diagnostics."
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "status": "complete",
+  "protocol": "analysis_protocol.json",
+  "bootstrap": "paired source-case cluster percentile intervals; fixed policies",
+  "censoring_limit": "maturity restrictions are not fixed-horizon relabeling or censoring correction",
+  "gather_limit": "uses retrospective observed t1 scores in original simulation; prospective analyses disable GATHER",
+  "inputs_sha256": {
+    "09b2l_rcse_v2_policy_spec.json": "a97631ce70e73e0f6b513e5a47e0a7a726e3239de5d1eb2f0a8f4641bc05adaf",
+    "09b2n_run_rcse_v2_policy_simulation.py": "5ff901cbc2ca00ed22437561fb7c17592e8f737cbd91d87059d12dbd2fe0e462",
+    "09b2r_bootstrap_rcse_v2_uncertainty.py": "15a201aaed52849843914f133fd6399401f9cb8ba73e59ce2d7a67871e0e7ed5",
+    "rcse_output\\rcse_base_v2.parquet": "017947e5996f7a6787ce9945adce42b5ad3bce27f5df2752c33dc5f6e1c95878",
+    "rcse_output\\experimental_benchmark\\splits\\rcse_experimental_with_splits.parquet": "051a2a2df66b972b68e45e430abbdf56f20099e8325018e9bf804d2d5b94c038",
+    "revision_complete\\analysis_protocol.json": "72d5eea18e2fad36630401c696a9d5eef76bb613df7f07ac4b591a1807f3165e"
+  }
+}

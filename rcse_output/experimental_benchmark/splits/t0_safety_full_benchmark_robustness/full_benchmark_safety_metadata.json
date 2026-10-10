@@ -1,0 +1,25 @@
+{
+  "step": "09b.2h",
+  "base_v2": "C:\\Users\\jkashyap\\Downloads\\rcse_output\\rcse_base_v2.parquet",
+  "experimental_benchmark": "C:\\Users\\jkashyap\\Downloads\\rcse_output\\experimental_benchmark\\splits\\rcse_experimental_with_splits.parquet",
+  "training": {
+    "scope": "natural D1-resolved source cases only",
+    "model": "L-BFGS logistic regression + isotonic calibration",
+    "C": 1.0,
+    "max_iter": 5000,
+    "tol": 0.0001
+  },
+  "robustness_target": {
+    "natural": "D1 natural safety target when resolved; ambiguous remains ambiguous",
+    "synthetic": "NOT_SAFE_TO_EXECUTE for robustness evaluation only"
+  },
+  "guardrails": [
+    "No synthetic episode is used in training.",
+    "No synthetic episode is used in calibration.",
+    "No future outcome field is used as a predictor.",
+    "No exposure/risk field is used as a predictor.",
+    "No intervention metadata is used as a predictor.",
+    "No rejected mismatch feature is used as a predictor."
+  ],
+  "decision_rule": "If high SAFE scores remain rare on missingness/contradiction/severe-evidence-loss episodes, the safety estimator is robust enough to consider for RCSE v2. If synthetic uncertainty receives high SAFE scores frequently, add a conservative evidence-consistency gate rather than silently treating the safety probability as universal."
+}

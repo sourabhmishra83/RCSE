@@ -1,0 +1,5 @@
+regime,partition,episodes,source_cases,episode_pct,source_case_pct
+ood_exposure,calibration,36719,23136,14.8852,14.8478
+ood_exposure,id_test,36556,23137,14.8191,14.8484
+ood_exposure,ood_test_r4,2536,1578,1.028,1.0127
+ood_exposure,train,170871,107970,69.2677,69.291

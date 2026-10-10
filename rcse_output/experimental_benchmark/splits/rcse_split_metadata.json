@@ -1,0 +1,30 @@
+{
+  "input_file": "C:\\Users\\jkashyap\\Downloads\\rcse_output\\experimental_benchmark\\rcse_experimental_benchmark.parquet",
+  "episodes": 246682,
+  "source_cases": 155821,
+  "split_version": "v1",
+  "seed": 42,
+  "fractions": {
+    "train": 0.7,
+    "calibration": 0.15,
+    "test": 0.15
+  },
+  "grouping_key": "source_case_id",
+  "group_leakage_rule": "All intervention variants derived from the same source_case_id must remain in the same partition for every split regime.",
+  "regimes": {
+    "grouped_iid": {
+      "description": "Random grouped split by source_case_id."
+    },
+    "temporal": {
+      "description": "Source cases ordered by decision_time; earliest cases train, middle cases calibration, latest cases test.",
+      "train_max_time": "2018-09-21 15:10:00+00:00",
+      "calibration_min_time": "2018-09-21 15:10:00+00:00",
+      "calibration_max_time": "2018-11-20 10:43:00+00:00",
+      "test_min_time": "2018-11-20 10:44:00+00:00"
+    },
+    "ood_exposure": {
+      "description": "All R4_99_100 source cases held out exclusively as OOD test. R1-R3 source cases form train/calibration/in-domain test.",
+      "ood_risk_stratum": "R4_99_100"
+    }
+  }
+}

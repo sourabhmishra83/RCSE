@@ -1,0 +1,4 @@
+regime,intervention_family,gather_count,post_gather_execute_count,post_gather_execute_rate,known_post_gather_execute_safety_count,unsafe_post_gather_execute_count,unsafe_post_gather_execution_rate_known
+grouped_iid,NATURAL,1514,1514,1.0,1514,35,0.023117569352708058
+ood_exposure,NATURAL,61,61,1.0,61,12,0.19672131147540983
+temporal,NATURAL,677,677,1.0,677,19,0.028064992614475627

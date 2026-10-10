@@ -1,0 +1,81 @@
+{
+  "executed_entry_point": "run_rq2_revision.py",
+  "executed_imported_helper": "source_scripts/08c_generate_frozen_baseline_predictions.py",
+  "files": [
+    {
+      "file": "action_model_without_future_count_grouped_iid.joblib",
+      "bytes": 27800,
+      "sha256": "586cc300a2e2c7252eb05e172b0a89a8e091251dc6166fff8eb6ee4082d5d11e"
+    },
+    {
+      "file": "action_model_without_future_count_ood_exposure.joblib",
+      "bytes": 27720,
+      "sha256": "f24e6ce68cafe64dc9dd2f568c108677659dde9f9eaa153505a09d59bf1dc023"
+    },
+    {
+      "file": "action_model_without_future_count_temporal.joblib",
+      "bytes": 27928,
+      "sha256": "d5a1670ded916b65b9d6a3d1731287d20bfcab36b1b6db64f0b1559078e39e18"
+    },
+    {
+      "file": "experiment_manifest.json",
+      "bytes": 3023,
+      "sha256": "fb7b22ad9cc5395c85754f50b29e9024308ba1c373fccc95f3b1b4620bfec3b1"
+    },
+    {
+      "file": "paired_predictions_grouped_iid.parquet",
+      "bytes": 1355159,
+      "sha256": "af78f109995576372e3b0bf48f703fcda5968196df8f54b7743371673a827321"
+    },
+    {
+      "file": "paired_predictions_ood_exposure.parquet",
+      "bytes": 136478,
+      "sha256": "0e9276ce659a42bab200adc1f883687e6d9d1b94e5794f52d7ec3a5b2c72348d"
+    },
+    {
+      "file": "paired_predictions_temporal.parquet",
+      "bytes": 542978,
+      "sha256": "a0fab237cdef2b847059dc5191655bc7e334e61ffd8178834bbb4c2ff6a5142b"
+    },
+    {
+      "file": "RCSE_Revision.code-workspace",
+      "bytes": 646,
+      "sha256": "dd491a433b736888e3345e726225419951a61023f3f97100a67bdb01a2476052"
+    },
+    {
+      "file": "rq2_paired_bootstrap_ci.csv",
+      "bytes": 7677,
+      "sha256": "336b5de2c94174bbf6213f95c0ed76a0f2044ad994050c1709b6aa83ca1d01cb"
+    },
+    {
+      "file": "rq2_point_estimates.csv",
+      "bytes": 2926,
+      "sha256": "cf9bf082cce9ad8da0d6f079395433d1f277031a15351a9d26a03bd69eb4ecc3"
+    },
+    {
+      "file": "RQ2_Results.md",
+      "bytes": 4124,
+      "sha256": "d5d12844321b852d26dd03a4dd5e1d66eb3d8c4061e8b04c6a3951dd435c4e1f"
+    },
+    {
+      "file": "run.log",
+      "bytes": 861,
+      "sha256": "167448e3aa3367b7b59b80b0c80725b60452de9c2ae16da728c733d4d0f4aa7c"
+    },
+    {
+      "file": "run_rq2_revision.py",
+      "bytes": 9013,
+      "sha256": "a98bf9f06765e72323eaedcdf17b2f6e1a7a746561832894e4c1167909c89149"
+    },
+    {
+      "file": "source_scripts\\08c_generate_frozen_baseline_predictions.py",
+      "bytes": 22840,
+      "sha256": "acd160d5eb2cb61a29618e63ffbcdea12a5e8cf36d910a587f92e924c8ceb335"
+    },
+    {
+      "file": "training_audit.csv",
+      "bytes": 204,
+      "sha256": "f7335c97f20cac548463fe651f0ca54acbf206e0830eff2dc230070e8fec8219"
+    }
+  ]
+}

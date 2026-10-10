@@ -1,0 +1,11 @@
+outcome,true_count,pct_of_review
+outcome_eventually_cleared,1525,88.5084
+outcome_invoice_cancelled_after_t0,72,4.1788
+outcome_payment_block_removed_after_t0,143,8.2995
+outcome_future_gr,31,1.7992
+outcome_future_gr_cancel,9,0.5223
+outcome_future_price_change,10,0.5804
+outcome_future_quantity_change,4,0.2322
+outcome_subsequent_invoice,0,0.0
+outcome_additional_invoice_receipt,250,14.5096
+outcome_any_post_t0_exception,222,12.8845

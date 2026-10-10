@@ -1,0 +1,4 @@
+regime,train_episode_rows_before_source_dedup,train_unique_source_cases,train_exposure_p50_eur,train_exposure_p90_eur,train_exposure_p99_eur,policy_test_rows_preserved,dataset_file
+grouped_iid,172820,109074,573.0,7149.0,49384.0,36919,C:\Users\jkashyap\Downloads\rcse_output\experimental_benchmark\splits\frozen_baseline_results\rcse_policy_dataset\rcse_v2_policy_dataset\rcse_v2_policy_dataset_grouped_iid.parquet
+temporal,171985,109074,554.0,7109.399999999994,48824.30000000037,37580,C:\Users\jkashyap\Downloads\rcse_output\experimental_benchmark\splits\frozen_baseline_results\rcse_policy_dataset\rcse_v2_policy_dataset\rcse_v2_policy_dataset_temporal.parquet
+ood_exposure,170871,107970,554.0,6512.0,39615.889999999956,2536,C:\Users\jkashyap\Downloads\rcse_output\experimental_benchmark\splits\frozen_baseline_results\rcse_policy_dataset\rcse_v2_policy_dataset\rcse_v2_policy_dataset_ood_exposure.parquet

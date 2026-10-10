@@ -1,0 +1,5 @@
+case:Item Category,cases
+"3-way match, invoice before GR",221010
+"3-way match, invoice after GR",15182
+Consignment,14498
+2-way match,1044

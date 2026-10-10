@@ -1,0 +1,4 @@
+regime,train_episodes,calibration_episodes,resolved_test_cases,iterations,converged
+grouped_iid,172820,36943,20604,824,True
+temporal,171985,37117,9089,832,True
+ood_exposure,170871,36719,1376,437,True

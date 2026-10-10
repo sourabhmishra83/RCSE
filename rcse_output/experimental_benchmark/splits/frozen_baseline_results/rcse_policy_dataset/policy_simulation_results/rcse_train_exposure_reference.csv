@@ -1,0 +1,4 @@
+regime,train_source_cases,non_null_train_exposure,p50_exposure_eur,p90_exposure_eur,p99_exposure_eur
+grouped_iid,109074,109074,573.0,7149.0,49384.0
+temporal,109074,109074,554.0,7109.399999999994,48824.30000000037
+ood_exposure,107970,107970,554.0,6512.0,39615.889999999956

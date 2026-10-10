@@ -1,0 +1,83 @@
+{
+  "step": "09b.2r",
+  "analysis": "source_case_level_cluster_bootstrap",
+  "bootstrap_reps": 2000,
+  "seed": 20260823,
+  "ci_level": 0.95,
+  "bootstrap_unit": "source_case_id",
+  "primary_consequence": "LOG_TRAIN_P90",
+  "primary_policy": "RCSE_V2_FULL",
+  "policies": [
+    "ARGMAX_V1",
+    "CONFIDENCE_THRESHOLD_V1",
+    "VOI_BLIND_V1",
+    "RCSE_V1_FULL",
+    "V2_SAFETY_NO_GATE",
+    "V2_GATE_MULTICLASS_EXECUTE",
+    "RCSE_V2_NO_GATHER",
+    "RCSE_V2_FULL"
+  ],
+  "paired_ablations": [
+    {
+      "left": "RCSE_V2_FULL",
+      "right": "RCSE_V2_NO_GATHER",
+      "label": "GATHER_CONTRIBUTION"
+    },
+    {
+      "left": "RCSE_V2_FULL",
+      "right": "V2_SAFETY_NO_GATE",
+      "label": "EVIDENCE_GATE_CONTRIBUTION"
+    },
+    {
+      "left": "RCSE_V2_FULL",
+      "right": "V2_GATE_MULTICLASS_EXECUTE",
+      "label": "DEDICATED_SAFETY_BELIEF_CONTRIBUTION"
+    },
+    {
+      "left": "RCSE_V2_FULL",
+      "right": "VOI_BLIND_V1",
+      "label": "CONSEQUENCE_AWARE_VS_VOI_BLIND"
+    },
+    {
+      "left": "RCSE_V2_FULL",
+      "right": "RCSE_V1_FULL",
+      "label": "V2_VS_V1"
+    }
+  ],
+  "regime_populations": {
+    "grouped_iid": {
+      "episodes": 36919,
+      "unique_source_cases": 23374
+    },
+    "temporal": {
+      "episodes": 37580,
+      "unique_source_cases": 23374
+    },
+    "ood_exposure": {
+      "episodes": 2536,
+      "unique_source_cases": 1578
+    }
+  },
+  "frozen_reference_parameters": {
+    "c_G": 0.02,
+    "c_H": 0.1,
+    "c_A": 0.5,
+    "rho_H": 0.0,
+    "tau_safe_t0": 0.95,
+    "beta0": 0.05,
+    "tau_safe_t1": 0.95,
+    "beta1": 0.05
+  },
+  "training_performed": false,
+  "recalibration_performed": false,
+  "gate_modified": false,
+  "policy_retuned": false,
+  "new_operating_point_selected": false,
+  "loss_metrics": {
+    "mean_realized_normalized_loss_09b2n": "Preserves Step 09b.2n top-level GATHER=c_G accounting.",
+    "mean_end_to_end_realized_loss_diagnostic": "Adds realized post-GATHER continuation loss to c_G. Diagnostic only; does not overwrite frozen Step 09b.2n results."
+  },
+  "ci_method": "Percentile bootstrap confidence intervals over source-case cluster resamples.",
+  "important_interpretation": "Confidence intervals quantify sampling uncertainty of the frozen analysis. They do not justify changing thresholds, gate rules, or selecting new policy operating points.",
+  "next_decision": "Use paired bootstrap intervals to determine which RCSE v2 effects are statistically stable, then lock Step 09 results and move to publication tables/figures unless a genuine implementation defect is identified."
+}

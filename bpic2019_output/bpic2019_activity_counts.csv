@@ -1,0 +1,43 @@
+activity,count
+Record Goods Receipt,314097
+Create Purchase Order Item,251734
+Record Invoice Receipt,228760
+Vendor creates invoice,219919
+Clear Invoice,194393
+Record Service Entry Sheet,164975
+Remove Payment Block,57136
+Create Purchase Requisition Item,46592
+Receive Order Confirmation,32065
+Change Quantity,21449
+Change Price,12423
+Delete Purchase Order Item,8875
+Change Approval for Purchase Order,7541
+Cancel Invoice Receipt,7096
+Vendor creates debit memo,6255
+Change Delivery Indicator,3289
+Cancel Goods Receipt,3096
+SRM: In Transfer to Execution Syst.,1765
+SRM: Complete,1628
+SRM: Created,1628
+SRM: Awaiting Approval,1628
+SRM: Document Completed,1628
+SRM: Ordered,1628
+Release Purchase Order,1610
+SRM: Change was Transmitted,1440
+Reactivate Purchase Order Item,543
+Block Purchase Order Item,514
+Cancel Subsequent Invoice,491
+Release Purchase Requisition,467
+Change Storage Location,415
+Update Order Confirmation,244
+SRM: Deleted,188
+Record Subsequent Invoice,167
+Set Payment Block,124
+SRM: Transfer Failed (E.Sys.),45
+Change Currency,35
+Change Final Invoice Indicator,11
+SRM: Transaction Completed,8
+Change payment term,7
+SRM: Held,6
+SRM: Incomplete,6
+Change Rejection Indicator,2

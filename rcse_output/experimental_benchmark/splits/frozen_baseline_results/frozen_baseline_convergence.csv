@@ -1,0 +1,4 @@
+regime,solver,iterations_required,max_iter,convergence_warning,converged
+grouped_iid,lbfgs,721,5000,False,True
+temporal,lbfgs,784,5000,False,True
+ood_exposure,lbfgs,324,5000,False,True

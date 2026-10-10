@@ -1,0 +1,3 @@
+population,episodes,blocked_count,false_block_rate
+ALL_NATURAL,66682,17237,0.2584955460244144
+NATURAL_REFERENCE_EXECUTE,50000,555,0.0111

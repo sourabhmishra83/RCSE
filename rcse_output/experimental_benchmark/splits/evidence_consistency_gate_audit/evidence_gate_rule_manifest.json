@@ -1,0 +1,26 @@
+{
+  "step": "09b.2i",
+  "gate_states": [
+    "VALID",
+    "INCOMPLETE",
+    "CONTRADICTORY"
+  ],
+  "precedence": "CONTRADICTORY overrides INCOMPLETE; otherwise VALID",
+  "rules": {
+    "INCOMPLETE": [
+      "goods_receipt_required=True AND gr_available_at_t0=False",
+      "vendor_invoice_seen_at_t0=False",
+      "po_created_at_t0=False"
+    ],
+    "CONTRADICTORY": [
+      "gr_available_at_t0=False AND n_goods_receipts_before_t0>0",
+      "gr_available_at_t0=True AND n_goods_receipts_before_t0==0",
+      "had_gr_cancellation_before_t0=True AND n_cancel_gr_before_t0==0",
+      "had_invoice_cancellation_before_t0=True AND n_cancel_invoice_before_t0==0",
+      "had_price_change_before_t0=True AND n_price_change_before_t0==0",
+      "had_quantity_change_before_t0=True AND n_quantity_change_before_t0==0",
+      "had_payment_block_before_t0=True AND (n_set_payment_block_before_t0+n_remove_payment_block_before_t0)==0"
+    ]
+  },
+  "feature_boundary": "Only t0-observable evidence-state and history-consistency fields are used by the gate."
+}

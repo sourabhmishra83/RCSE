@@ -1,0 +1,23 @@
+{
+  "step": "09b.2m.2",
+  "purpose": "Attach frozen TRAIN-only source-case exposure percentiles required for RCSE v2 consequence normalization.",
+  "experimental_split_benchmark": "C:\\Users\\jkashyap\\Downloads\\rcse_output\\experimental_benchmark\\splits\\rcse_experimental_with_splits.parquet",
+  "dataset_directory": "C:\\Users\\jkashyap\\Downloads\\rcse_output\\experimental_benchmark\\splits\\frozen_baseline_results\\rcse_policy_dataset\\rcse_v2_policy_dataset",
+  "reference_population": "Unique source_case_id values in the TRAIN partition of each frozen regime.",
+  "percentiles": [
+    0.5,
+    0.9,
+    0.99
+  ],
+  "test_exposure_used_to_define_reference": false,
+  "training_performed": false,
+  "recalibration_performed": false,
+  "policy_retuned": false,
+  "gate_modified": false,
+  "columns_added": [
+    "train_exposure_p50_eur",
+    "train_exposure_p90_eur",
+    "train_exposure_p99_eur"
+  ],
+  "next_step": "Rerun the unchanged Step 09b.2n frozen RCSE v2 simulation."
+}

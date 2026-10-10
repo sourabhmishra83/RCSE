@@ -1,0 +1,5 @@
+metric,count,pct_of_all
+total_rcse_cases,210692,100.0
+cases_with_future_gr_gather_possible,18258,8.6657
+cases_with_future_gr_value_available,18258,8.6657
+no_gr_at_t0_but_future_gr,16360,7.7649

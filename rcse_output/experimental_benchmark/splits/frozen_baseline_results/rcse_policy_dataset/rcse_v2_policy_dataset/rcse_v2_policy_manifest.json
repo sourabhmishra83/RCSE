@@ -1,0 +1,76 @@
+{
+  "step": "09b.2m",
+  "status": "POLICY_READY_DATASET_BUILT_FROM_FROZEN_COMPONENTS",
+  "regimes": [
+    "grouped_iid",
+    "temporal",
+    "ood_exposure"
+  ],
+  "expected_test_counts": {
+    "grouped_iid": 36919,
+    "temporal": 37580,
+    "ood_exposure": 2536
+  },
+  "policy_source_files": {
+    "grouped_iid": "rcse_policy_dataset_grouped_iid.parquet",
+    "temporal": "rcse_policy_dataset_temporal.parquet",
+    "ood_exposure": "rcse_policy_dataset_ood_exposure.parquet"
+  },
+  "safety_source_files": {
+    "grouped_iid": "full_benchmark_safety_predictions_grouped_iid.parquet",
+    "temporal": "full_benchmark_safety_predictions_temporal.parquet",
+    "ood_exposure": "full_benchmark_safety_predictions_ood_exposure.parquet"
+  },
+  "gate_source_file": "evidence_gate_v2_row_diagnostics.parquet",
+  "gate_delta": 0.05,
+  "frozen_spec": "C:\\Users\\jkashyap\\Downloads\\09b2l_rcse_v2_policy_spec.json",
+  "required_action_columns": [
+    "benchmark_episode_id",
+    "source_case_id",
+    "expected_action_reference",
+    "p_cal_execute",
+    "p_cal_gather",
+    "p_cal_escalate",
+    "p_cal_abstain",
+    "predicted_action_frozen",
+    "transaction_exposure_eur",
+    "transaction_risk_stratum",
+    "gather_policy_eligible",
+    "p_safe_t1_for_primary_rcse",
+    "y_t1_d1"
+  ],
+  "required_safety_columns": [
+    "benchmark_episode_id",
+    "p_safe_t0_raw",
+    "p_safe_t0_cal"
+  ],
+  "stable_v2_columns_added": [
+    "gate_state_v2",
+    "rcse_v2_gate_valid",
+    "rcse_v2_gate_incomplete",
+    "rcse_v2_gate_contradictory",
+    "rcse_v2_execute_probability_belief",
+    "rcse_v2_execute_risk_probability",
+    "reference_is_execute",
+    "evaluation_regime"
+  ],
+  "decision_feature_boundary": {
+    "execution_safety_belief": "p_safe_t0_cal",
+    "planning_beliefs": [
+      "p_cal_execute",
+      "p_cal_gather",
+      "p_cal_escalate",
+      "p_cal_abstain"
+    ],
+    "evidence_gate": "gate_state_v2",
+    "consequence_input": "transaction_exposure_eur",
+    "post_gather_belief": "p_safe_t1_for_primary_rcse"
+  },
+  "evaluation_only_fields_may_include": [
+    "expected_action_reference",
+    "y_t1_d1",
+    "t0_safety_robustness_target",
+    "is_synthetic_intervention_eval",
+    "intervention_family_eval"
+  ]
+}

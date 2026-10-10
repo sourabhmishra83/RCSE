@@ -1,0 +1,13 @@
+evaluation_regime,expected_action_reference,episodes,execute_count,execution_coverage,unsafe_execute_count,unsafe_execution_rate,raw_exposure_weighted_unsafe_rate,consequence_weighted_unsafe_rate
+grouped_iid,ABSTAIN,2224,0,0.0,0,,,
+grouped_iid,ESCALATE,22350,975,0.0436241610738255,975,1.0,1.0,1.0
+grouped_iid,EXECUTE,7566,5401,0.7138514406555644,102,0.01888539159414923,0.045464690193991276,0.021756266731879508
+grouped_iid,GATHER,4779,0,0.0,0,,,
+ood_exposure,ABSTAIN,168,0,0.0,0,,,
+ood_exposure,ESCALATE,1510,2,0.0013245033112582781,2,1.0,1.0,1.0
+ood_exposure,EXECUTE,520,21,0.04038461538461539,3,0.14285714285714285,0.2189791487320273,0.14866864098022028
+ood_exposure,GATHER,338,0,0.0,0,,,
+temporal,ABSTAIN,2323,0,0.0,0,,,
+temporal,ESCALATE,23509,1350,0.05742481602790421,1350,1.0,1.0,1.0
+temporal,EXECUTE,7825,6882,0.8794888178913738,67,0.00973554199360651,0.017667252103771718,0.010825406180012728
+temporal,GATHER,3923,0,0.0,0,,,

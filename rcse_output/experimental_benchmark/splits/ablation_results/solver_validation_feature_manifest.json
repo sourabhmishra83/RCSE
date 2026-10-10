@@ -1,0 +1,55 @@
+{
+  "NO_MISMATCH": {
+    "numeric_features": [
+      "po_value_initial_eur",
+      "invoice_value_t0_eur",
+      "latest_gr_value_before_t0_eur",
+      "events_total_case",
+      "events_available_at_t0",
+      "n_goods_receipts_before_t0",
+      "n_cancel_gr_before_t0",
+      "n_invoice_receipts_at_t0_history",
+      "n_cancel_invoice_before_t0",
+      "n_price_change_before_t0",
+      "n_quantity_change_before_t0",
+      "n_set_payment_block_before_t0",
+      "n_remove_payment_block_before_t0",
+      "n_service_entry_before_t0",
+      "n_delete_po_before_t0",
+      "n_block_po_before_t0",
+      "n_reactivate_po_before_t0",
+      "n_change_approval_before_t0",
+      "n_release_po_before_t0",
+      "po_to_invoice_days",
+      "vendor_invoice_to_recorded_invoice_days",
+      "last_gr_to_invoice_days"
+    ],
+    "categorical_features": [
+      "item_category",
+      "company",
+      "source_system",
+      "document_type",
+      "document_category",
+      "item_type",
+      "spend_classification",
+      "spend_area",
+      "sub_spend_area",
+      "gr_based_invoice_verification",
+      "goods_receipt_required",
+      "gr_available_at_t0",
+      "vendor_invoice_seen_at_t0",
+      "po_created_at_t0",
+      "had_gr_cancellation_before_t0",
+      "had_invoice_cancellation_before_t0",
+      "had_price_change_before_t0",
+      "had_quantity_change_before_t0",
+      "had_payment_block_before_t0"
+    ],
+    "numeric_count": 22,
+    "categorical_count": 19
+  },
+  "excluded_consequence_features": [
+    "transaction_exposure_eur",
+    "transaction_risk_stratum"
+  ]
+}

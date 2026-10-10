@@ -1,0 +1,10 @@
+regime,horizon_days,heldout_cases,resolved,ambiguous,unsafe,safe,auroc,ap_unsafe,score_model
+grouped_iid,30,23374,9609,13765,2943,6666,0.963990716095055,0.9548089431357929,fixed original-D1 train model with separate isotonic calibration half
+grouped_iid,60,23374,15025,8349,3039,11986,0.9568705718808611,0.9299106021713965,fixed original-D1 train model with separate isotonic calibration half
+grouped_iid,90,23374,18411,4963,3114,15297,0.9530706168999181,0.914706407655074,fixed original-D1 train model with separate isotonic calibration half
+temporal,30,23374,5764,17610,1980,3784,0.96262419384116,0.9503193365440898,fixed original-D1 train model with separate isotonic calibration half
+temporal,60,23374,9089,14285,1993,7096,0.9604674704192973,0.9284927641069173,fixed original-D1 train model with separate isotonic calibration half
+temporal,90,23374,9089,14285,1993,7096,0.9604674704192973,0.9284927641069173,fixed original-D1 train model with separate isotonic calibration half
+ood_exposure,30,1578,542,1036,234,308,0.8334027084027084,0.7770154821902893,fixed original-D1 train model with separate isotonic calibration half
+ood_exposure,60,1578,940,638,265,675,0.8395723270440252,0.7272324757368221,fixed original-D1 train model with separate isotonic calibration half
+ood_exposure,90,1578,1359,219,286,1073,0.8454793109965524,0.7092736026970118,fixed original-D1 train model with separate isotonic calibration half

@@ -1,0 +1,11 @@
+signal,count_true,pct_true
+goods_receipt_required,246682,1.0
+gr_available_at_t0,200000,0.8107604121905936
+outcome_eventually_cleared,214181,0.8682473792169676
+outcome_invoice_cancelled_after_t0,6462,0.026195668917878077
+outcome_payment_block_set_after_t0,143,0.0005796936947162744
+outcome_future_gr_cancel,281,0.001139118379127784
+outcome_future_price_change,2753,0.01116011707380352
+outcome_future_quantity_change,1216,0.004929423306118809
+outcome_subsequent_invoice,166,0.0006729311421181926
+outcome_additional_invoice_receipt,11229,0.04552014334244087

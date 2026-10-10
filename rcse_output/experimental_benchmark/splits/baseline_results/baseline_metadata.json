@@ -1,0 +1,29 @@
+{
+  "input_file": "C:\\Users\\jkashyap\\Downloads\\rcse_output\\experimental_benchmark\\splits\\rcse_experimental_with_splits.parquet",
+  "model": "multinomial logistic regression",
+  "solver": "saga",
+  "regularization": "L2",
+  "C": 1.0,
+  "max_iter": 5000,
+  "convergence_rule": "converged iff max(model.n_iter_) < max_iter",
+  "convergence_fields": [
+    "max_iter",
+    "iterations_required",
+    "converged"
+  ],
+  "calibration_method": "one-vs-rest isotonic regression",
+  "calibration_partition": "dedicated split calibration partition",
+  "classes": [
+    "EXECUTE",
+    "GATHER",
+    "ESCALATE",
+    "ABSTAIN"
+  ],
+  "regimes": [
+    "grouped_iid",
+    "temporal",
+    "ood_exposure"
+  ],
+  "ece_bins": 15,
+  "primary_design_rule": "Transaction exposure and risk stratum are excluded from the predictive model so later RCSE can combine calibrated predictive uncertainty with business consequence as a separate decision layer."
+}
