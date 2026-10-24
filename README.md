@@ -54,6 +54,6 @@ Source: [BPI Challenge 2019, 4TU.ResearchData](https://doi.org/10.4121/uuid:d06a
 Original code and accompanying code documentation are MIT licensed; see `LICENSE` and `LICENSE_SCOPE.md` for the separate source-data attribution terms. The label-loss sensitivity is documented in `docs/RESULTS.md` and reproduced by `revision_complete/run_loss_label_sensitivity.py`.
 
 
-The current archived reproduction package is [RCSE v1.3.0 on Zenodo](https://doi.org/10.5281/zenodo.23618321), DOI **10.5281/zenodo.23618321**. It includes the full-population and matched-natural analyses, saved models and scores, all numerical outputs, and reproduction instructions. The corresponding [GitHub release is v1.3.0](https://github.com/sourabhmishra83/RCSE/releases/tag/v1.3.0).
+The current archived reproduction package is [RCSE v1.3.1 on Zenodo](https://doi.org/10.5281/zenodo.23618321), DOI **10.5281/zenodo.23618321**. It includes the full-population and matched-natural analyses, saved models and scores, all numerical outputs, and reproduction instructions. The corresponding [GitHub release is v1.3.1](https://github.com/sourabhmishra83/RCSE/releases/tag/v1.3.1).
 
 Previous versions remain available: [v1.2.0](https://doi.org/10.5281/zenodo.23608623), [v1.1.0](https://doi.org/10.5281/zenodo.23608129), [v1.0.1](https://doi.org/10.5281/zenodo.23283511) and [v1.0.0](https://doi.org/10.5281/zenodo.23273149). All belong to the same [Zenodo DOI series](https://doi.org/10.5281/zenodo.23273148).

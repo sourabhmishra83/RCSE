@@ -1,4 +1,4 @@
-cff-version: 1.3.0
+cff-version: 1.2.0
 message: "Please cite this software archive when using the RCSE research code and results."
 type: software
 title: "RCSE consequence alignment and repeated vendor holdouts"
@@ -6,7 +6,7 @@ authors:
   - family-names: Mishra
     given-names: Sourabh
     orcid: "https://orcid.org/0009-0006-6338-5587"
-version: 1.3.0
+version: 1.3.1
 date-released: 2026-10-24
 doi: 10.5281/zenodo.23618321
 url: "https://github.com/sourabhmishra83/RCSE"
