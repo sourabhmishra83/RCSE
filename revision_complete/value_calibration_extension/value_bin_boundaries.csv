@@ -1,0 +1,9 @@
+regime,scheme,cutpoints_eur
+iid,P90 bins,[7150.0]
+iid,Quartile bins,"[188.0, 572.0, 2161.0]"
+group_po,P90 bins,[7088.0]
+group_po,Quartile bins,"[192.0, 583.0, 2197.0]"
+early_temporal90,P90 bins,[6989.900000000031]
+early_temporal90,Quartile bins,"[175.0, 510.0, 1964.25]"
+ood,P90 bins,[6492.0]
+ood,Quartile bins,"[185.0, 558.0, 2045.0]"

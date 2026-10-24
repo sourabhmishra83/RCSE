@@ -1,0 +1,39 @@
+{
+  "status": "exploratory mechanism check; schemes fixed before new result inspection",
+  "regimes": [
+    "iid",
+    "group_po",
+    "early_temporal90",
+    "ood"
+  ],
+  "seeds": [
+    20261004,
+    20261024,
+    20261025,
+    20261026,
+    20261027,
+    20261028,
+    20261029,
+    20261030,
+    20261031,
+    20261032,
+    20261033,
+    20261034,
+    20261035,
+    20261036,
+    20261037,
+    20261038,
+    20261039,
+    20261040,
+    20261041,
+    20261042
+  ],
+  "schemes": {
+    "P90 bins": "<= training P90 versus > training P90",
+    "Quartile bins": "training P25 P50 P75 cutpoints"
+  },
+  "calibration": "Fit separate isotonic models on raw scores in each value bin using only the first calibration half; predict independent second half and fixed test. One pooled first-half fit is a fallback only if a bin is empty.",
+  "graph": "same eight scalar starts and delta/8; descending union of first-half fitted bin anchor values; all four caps; gated and ungated variants",
+  "diagnostic": "Independent selection-half UER within gate and globally calibrated score >=.95, split at training P90, plus score bands [.95,.97), [.97,.99), [.99,1]. First-seed PO-cluster bootstrap high-minus-low difference, 2000 reps, seed20261024.",
+  "limits": "Risk differences within a broad score range do not isolate conditional miscalibration. Bin schemes are finite tests of one mechanism, not exhaustive calibration models. Certification remains nominal under item dependence; no shift guarantee."
+}

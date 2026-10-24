@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "rows": 3840,
+  "twenty_calibration_splits": true,
+  "pooled_baseline_matches_archive": true,
+  "first_half_only_fits": true,
+  "train_only_value_bins": true,
+  "empty_bin_fallbacks": 0
+}

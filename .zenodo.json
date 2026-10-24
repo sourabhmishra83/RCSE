@@ -1,7 +1,7 @@
 {
-  "title": "RCSE v1.3.1 - consequence alignment and repeated vendor holdouts",
+  "title": "RCSE v1.4.0 - value-conditional calibration mechanism",
   "upload_type": "software",
-  "version": "v1.3.1",
+  "version": "v1.4.0",
   "creators": [
     {
       "name": "Mishra, Sourabh",
@@ -10,10 +10,10 @@
     }
   ],
   "license": "mit-license",
-  "description": "Reproducible selective-execution study including twenty consequence-permutation assignments across twenty calibration splits, ten cold-start vendor holdouts with concentration measures, PO-grouped policy and selection contrasts, component loss comparisons and refreshed tail diagnostics. Includes the preceding all-eligible 210692-case study and outputs. Manuscripts, reviewer correspondence, document-editing helpers and credentials are excluded. Original code is MIT licensed; source-data attribution remains CC BY 4.0.",
+  "description": "Reproducible selective-execution study including independent value-bin isotonic calibration, held-out risk diagnostics by PO value, and matched scalar graph selection across twenty calibration splits. Includes preceding full-population, grouped, temporal, permutation and repeated vendor experiments. Manuscripts, reviewer files, editorial helpers and credentials are excluded. Original code is MIT licensed; source-data attribution remains CC BY 4.0.",
   "related_identifiers": [
     {
-      "identifier": "10.5281/zenodo.23608623",
+      "identifier": "10.5281/zenodo.23618321",
       "relation": "isNewVersionOf",
       "scheme": "doi"
     }
