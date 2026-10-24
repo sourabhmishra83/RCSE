@@ -1,0 +1,4 @@
+regime,natural_cases,reference_execute,reference_execute_gate_valid,reference_execute_policy_execute,all_natural_policy_execute,gate_pass_retention,policy_execution_retention,natural_coverage
+grouped_iid,10106,7566,7427,5401,5401,0.9816283372984403,0.7138514406555644,0.534434989115377
+temporal,9442,7825,7570,6882,6882,0.9674121405750798,0.8794888178913738,0.7288710019063758
+ood_exposure,677,520,513,21,21,0.9865384615384616,0.04038461538461539,0.0310192023633678

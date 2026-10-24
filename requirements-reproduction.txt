@@ -7,3 +7,4 @@ joblib==1.4.2
 pyarrow==19.0.1
 lxml==6.1.2
 matplotlib==3.10.8
+threadpoolctl==3.6.0

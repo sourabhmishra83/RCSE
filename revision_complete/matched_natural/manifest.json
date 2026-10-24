@@ -1,0 +1,84 @@
+{
+  "status": "complete",
+  "protocol": {
+    "seed": 20261023,
+    "risk_caps": [
+      0.02,
+      0.03,
+      0.05,
+      0.1
+    ],
+    "score_grid": [
+      0.0,
+      0.05,
+      0.1,
+      0.15,
+      0.2,
+      0.25,
+      0.3,
+      0.35,
+      0.4,
+      0.45,
+      0.5,
+      0.55,
+      0.6,
+      0.65,
+      0.7,
+      0.75,
+      0.8,
+      0.85,
+      0.9,
+      0.95,
+      0.96,
+      0.97,
+      0.98,
+      0.99,
+      1.0
+    ],
+    "populations": "same natural D1-resolved source cases for every policy",
+    "scores": "frozen separate-calibration safety raw/isotonic and corrected action raw",
+    "selection": "saved independent selection half; no test-label selection",
+    "consequence": "frozen source-case TRAIN P90 from original policy metadata",
+    "costs": {
+      "c_H": 0.1,
+      "c_A": 0.5,
+      "rho_H": 0
+    },
+    "ltt": "one-sided exact binomial; Bonferroni within each fixed family and cap",
+    "guarantee": "IID/exchangeability assumptions only; no joint guarantee across reported families/caps",
+    "crc": "marginal unsafe incidence, not conditional UER",
+    "bootstrap": "2000 paired natural source-case replicates; fitted models held fixed"
+  },
+  "score_inputs": [
+    {
+      "file": "revision_complete\\independent_selection_cases_grouped_iid.parquet",
+      "sha256": "353ac56a2569218abdc898f37eade800a788eb74a6b460474c3b76ec0155ed22"
+    },
+    {
+      "file": "revision_complete\\separate_calibration_natural_test_grouped_iid.parquet",
+      "sha256": "4bbd0cc7a5cabf9d322d275c1e775d9ecb363605826797f8446a307d7a385c08"
+    },
+    {
+      "file": "revision_complete\\independent_selection_cases_temporal.parquet",
+      "sha256": "34667866d1aae33946e0e08a395bd5e61676557eb3dd17a39913eafe40312977"
+    },
+    {
+      "file": "revision_complete\\separate_calibration_natural_test_temporal.parquet",
+      "sha256": "c733624253b1213b5eb0e0e946c3e1882381a463533ec70917fa7f50301533a2"
+    },
+    {
+      "file": "revision_complete\\independent_selection_cases_ood_exposure.parquet",
+      "sha256": "58748be9626a2d92a418199d06d293a7c3ced0d1c604d32ac68c347dc89108a0"
+    },
+    {
+      "file": "revision_complete\\separate_calibration_natural_test_ood_exposure.parquet",
+      "sha256": "be0be07754627978ddd411eb6bcf6a7575e5ec42092ad249d39cb7ef953698b0"
+    }
+  ],
+  "limitations": [
+    "D1-resolved cohort excludes ambiguous cases",
+    "No independent new dataset",
+    "No training variability in bootstrap",
+    "Risk-coverage curves descriptive; operating points selected on calibration only"
+  ]
+}

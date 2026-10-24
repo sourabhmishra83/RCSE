@@ -1,5 +1,7 @@
 # Reproducing the RCSE experiments
 
+For the full-population v1.1.0 extension, follow [the dedicated reproduction protocol](../revision_complete/robustness_extension/README.md). The legacy artifact verifier below checks the preceding benchmark evidence; it is not a substitute for rerunning the extension.
+
 ## 1. What this repository supplies
 
 The repository includes analysis source, frozen derived datasets, saved models, predictions, split metadata, numerical results, figures, and additional validation experiments. It excludes manuscripts, reviewer comments/responses, document-generation programs, and the raw XES log. Large duplicate CSV dataset exports are omitted; their Parquet counterparts are included.

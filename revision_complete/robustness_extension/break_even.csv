@@ -1,0 +1,25 @@
+regime,model,comparison,removed,unsafe_removed,avoided_consequence,break_even_cH
+iid,Logistic,RCSE reference minus Safety 0.95,137,2,1.7258423028469059,0.012597389071875225
+iid,Logistic,Gate only minus Evidence complete,357,26,18.749231956519317,0.052518857021062515
+iid,Logistic,RCSE reference minus Gate safety 0.95,0,0,-0.0,
+iid,HistBoost,RCSE reference minus Safety 0.95,333,5,4.142123675386464,0.012438809835995388
+iid,HistBoost,Gate only minus Evidence complete,357,26,18.749231956519317,0.052518857021062515
+iid,HistBoost,RCSE reference minus Gate safety 0.95,110,1,1.1725933584420491,0.010659939622200448
+late_temporal,Logistic,RCSE reference minus Safety 0.95,138,1,1.2600069197163406,0.00913048492548073
+late_temporal,Logistic,Gate only minus Evidence complete,146,3,2.7643837316409776,0.018934135148225874
+late_temporal,Logistic,RCSE reference minus Gate safety 0.95,5,0,-0.0,-0.0
+late_temporal,HistBoost,RCSE reference minus Safety 0.95,143,1,0.8468368996466887,0.005921936361165656
+late_temporal,HistBoost,Gate only minus Evidence complete,146,3,2.7643837316409776,0.018934135148225874
+late_temporal,HistBoost,RCSE reference minus Gate safety 0.95,0,0,-0.0,
+early_temporal90,Logistic,RCSE reference minus Safety 0.95,55,2,1.4924595792683162,0.027135628713969386
+early_temporal90,Logistic,Gate only minus Evidence complete,248,53,38.01814709603437,0.15329898022594504
+early_temporal90,Logistic,RCSE reference minus Gate safety 0.95,0,0,-0.0,
+early_temporal90,HistBoost,RCSE reference minus Safety 0.95,54,11,8.078480659764683,0.14960149369934597
+early_temporal90,HistBoost,Gate only minus Evidence complete,248,53,38.01814709603437,0.15329898022594504
+early_temporal90,HistBoost,RCSE reference minus Gate safety 0.95,0,0,-0.0,
+ood,Logistic,RCSE reference minus Safety 0.95,156,65,81.22681983523506,0.5206847425335581
+ood,Logistic,Gate only minus Evidence complete,29,6,8.732150721272534,0.3011086455611219
+ood,Logistic,RCSE reference minus Gate safety 0.95,151,65,81.22681983523506,0.5379259591737421
+ood,HistBoost,RCSE reference minus Safety 0.95,424,91,114.6066175651127,0.270298626332813
+ood,HistBoost,Gate only minus Evidence complete,29,6,8.732150721272534,0.3011086455611219
+ood,HistBoost,RCSE reference minus Gate safety 0.95,413,90,113.0995126037114,0.2738486987983327

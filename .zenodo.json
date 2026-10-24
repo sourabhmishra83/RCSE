@@ -1,7 +1,7 @@
 {
-  "title": "RCSE v1.0.1 â€” cleaned reproduction package",
+  "title": "RCSE v1.1.0 — full-population selective execution study",
   "upload_type": "software",
-  "version": "v1.0.1",
+  "version": "v1.1.0",
   "creators": [
     {
       "name": "Mishra, Sourabh",
@@ -10,10 +10,10 @@
     }
   ],
   "license": "mit-license",
-  "description": "Research code, derived datasets, saved models, numerical outputs, figures, and detailed reproduction instructions for Risk-Calibrated Selective Execution. Version v1.0.1 excludes manuscript files, reviewer correspondence, manuscript-editing helpers, editorial change logs, and the reference-check report. Analysis code and numerical results are unchanged. Original code is MIT licensed; BPI Challenge 2019 source-data attribution remains governed by separate CC BY 4.0 terms.",
+  "description": "Reproducible full-population and matched-natural selective execution study, including all eligible source cases, repeated independent calibration, sequential risk selection, an earlier fixed-90-day temporal refit, nonlinear safety estimation, exact cost break-even curves, consequence sensitivity and source timestamp audits. Manuscripts, reviewer correspondence and document-editing helpers are excluded. Original code is MIT licensed; source-data attribution remains CC BY 4.0.",
   "related_identifiers": [
     {
-      "identifier": "10.5281/zenodo.23273149",
+      "identifier": "10.5281/zenodo.23283511",
       "relation": "isNewVersionOf",
       "scheme": "doi"
     }

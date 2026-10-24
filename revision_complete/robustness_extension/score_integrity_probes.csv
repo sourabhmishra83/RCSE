@@ -1,0 +1,17 @@
+regime,model,probe,test_cases,original_gate_valid,newly_gate_blocked,original_high_safety,perturbed_high_safety,mean_score_change,scope
+iid,Logistic,Negative PO age,31561,28532,0,18834,21254,0.010907717889114397,specification-gap and score-sensitivity probe; no downstream harm label assigned
+iid,Logistic,Coherent amount substitution,31561,28532,0,18834,17745,-0.018638903901634012,specification-gap and score-sensitivity probe; no downstream harm label assigned
+iid,HistBoost,Negative PO age,31561,28532,0,23808,24855,0.015236201596075086,specification-gap and score-sensitivity probe; no downstream harm label assigned
+iid,HistBoost,Coherent amount substitution,31561,28532,0,23808,21858,-0.018313891953203838,specification-gap and score-sensitivity probe; no downstream harm label assigned
+late_temporal,Logistic,Negative PO age,31604,29131,0,27459,28324,0.008649380524495646,specification-gap and score-sensitivity probe; no downstream harm label assigned
+late_temporal,Logistic,Coherent amount substitution,31604,29131,0,27459,26009,-0.019848759851656215,specification-gap and score-sensitivity probe; no downstream harm label assigned
+late_temporal,HistBoost,Negative PO age,31604,29131,0,24267,25970,0.006240517074910185,specification-gap and score-sensitivity probe; no downstream harm label assigned
+late_temporal,HistBoost,Coherent amount substitution,31604,29131,0,24267,26021,0.0016737928488685552,specification-gap and score-sensitivity probe; no downstream harm label assigned
+early_temporal90,Logistic,Negative PO age,19676,18231,0,10961,16042,0.040590572097190906,specification-gap and score-sensitivity probe; no downstream harm label assigned
+early_temporal90,Logistic,Coherent amount substitution,19676,18231,0,10961,10808,-0.0018981796821520298,specification-gap and score-sensitivity probe; no downstream harm label assigned
+early_temporal90,HistBoost,Negative PO age,19676,18231,0,9998,14467,0.038490637734910314,specification-gap and score-sensitivity probe; no downstream harm label assigned
+early_temporal90,HistBoost,Coherent amount substitution,19676,18231,0,9998,7864,-0.006024658620302578,specification-gap and score-sensitivity probe; no downstream harm label assigned
+ood,Logistic,Negative PO age,2107,1918,0,216,282,0.07844161723547043,specification-gap and score-sensitivity probe; no downstream harm label assigned
+ood,Logistic,Coherent amount substitution,2107,1918,0,216,0,-0.5780623158306795,specification-gap and score-sensitivity probe; no downstream harm label assigned
+ood,HistBoost,Negative PO age,2107,1918,0,646,1139,0.06298627998886312,specification-gap and score-sensitivity probe; no downstream harm label assigned
+ood,HistBoost,Coherent amount substitution,2107,1918,0,646,646,0.0,specification-gap and score-sensitivity probe; no downstream harm label assigned

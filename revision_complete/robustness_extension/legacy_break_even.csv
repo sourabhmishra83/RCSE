@@ -1,0 +1,10 @@
+regime,comparison,removed,unsafe_removed,break_even_cH,population
+grouped_iid,RCSE minus Safety 0.95,370,21,0.062159181089526554,earlier intervention-source natural resolved sample
+grouped_iid,Gate minus completeness,251,17,0.05147201874813337,earlier intervention-source natural resolved sample
+grouped_iid,RCSE minus Gate safety 0.95,242,18,0.08430363463250821,earlier intervention-source natural resolved sample
+temporal,RCSE minus Safety 0.95,105,0,-0.0,earlier intervention-source natural resolved sample
+temporal,Gate minus completeness,113,2,0.013292793594097662,earlier intervention-source natural resolved sample
+temporal,RCSE minus Gate safety 0.95,4,0,-0.0,earlier intervention-source natural resolved sample
+ood_exposure,RCSE minus Safety 0.95,27,4,0.18577808877970142,earlier intervention-source natural resolved sample
+ood_exposure,Gate minus completeness,20,3,0.2250663888449118,earlier intervention-source natural resolved sample
+ood_exposure,RCSE minus Gate safety 0.95,24,4,0.2090003498771641,earlier intervention-source natural resolved sample

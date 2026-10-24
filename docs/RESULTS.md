@@ -1,5 +1,7 @@
 # Results and where to find the evidence
 
+The current full-population study is documented in [ROBUSTNESS_STUDY.md](ROBUSTNESS_STUDY.md). The sections below retain the earlier benchmark protocol and results; do not combine their headline metrics with the new study.
+
 These results concern one Procure-to-Pay log and linear models. Negative findings are retained. They do not establish production safety or universal economic superiority.
 
 ## Shared-target discrimination

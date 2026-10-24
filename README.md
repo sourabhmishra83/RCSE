@@ -4,6 +4,7 @@ Research code, derived datasets, saved models, experiment outputs, and technical
 
 ## Start here
 
+- [Current full-population study](docs/ROBUSTNESS_STUDY.md): all eligible cases, repeated sequential selection, earlier temporal refitting, nonlinear models, and cost sensitivity.
 - [Reproduction guide](docs/REPRODUCING.md): environment, verified inputs, ordered commands, raw-log access, historical pipeline map, and output comparison.
 - [Detailed methods](docs/METHODS.md): labels, source-grouped splits, models/calibration, evidence gate, consequence, policy, baselines, and uncertainty.
 - [Results and evidence map](docs/RESULTS.md): numerical findings, saved files, and limitations.
@@ -39,18 +40,18 @@ The existing directory names preserve script/input paths. Alternative historical
 
 ## Main findings and limits
 
-Corrected shared-target evaluation supports an IID/temporal safety-score discrimination advantage; an exposure-OOD advantage is not established. Monetary mismatch features do not establish an AUROC gain. Independent chronology and coherent-value substitution bypass the gate. Always-escalate has lower full-benchmark modeled loss at reference costs, and temporal unsafe-execution estimates are strongly label-dependent.
+The current study evaluates all 210,692 eligible natural cases, with resolved-case policy comparisons and explicit ambiguity bounds. Complete-evidence IID AUROC is 0.7694 for logistic regression and 0.8554 for histogram gradient boosting; that nonlinear advantage does not generalize across the evaluated shifts. At the first calibration seed, reference RCSE and gate plus safety at 0.95 select identical IID and earlier-temporal logistic cases. Stronger safety-threshold selection can certify at a 2% target, and success depends on the calibration split, starting rule, and model. These results do not establish general superiority of consequence weighting.
 
-Historical GATHER uses observed t1 information at t0 and is retrospective. Additional prospective comparisons disable GATHER. Complete outcome capture cannot be established from the log. LTT conditional risk, CRC marginal risk, resolved-only UER, and historical fallback UER have distinct meanings. See the methods and results guides before interpreting them.
+Exact break-even curves distinguish fixed-decision repricing from retuning. Log, linear, and capped-linear consequences and PO-value-weighted risk are provided. The earlier temporal refit uses 90-day outcomes; capture completeness remains unknown. Integrity probes expose the finite gate specification and score sensitivity, rather than proving general corruption detection. Historical GATHER replay remains retrospective. Older directories retain different benchmark populations and model provenance; use the current study guide for the main full-population analysis.
 
 ## Data and code terms
 
 Source: [BPI Challenge 2019, 4TU.ResearchData](https://doi.org/10.4121/uuid:d06aff4b-79f0-45e6-8ec8-e19730c248f1). The existing source declaration identifies CC BY 4.0; retain source attribution and verify applicable redistribution terms. Raw logs are excluded. Original code and code documentation are MIT licensed; source-data attribution terms are retained separately in LICENSE_SCOPE.md.
 
 
-Original code and accompanying code documentation are MIT licensed; see `LICENSE` and `LICENSE_SCOPE.md` for the separate source-data attribution terms. The pre-resubmission label-loss sensitivity is documented in `docs/RESULTS.md` and reproduced by `revision_complete/run_loss_label_sensitivity.py`.
+Original code and accompanying code documentation are MIT licensed; see `LICENSE` and `LICENSE_SCOPE.md` for the separate source-data attribution terms. The label-loss sensitivity is documented in `docs/RESULTS.md` and reproduced by `revision_complete/run_loss_label_sensitivity.py`.
 
 
-The current archived reproduction package is [RCSE v1.0.1 on Zenodo](https://doi.org/10.5281/zenodo.23283511), DOI **10.5281/zenodo.23283511**. This cleaned package contains research code, data, outputs, and reproduction documentation; manuscript and reviewer-response materials are excluded. The corresponding [GitHub release is v1.0.1](https://github.com/sourabhmishra83/RCSE/releases/tag/v1.0.1).
+The current archived reproduction package is [RCSE v1.1.0 on Zenodo](https://doi.org/10.5281/zenodo.23608129), DOI **10.5281/zenodo.23608129**. It includes the full-population and matched-natural analyses, saved models and scores, all numerical outputs, and reproduction instructions. The corresponding [GitHub release is v1.1.0](https://github.com/sourabhmishra83/RCSE/releases/tag/v1.1.0).
 
-The previous [v1.0.0 snapshot](https://doi.org/10.5281/zenodo.23273149) remains available. Both versions belong to the same [Zenodo DOI series](https://doi.org/10.5281/zenodo.23273148).
+Previous versions remain available: [v1.0.1](https://doi.org/10.5281/zenodo.23283511) and [v1.0.0](https://doi.org/10.5281/zenodo.23273149). All belong to the same [Zenodo DOI series](https://doi.org/10.5281/zenodo.23273148).

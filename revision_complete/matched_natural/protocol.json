@@ -1,0 +1,49 @@
+{
+  "seed": 20261023,
+  "risk_caps": [
+    0.02,
+    0.03,
+    0.05,
+    0.1
+  ],
+  "score_grid": [
+    0.0,
+    0.05,
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3,
+    0.35,
+    0.4,
+    0.45,
+    0.5,
+    0.55,
+    0.6,
+    0.65,
+    0.7,
+    0.75,
+    0.8,
+    0.85,
+    0.9,
+    0.95,
+    0.96,
+    0.97,
+    0.98,
+    0.99,
+    1.0
+  ],
+  "populations": "same natural D1-resolved source cases for every policy",
+  "scores": "frozen separate-calibration safety raw/isotonic and corrected action raw",
+  "selection": "saved independent selection half; no test-label selection",
+  "consequence": "frozen source-case TRAIN P90 from original policy metadata",
+  "costs": {
+    "c_H": 0.1,
+    "c_A": 0.5,
+    "rho_H": 0
+  },
+  "ltt": "one-sided exact binomial; Bonferroni within each fixed family and cap",
+  "guarantee": "IID/exchangeability assumptions only; no joint guarantee across reported families/caps",
+  "crc": "marginal unsafe incidence, not conditional UER",
+  "bootstrap": "2000 paired natural source-case replicates; fitted models held fixed"
+}

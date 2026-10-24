@@ -1,0 +1,5 @@
+regime,training_resolved,train_P90,lr_iterations,histboost_iterations,features
+iid,129247,7150.0,179,180,40
+late_temporal,146800,7014.0,203,180,40
+early_temporal90,35661,6989.900000000031,129,180,40
+ood,127941,6492.0,170,180,40

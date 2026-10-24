@@ -1,0 +1,5 @@
+split_ood_exposure,total,resolved
+calibration,23136,20410
+id_test,23137,20375
+ood_test_r4,1578,1376
+train,107970,94992

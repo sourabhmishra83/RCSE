@@ -1,0 +1,32 @@
+{
+  "raw_traces": 251734,
+  "raw_events": 1595923,
+  "invalid_timestamp_events": 0,
+  "original_order_time_decreases": 0,
+  "raw_min": "1948-01-26 22:59:00+00:00",
+  "raw_max": "2020-04-09 21:59:00+00:00",
+  "events_by_year": {
+    "2018": 1550468,
+    "2019": 45135,
+    "2017": 223,
+    "2001": 22,
+    "2016": 6,
+    "2015": 3,
+    "1948": 10,
+    "2020": 2,
+    "1993": 9,
+    "2008": 45
+  },
+  "eligible_cases": 210692,
+  "eligible_cases_with_events_outside_2018_2019": 246,
+  "eligible_outside_year_events_by_activity": {
+    "Vendor creates invoice": 271,
+    "Vendor creates debit memo": 25,
+    "Create Purchase Requisition Item": 2
+  },
+  "raw_po_after_first_invoice_cases": 0,
+  "derived_negative_po_age_cases": 0,
+  "handling": "Source timestamps retained. Derived construction sorts UTC timestamp then original event order. Temporal splits use decision_time, not maximum trace time. The 90-day outcome sensitivity ignores events outside the decision-relative window; outside-2018/2019 is an audit category, not automatic evidence of invalidity.",
+  "followup_limit": "Observed last event is not proof of complete capture. Remaining outcomes stay ambiguous.",
+  "raw_sha256": "af63bc687fc4152f2123b05c3af7772b37ef3fce2d3f67f812666c9e356baae7"
+}

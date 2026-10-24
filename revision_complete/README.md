@@ -18,9 +18,7 @@ Run corrected action and mismatch experiments first when rebuilding their model 
 GATHER replay is retrospective, temporal outcomes remain ambiguous, and public risk-control guarantees cannot be transferred automatically to shifted or synthetic-cluster populations. Read the specific metric/label conventions in the methods guide.
 
 
-Original code and accompanying code documentation are MIT licensed; see `LICENSE` and `LICENSE_SCOPE.md` for the separate source-data attribution terms. The pre-resubmission label-loss sensitivity is documented in `docs/RESULTS.md` and reproduced by `revision_complete/run_loss_label_sensitivity.py`.
+Original code and accompanying code documentation are MIT licensed; see `LICENSE` and `LICENSE_SCOPE.md` for the separate source-data attribution terms. The label-loss sensitivity is documented in `docs/RESULTS.md` and reproduced by `revision_complete/run_loss_label_sensitivity.py`.
 
 
-The current archived reproduction package is [RCSE v1.0.1 on Zenodo](https://doi.org/10.5281/zenodo.23283511), DOI **10.5281/zenodo.23283511**. This cleaned package contains research code, data, outputs, and reproduction documentation; manuscript and reviewer-response materials are excluded. The corresponding [GitHub release is v1.0.1](https://github.com/sourabhmishra83/RCSE/releases/tag/v1.0.1).
-
-The previous [v1.0.0 snapshot](https://doi.org/10.5281/zenodo.23273149) remains available. Both versions belong to the same [Zenodo DOI series](https://doi.org/10.5281/zenodo.23273148).
+The current [v1.1.0 archive](https://doi.org/10.5281/zenodo.23608129) includes the [full-population robustness study](robustness_extension/README.md). Earlier analyses remain for traceability; their populations and calibration are distinct.

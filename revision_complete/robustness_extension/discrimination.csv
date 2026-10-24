@@ -1,0 +1,17 @@
+regime,model,scope,cases,unsafe,auroc
+iid,Logistic,all_resolved,27529,3529,0.9287887798715406
+iid,Logistic,evidence_complete,25089,1089,0.7694123239975512
+iid,HistBoost,all_resolved,27529,3529,0.9553647929063948
+iid,HistBoost,evidence_complete,25089,1089,0.8553556971227426
+late_temporal,Logistic,all_resolved,11743,2083,0.9477597409374322
+late_temporal,Logistic,evidence_complete,10138,478,0.7730430884378493
+late_temporal,HistBoost,all_resolved,11743,2083,0.9099244699027622
+late_temporal,HistBoost,evidence_complete,10138,478,0.6074742067101536
+early_temporal90,Logistic,all_resolved,17367,1544,0.9102430375340679
+early_temporal90,Logistic,evidence_complete,16370,547,0.7468535320058587
+early_temporal90,HistBoost,all_resolved,17367,1544,0.9066847908485023
+early_temporal90,HistBoost,evidence_complete,16370,547,0.7366020421756634
+ood,Logistic,all_resolved,1815,570,0.7243443951243571
+ood,Logistic,evidence_complete,1658,413,0.6214942092826512
+ood,HistBoost,all_resolved,1815,570,0.735125766222786
+ood,HistBoost,evidence_complete,1658,413,0.6344350768692203

@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "policy_rows": 4160,
+  "repetitions": 20,
+  "eligible_cases": 210692,
+  "checks": [
+    "common cohorts",
+    "20 independently refitted calibrators",
+    "disjoint source-case partitions",
+    "early calibration labels precede test",
+    "coverage and UER identities",
+    "no undefined risk mapped to zero",
+    "fixed-horizon labels independently reconciled over 155821 prior cases"
+  ],
+  "script_sha256": {
+    "run_source_followup_audit.py": "017c5bbfd49a423c2721e9a6fa2b0624a25b6c62472875586c32920cf2d93630",
+    "run_robustness_extension.py": "5e6755b1880bede8ff3faed0da9a8a2595d3e68162bca7bec46555980a9390b1",
+    "run_selection_and_stress_audit.py": "7d7d0e26c1bc6c4786e959f6bd9ce682d1d6f327c75de3037b4b7db071b4ca5f",
+    "run_robustness_uncertainty.py": "b82a7eb243a9efc3aecbffa10654ff5b08f0622b6fc1999e8b45fd6f22624436"
+  }
+}

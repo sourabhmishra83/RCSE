@@ -1,0 +1,68 @@
+{
+  "status": "exploratory reanalysis of previously inspected data",
+  "seeds": [
+    20261004,
+    20261024,
+    20261025,
+    20261026,
+    20261027,
+    20261028,
+    20261029,
+    20261030,
+    20261031,
+    20261032,
+    20261033,
+    20261034,
+    20261035,
+    20261036,
+    20261037,
+    20261038,
+    20261039,
+    20261040,
+    20261041,
+    20261042
+  ],
+  "risk_caps": [
+    0.02,
+    0.03,
+    0.05,
+    0.1
+  ],
+  "source_population": "all 210692 eligible natural cases; no intervention-source sampling",
+  "iid_split": "SHA256 uniform source hash, 70/15/15",
+  "late_temporal": "70/15/15 sorted decision_time and source ID; original-D1 target",
+  "early_temporal": "90-day target; training Jan-Mar 2018, calibration Apr-May 2018, test Sep 2018; latest calibration horizon ends before test begins",
+  "ood_split": "top 1% absolute PO exposure held out; lower 99% hash split 70/15/15 including ID test",
+  "selection": "Refit isotonic for each of 20 calibration-half seeds; train model fixed. Candidates are distinct fitted isotonic y thresholds, independent of selection labels; descending fixed sequence stops at first failure.",
+  "graph": {
+    "tau": [
+      0.0,
+      0.5,
+      0.7,
+      0.8,
+      0.9,
+      0.95,
+      0.97,
+      0.99
+    ],
+    "beta": [
+      0.01,
+      0.02,
+      0.03,
+      0.05,
+      0.075,
+      0.1
+    ],
+    "initial_error_per_chain": 0.00625,
+    "stop": "first failed exact binomial test in each increasing-budget chain"
+  },
+  "costs": "dimensionless; cH=.10, rhoH=0, cA=.50; fixed-decision repricing distinguished from RCSE retuning",
+  "consequences": [
+    "log1p(v)/log1p(train_P90)",
+    "v/train_P90",
+    "min(v/train_P90,10)"
+  ],
+  "nonlinear": "sklearn histogram gradient boosting: 180 trees, learning_rate=.05, max_leaf_nodes=31, min_samples_leaf=30, L2=1; no hyperparameter search; train-only category vocabulary, top 253 plus other",
+  "guarantee": "Within each reported family and seed only, under IID natural-case assumptions. No simultaneous guarantee over seeds/families, no shift guarantee, no capture-completeness claim.",
+  "learned_start": "First isotonic-fitting half chooses a starting candidate using an in-sample binomial heuristic, not a certificate. The independent selection half certifies the resulting fixed sequence at delta=.05."
+}

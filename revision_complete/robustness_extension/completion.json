@@ -1,0 +1,9 @@
+{
+  "status": "complete",
+  "model_fits": 8,
+  "repetitions": 20,
+  "eligible": 210692,
+  "q99_exposure": 49205.53999999998,
+  "rows": 4160,
+  "scope": "all eligible cases; resolved outcomes condition the primary comparison; earlier-window fixed-90-day refitting included"
+}
