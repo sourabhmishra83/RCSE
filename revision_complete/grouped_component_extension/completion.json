@@ -1,0 +1,8 @@
+{
+  "status": "complete",
+  "grouped_fits": 4,
+  "graph_rows": 1280,
+  "fixed_rows": 252,
+  "contrast_rows": 504,
+  "all_group_partitions_disjoint": true
+}

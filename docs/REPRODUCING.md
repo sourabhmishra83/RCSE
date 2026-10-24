@@ -1,6 +1,6 @@
 # Reproducing the RCSE experiments
 
-For the full-population v1.1.0 extension, follow [the dedicated reproduction protocol](../revision_complete/robustness_extension/README.md). The legacy artifact verifier below checks the preceding benchmark evidence; it is not a substitute for rerunning the extension.
+For the full-population v1.2.0 extension, follow [the dedicated reproduction protocol](../revision_complete/robustness_extension/README.md). The legacy artifact verifier below checks the preceding benchmark evidence; it is not a substitute for rerunning the extension.
 
 ## 1. What this repository supplies
 

@@ -1,4 +1,6 @@
-# Full population selective execution study
+# Full-population selective execution study
+
+The latest extension adds [PO/vendor holdouts and component audits](../revision_complete/grouped_component_extension/README.md). Its cluster intervals supersede case-only intervals for interpreted component effects; original outputs remain available. Run the grouped extension after the full-population study.
 
 The current study evaluates component tradeoffs on all 210,692 eligible natural
 cases rather than the capped intervention-source universe. Read the
@@ -32,3 +34,5 @@ Earlier experiment directories retain historical protocols and diagnostic result
 They use different cohorts or model calibration and should not be merged into a
 single headline comparison. Manuscripts, reviewer correspondence, editing helpers,
 and editorial logs remain excluded from the public research repository.
+
+PO-grouped complete-evidence AUROCs are 0.7406 and 0.8026; vendor-grouped AUROCs are 0.8052 and 0.8057. The logistic linear temporal RCSE-minus-safety interval includes zero; the boosted linear temporal contrast is negative with its cluster interval below zero. Absolute exposure totals and concentration sensitivities are included.

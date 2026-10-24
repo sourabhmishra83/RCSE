@@ -1,7 +1,7 @@
 {
-  "title": "RCSE v1.1.0 — full-population selective execution study",
+  "title": "RCSE v1.2.0 - grouped holdouts and component decision audit",
   "upload_type": "software",
-  "version": "v1.1.0",
+  "version": "v1.2.0",
   "creators": [
     {
       "name": "Mishra, Sourabh",
@@ -10,10 +10,10 @@
     }
   ],
   "license": "mit-license",
-  "description": "Reproducible full-population and matched-natural selective execution study, including all eligible source cases, repeated independent calibration, sequential risk selection, an earlier fixed-90-day temporal refit, nonlinear safety estimation, exact cost break-even curves, consequence sensitivity and source timestamp audits. Manuscripts, reviewer correspondence and document-editing helpers are excluded. Original code is MIT licensed; source-data attribution remains CC BY 4.0.",
+  "description": "Reproducible selective-execution study with PO-grouped and vendor-grouped holdouts, matched eight-chain safety selection, a plug-in cost policy, cluster-bootstrap component uncertainty, absolute exposure totals and contribution concentration diagnostics. Includes the full-population 210692-case study and all preceding analyses. Manuscripts, reviewer correspondence and document-editing helpers are excluded. Original code is MIT licensed; source-data attribution remains CC BY 4.0.",
   "related_identifiers": [
     {
-      "identifier": "10.5281/zenodo.23283511",
+      "identifier": "10.5281/zenodo.23608129",
       "relation": "isNewVersionOf",
       "scheme": "doi"
     }

@@ -1,0 +1,3 @@
+group,test_cases,test_cases_with_group_in_train,test_groups,shared_train_test_groups
+purchasing_document,31561,25260,18126,12092
+vendor_id,31561,31506,1049,996

@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "group_isolation": true,
+  "all_eligible_accounted": true,
+  "policy_identities": true,
+  "restriction_exposure_monotonicity": true,
+  "twenty_seeds_all_targets": true,
+  "contrast_identities": true,
+  "graph_rows": 1280,
+  "fixed_rows": 252
+}

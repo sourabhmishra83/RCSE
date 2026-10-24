@@ -1,0 +1,7 @@
+regime,part,total,resolved,ambiguous,groups
+group_po,calibration,31117,27245,3872,9153
+group_po,test,32154,27910,4244,8929
+group_po,train,147421,129448,17973,42646
+group_vendor,calibration,45480,39243,6237,240
+group_vendor,test,28498,26287,2211,250
+group_vendor,train,136714,119073,17641,1104
