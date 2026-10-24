@@ -21,4 +21,4 @@ GATHER replay is retrospective, temporal outcomes remain ambiguous, and public r
 Original code and accompanying code documentation are MIT licensed; see `LICENSE` and `LICENSE_SCOPE.md` for the separate source-data attribution terms. The label-loss sensitivity is documented in `docs/RESULTS.md` and reproduced by `revision_complete/run_loss_label_sensitivity.py`.
 
 
-The current [v1.2.0 archive](https://doi.org/10.5281/zenodo.23608623) includes the [full-population robustness study](robustness_extension/README.md). Earlier analyses remain for traceability; their populations and calibration are distinct.
+The current [v1.3.0 archive](https://doi.org/10.5281/zenodo.23618321) includes the [full-population robustness study](robustness_extension/README.md). Earlier analyses remain for traceability; their populations and calibration are distinct.

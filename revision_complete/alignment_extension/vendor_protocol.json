@@ -1,0 +1,21 @@
+{
+  "status": "exploratory split sensitivity",
+  "seeds": [
+    20261023,
+    20261024,
+    20261025,
+    20261026,
+    20261027,
+    20261028,
+    20261029,
+    20261030,
+    20261031,
+    20261032
+  ],
+  "first_seed": "exact original hash of all-eligible-20261023 plus vendor ID",
+  "other_seeds": "SHA256 vendor-heldout-{seed}: plus vendor ID, 70/15/15; vendor sizes not balanced",
+  "calibration": "group-disjoint halves from 20261004 plus vendor ID",
+  "features": "same 40 predictors; vendor_id and vendor_name_anon excluded; vendor-invoice availability and time intervals are process features",
+  "inference": "1000 vendor-cluster AUROC replicates per split, fixed fitted model; ten split estimates are descriptive sensitivity, not independent external replications",
+  "models": "original fixed logistic and HistGradientBoosting hyperparameters; no test tuning"
+}

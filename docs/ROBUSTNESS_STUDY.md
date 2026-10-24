@@ -1,6 +1,8 @@
 # Full-population selective execution study
 
-The latest extension adds [PO/vendor holdouts and component audits](../revision_complete/grouped_component_extension/README.md). Its cluster intervals supersede case-only intervals for interpreted component effects; original outputs remain available. Run the grouped extension after the full-population study.
+The latest [alignment and repeated-vendor extension](../revision_complete/alignment_extension/README.md) adds twenty consequence permutations, ten vendor splits, and PO-grouped policy/selection contrasts. It supersedes any general cold-start conclusion based on one vendor allocation.
+
+The grouped extension adds [PO/vendor holdouts and component audits](../revision_complete/grouped_component_extension/README.md). Its cluster intervals supersede case-only intervals for interpreted component effects; original outputs remain available. Run the grouped extension after the full-population study.
 
 The current study evaluates component tradeoffs on all 210,692 eligible natural
 cases rather than the capped intervention-source universe. Read the

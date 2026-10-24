@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "actual_graph_matches_release": true,
+  "permutation_calibration_counts": true,
+  "ten_vendor_splits": true,
+  "all_vendor_splits_group_disjoint": true,
+  "all_eligible_accounted": true,
+  "concentration_identities": true
+}

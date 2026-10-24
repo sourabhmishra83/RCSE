@@ -1,0 +1,15 @@
+{
+  "model": "HistBoost",
+  "regime": "early_temporal90",
+  "consequence": "Linear",
+  "comparison": "RCSE reference minus Safety 0.95",
+  "estimate": -0.0030985419392803933,
+  "lower": -0.005727830399292379,
+  "upper": -0.0009351768443270118,
+  "clusters": 6095,
+  "replicates": 2000,
+  "benefit_top1_share": 0.1243982300167018,
+  "benefit_top5_share": 0.471438144712693,
+  "estimate_without_largest_abs_case": -0.0025075347812227988,
+  "estimate_without_largest5_abs_cases": -0.0008584727608829669
+}

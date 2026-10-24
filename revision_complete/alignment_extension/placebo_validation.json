@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "rows": 13440,
+  "permutations_per_calibration": 20,
+  "calibration_repetitions": 20,
+  "graph_matches_reference": true,
+  "permutation_marginals_preserved": true,
+  "grouped_calibration_halves_disjoint": true
+}

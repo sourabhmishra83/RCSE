@@ -1,0 +1,29 @@
+regime,component,model,comparison,estimate,lower,upper
+iid,Gate,Logistic,Gate only minus Evidence complete,0.0006157422370402,0.0003250929786623,0.0008893378742001
+iid,Safety,Logistic,Safety 0.95 minus Evidence complete,0.0025448655951469,0.0001694308369455,0.0047668620455268
+iid,Safety,HistBoost,Safety 0.95 minus Evidence complete,-0.0092796090565306,-0.011461713121587,-0.0071955964826132
+iid,Consequence constraint,Logistic,RCSE reference minus Gate safety 0.95,0.0,0.0,0.0
+iid,Consequence constraint,HistBoost,RCSE reference minus Gate safety 0.95,0.0003569837858824,0.0002451154094949,0.0004573619756569
+iid,Reference constraints vs plug-in,Logistic,RCSE reference minus Plug-in cost,0.008122878076941,0.0066499591003992,0.0095894495314284
+iid,Reference constraints vs plug-in,HistBoost,RCSE reference minus Plug-in cost,0.0019264755621949,0.0012014523140885,0.0026434805688295
+group_po,Gate,Logistic,Gate only minus Evidence complete,0.0003814396638108,1.4105165392969233e-05,0.0006971470169968
+group_po,Safety,Logistic,Safety 0.95 minus Evidence complete,-0.0032334113206279,-0.0060335666347928,-0.0006866584165359
+group_po,Safety,HistBoost,Safety 0.95 minus Evidence complete,-0.0034181813683975,-0.0062512902085615,-0.0007844023386801
+group_po,Consequence constraint,Logistic,RCSE reference minus Gate safety 0.95,5.9814252233378776e-05,-0.0003790916250597,0.0004659305174592
+group_po,Consequence constraint,HistBoost,RCSE reference minus Gate safety 0.95,-3.445982110778815e-05,-0.0002545697343456,0.0001206420641649
+group_po,Reference constraints vs plug-in,Logistic,RCSE reference minus Plug-in cost,0.0017986423163341,-0.0003490530609438,0.0038038358616021
+group_po,Reference constraints vs plug-in,HistBoost,RCSE reference minus Plug-in cost,0.0027436197468108,0.0008872625715731,0.0042697475579848
+early_temporal90,Gate,Logistic,Gate only minus Evidence complete,-0.0007611071052014,-0.0013726825626205,-0.0001723748973642
+early_temporal90,Safety,Logistic,Safety 0.95 minus Evidence complete,0.0183252636046373,0.0138192788782982,0.0224778539349874
+early_temporal90,Safety,HistBoost,Safety 0.95 minus Evidence complete,0.0200447827775114,0.0159850474035803,0.0239237691861416
+early_temporal90,Consequence constraint,Logistic,RCSE reference minus Gate safety 0.95,0.0,0.0,0.0
+early_temporal90,Consequence constraint,HistBoost,RCSE reference minus Gate safety 0.95,0.0,0.0,0.0
+early_temporal90,Reference constraints vs plug-in,Logistic,RCSE reference minus Plug-in cost,0.0123697735615978,0.0090524668880184,0.0151984552909521
+early_temporal90,Reference constraints vs plug-in,HistBoost,RCSE reference minus Plug-in cost,0.0164692953206735,0.0142549333638446,0.0185625696699487
+ood,Gate,Logistic,Gate only minus Evidence complete,-0.0032133061825193,-0.0071134948762992,3.3375275902072874e-05
+ood,Safety,Logistic,Safety 0.95 minus Evidence complete,-0.1743201272409306,-0.2090701598569196,-0.1407359228281669
+ood,Safety,HistBoost,Safety 0.95 minus Evidence complete,-0.1668424836210371,-0.2004805937372586,-0.1341755272113226
+ood,Consequence constraint,Logistic,RCSE reference minus Gate safety 0.95,-0.0364335095510936,-0.0468554660783575,-0.0265874339872616
+ood,Consequence constraint,HistBoost,RCSE reference minus Gate safety 0.95,-0.0395589601122376,-0.0518424737088951,-0.0276392360260178
+ood,Reference constraints vs plug-in,Logistic,RCSE reference minus Plug-in cost,-0.0411248557222262,-0.0526534498966811,-0.0307109893707363
+ood,Reference constraints vs plug-in,HistBoost,RCSE reference minus Plug-in cost,-0.0631055138665868,-0.0787358166849144,-0.0480393053662673

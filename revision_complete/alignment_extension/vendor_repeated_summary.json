@@ -1,0 +1,15 @@
+{
+  "splits": 10,
+  "auc_gap_median": 0.0237586577137952,
+  "auc_gap_min": -0.0214429912097031,
+  "auc_gap_max": 0.0773602547568472,
+  "positive_gap_splits": 8,
+  "cluster_intervals_positive": 4,
+  "cluster_intervals_negative": 0,
+  "test_top_vendor_share_min": 0.1106680710201625,
+  "test_top_vendor_share_max": 0.2740981667652277,
+  "test_effective_vendors_min": 8.455815222281894,
+  "test_effective_vendors_max": 25.055115806170868,
+  "po_test_cases": 32154,
+  "po_test_vendor_seen_train_cases": 32039
+}

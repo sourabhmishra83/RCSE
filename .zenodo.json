@@ -1,7 +1,7 @@
 {
-  "title": "RCSE v1.2.0 - grouped holdouts and component decision audit",
+  "title": "RCSE v1.3.0 - consequence alignment and repeated vendor holdouts",
   "upload_type": "software",
-  "version": "v1.2.0",
+  "version": "v1.3.0",
   "creators": [
     {
       "name": "Mishra, Sourabh",
@@ -10,10 +10,10 @@
     }
   ],
   "license": "mit-license",
-  "description": "Reproducible selective-execution study with PO-grouped and vendor-grouped holdouts, matched eight-chain safety selection, a plug-in cost policy, cluster-bootstrap component uncertainty, absolute exposure totals and contribution concentration diagnostics. Includes the full-population 210692-case study and all preceding analyses. Manuscripts, reviewer correspondence and document-editing helpers are excluded. Original code is MIT licensed; source-data attribution remains CC BY 4.0.",
+  "description": "Reproducible selective-execution study including twenty consequence-permutation assignments across twenty calibration splits, ten cold-start vendor holdouts with concentration measures, PO-grouped policy and selection contrasts, component loss comparisons and refreshed tail diagnostics. Includes the preceding all-eligible 210692-case study and outputs. Manuscripts, reviewer correspondence, document-editing helpers and credentials are excluded. Original code is MIT licensed; source-data attribution remains CC BY 4.0.",
   "related_identifiers": [
     {
-      "identifier": "10.5281/zenodo.23608129",
+      "identifier": "10.5281/zenodo.23608623",
       "relation": "isNewVersionOf",
       "scheme": "doi"
     }

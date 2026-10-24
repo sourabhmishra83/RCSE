@@ -1,0 +1,39 @@
+{
+  "status": "exploratory sensitivity; fixed before inspecting new results",
+  "regimes": [
+    "iid",
+    "group_po",
+    "early_temporal90",
+    "ood"
+  ],
+  "calibration_seeds": [
+    20261004,
+    20261024,
+    20261025,
+    20261026,
+    20261027,
+    20261028,
+    20261029,
+    20261030,
+    20261031,
+    20261032,
+    20261033,
+    20261034,
+    20261035,
+    20261036,
+    20261037,
+    20261038,
+    20261039,
+    20261040,
+    20261041,
+    20261042
+  ],
+  "permutations": 20,
+  "permutation_seed": 20261024,
+  "assignment": "Separate uniform permutations of actual log consequence among all resolved calibration cases and among resolved test cases; fixed within permutation ID across calibration-half seeds and models",
+  "labels": "never used to assign permutations; isotonic fitted only on its first half",
+  "model": "frozen original models; PO-grouped calibration halves hash purchasing_document, other halves hash source_case_id",
+  "selection": "identical 8 by 6 RCSE graph and alpha allocation; all four caps; stop first nonrejection per chain",
+  "loss": "evaluate each placebo decision on actual unpermuted consequence, not shuffled consequence; this is a placebo decision family, not a feasible economic constraint",
+  "limits": "Tests are nominal under item independence; cluster dependence and shift remain. A similar certification frequency does not prove mechanisms equivalent; a gap does not prove economic benefit."
+}
